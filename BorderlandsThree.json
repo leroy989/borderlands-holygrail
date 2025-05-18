@@ -5236,18 +5236,75 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Kaos",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock / Corrosive / Cryo",          
+    "Notes": "Only Billy drops the dedicated Loot.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Psychobillies",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ambermire" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Laser-Sploder",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -5256,6 +5313,1740 @@
         { 
             "QuestName": null, 
             "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "King Bobo the Almighty",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Voracious Canopy" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Lead Sprinkler",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Billy, The Anointed", 
+            "respawns": true,
+            "DropRate": 20,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Jakobs Estate"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Lovable Rogue",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": "Shock",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Evil Brick", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Castle Crimson"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Fantastic Fustercluck DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Lucian's Call",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss / Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Corrosive / Cryo",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Blue Fire", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Slaughterstar 3000"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Dinklebot",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Each Loot-O-Gram",
+                    "rate": 25
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Skywell-27" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Mutant",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Fungal Gorger",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Cankerwood" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "NoPewPew",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Revenge of the Cartels",           
+    "Elements": "Fire",          
+    "Notes": "Revenge of the Cartels Event Active",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Joey Ultraviolet", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": 11
+                },
+                {
+                    "condition": "Mini-Bosses next to Joey",
+                    "rate": 11.6
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        },
+        { 
+            "BossName": "Roaster", 
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        },
+        { 
+            "BossName": "The Tenderizer", 
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "O.P.Q. System",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Atlas",      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Revenge of the Cartels",           
+    "Elements": "None",          
+    "Notes": "Revenge of the Cartels Event Active",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Joey Ultraviolet", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": 11
+                },
+                {
+                    "condition": "Mini-Bosses next to Joey",
+                    "rate": 11.6
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        },
+        { 
+            "BossName": "Josie Byte", 
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        },
+        { 
+            "BossName": "Franco Firewall", 
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Ogre",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Anointed Alpha",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Pain is Power",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Hot Karl",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Devil's Razor" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rebel Yell",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Atlas",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Shock",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Sky Bullies",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x2",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rebound",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Psychoreaver", 
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Vaulthalla"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rowan's Call",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Red Rain", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Slaughterstar 3000"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Sawbar",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Borman Nates",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Meridian Outskirts" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Seeryul Killur",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Amach",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Cursehaven" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Guns, Love, and Tentacles DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Shredifier",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Raging Titan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 25
+                },
+                {
+                    "condition": null,
+                    "rate": 33
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Slaughter Shaft"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Sickle",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss / Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tink of Cunning", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "True Trial",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Cunning"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Anointed X-4",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Soulrender",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tom & Xam", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Tom",
+                    "rate": 15
+                },
+                {
+                    "condition": "Xam",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Heart's Desire"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Star Helix",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Shock / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Power Troopers",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x3",
+                    "rate": 2.5
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Atlas HQ" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Stauros' Burn",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Wendigo", 
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Cankerwood"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Stonethrower",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Bounty of Blood",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Kormash", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ashfall Peaks"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "The Dictator",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Agonizer 9000, Pain & Terror", 
+            "respawns": true,
+            "DropRate": 1.2,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Guts of Carnivora"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "The Monarch",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Killavolt", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 16.5
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Lectra City"
+        },
+        { 
+            "BossName": "Sera of Supremacy", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "True Trial",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Supremacy"
+        },
+        { 
+            "BossName": "Anathema", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 2.44
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Minos Prime"
+        },
+        { 
+            "BossName": "Scourge", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 2.44
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Minos Prime"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Try-Bolt",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Manvark",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Konrad's Hold" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Warlord",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Queen Ant Wanette",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Web Slinger",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock / Corrosive / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Scourge", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M1-M5",
+                    "rate": 44
+                },
+                {
+                    "condition": "M6+",
+                    "rate": 39.1
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Minos Prime"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Zheitsev's Eruption",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Assault Rifle",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Raging Titan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 25
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Slaughter Shaft"
+        },
+        { 
+            "BossName": "Valkyrie Squad", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 1.01
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        },
+        { 
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 2.23
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "AAA",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Shock",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Wick and Warty",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Warty",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Lectra City" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Amazing Grace",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Quest / Vendor",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": "Life of the Party", 
+            "QuestLocation": "Devil's Razor" 
         }
     ],          
 
@@ -5286,25 +7077,175 @@
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "Veteran Rewards",
+            "Location": "Sanctuary III",
+            "DropRate": 2.22
+        }
+    ]
+},
+{
+    "ItemName": "Atlas Replay",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Atlas",      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": "None",          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Hemovorous", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "2.5-25"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Darkthirst Dominion"
+        },
+        { 
+            "BossName": "Sera of Supremacy", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "True Trial",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Supremacy"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Baby Maker",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Tediore",      
+    "DropSource": "Enemy / World Drop / Challenge",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": "After collecting all Dead Claptraps, Claptrap sends you Mail with the Baby Maker SMG.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Brood Mother",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Pyre of Stars" 
+        },
+        { 
+            "EnemyName": "Alacritous Vanda",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Cistern of Slaughter" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Dead Claptraps",
+            "Location": "World Wide",
+            "DropRate": null
+        },
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bangarang",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Tediore",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -5330,38 +7271,38 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
+            "EnemyName": "Captain Thunk & Sloth",
+            "isUniqueEnemy": true,
             "respawns": true,
             "DropRate": null,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Konrad's Hold" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Beacon",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Enemy / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Bounty of Blood",           
+    "Elements": "Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -5387,6 +7328,63 @@
     ],
     "EnemyLocations": [
         { 
+            "EnemyName": "Jerrick Logan",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 33,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Bloodsun Canyon" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Bounty of Blood DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bloom",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Bounty of Blood",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "The Ruiner", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Crater's Edge"
+        }
+    ],
+    "EnemyLocations": [
+        { 
             "EnemyName": null,
             "isUniqueEnemy": false,
             "respawns": true,
@@ -5407,18 +7405,18 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Breeder",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -5444,6 +7442,68 @@
     ],
     "EnemyLocations": [
         { 
+            "EnemyName": "Big Donny & The Big-D",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "*The Big-D",
+                    "DropRate": 3.75
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Craps",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Jackbot", 
+            "respawns": true,
+            "DropRate": 33.3,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "VIP Tower"
+        }
+    ],
+    "EnemyLocations": [
+        { 
             "EnemyName": null,
             "isUniqueEnemy": false,
             "respawns": true,
@@ -5457,25 +7517,25 @@
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "Handsome Jackpot DLC Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Devastator",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -5501,38 +7561,100 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
+            "EnemyName": "The Unstoppable",
+            "isUniqueEnemy": true,
             "respawns": true,
             "DropRate": null,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Ambermire" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Devils Foursum",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": "Only Billy drops the dedicated Loot.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Psychobillies",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Billy",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ambermire" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Echo",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -5554,6 +7676,1282 @@
             "TVHMDropRate": null,
             "UVHMDropRate": null,
             "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Big Donny & The Big-D",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "*The Big-D",
+                    "rate": 11.25
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Firefly",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": "Fire",          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "5.6-6.1"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Shipping Encouraged",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "28.6-40"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Designer's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Free Radical",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": "Shock",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Beef Plissken",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 30,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Karass Canyon" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Frozen Devil",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "Cryo",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Kukuwajack",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Negul Neshai" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Gargoyle",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Bounty of Blood",           
+    "Elements": "Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Dickon Goyle",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 33,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Bloodsun Canyon" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Bounty of Blood DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Grease Trap",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Revenge of the Cartels",           
+    "Elements": "Fire",          
+    "Notes": "Revenge of the Cartels Event Active",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Joey Ultraviolet", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": 11
+                },
+                {
+                    "condition": "Mini-Bosses next to Joey",
+                    "rate": 11.6
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        },
+        { 
+            "BossName": "Roaster", 
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        },
+        { 
+            "BossName": "The Tenderizer", 
+            "respawns": true,
+            "DropRate": 6.6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Villa Ultraviolet"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Gunerang",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Tediore",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Indo Tyrant",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Floodmoor Basin" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Hellshock",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Vermilingua",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Hornet",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Mother of Grogans",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Hydrafrost",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "Cryo",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Shiverous the Unscathed",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Negul Neshai" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Infinity",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Anointed Alpha",
+            "isUniqueEnemy": "true",
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "King's Call",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tyreen the Destroyer", 
+            "respawns": true,
+            "DropRate": 6,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Destroyer's Rift"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Light Show",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Bounty of Blood",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Lasodactyl",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 33,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Obsidian Forest" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Bounty of Blood DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Linc",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Atlas",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Anointed Alpha",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Linoge",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Lavender Crawly",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Droughts" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Little Yeeti",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Yeti",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 25,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Skittermaw Basin" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Love Drill",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Eleanor and the Heart", 
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Heart's Desire"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Lucky 7",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Scraptrap Prime", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Compactor"
+        },
+        { 
+            "BossName": "Skag of Survival", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "True Trial",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Survival"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Handsome Jackpot DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Maggie",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss / Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Hag of Fervor", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "True Trial",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Fervor"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Turnkey Tim",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Floodmoor Basin" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Magnificent",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Jabbermogwai",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Voracious Canopy" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Miscreant",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Vladof",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Bounty of Blood",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "The Quartermaster", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Bloodsun Canyon"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Moonfire",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 55.1
+                },
+                {
+                    "condition": "M4-",
+                    "rate": 60
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
         }
     ],
     "EnemyLocations": [
