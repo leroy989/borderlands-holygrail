@@ -8976,18 +8976,18 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Multi-tap",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Atlas",      
+    "DropSource": "Boss",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9001,14 +9001,49 @@
 
     "BossLocations": [
         { 
-            "BossName": null, 
+            "BossName": "Katagawa Ball", 
             "respawns": true,
             "DropRate": null,
-            "DropRates": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 16.5
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null
+            "LocationName": "Skywell-27"
+        },
+        { 
+            "BossName": "Anathema", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 2.44
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Minos Prime"
+        },
+        { 
+            "BossName": "Scourge", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 2.44
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Minos Prime"
         }
     ],
     "EnemyLocations": [
