@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borderlands Completion Checklist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Borderlands Holy Grail</h1>
+        <p>Track your progress across the Borderlands universe!</p>
+    </header>
+
+    <div class="controls-section">
+        
+        <div id="filter-collapsible-content"> 
+            <div class="filter-category">
+                <label for="game-filter-select">Game:</label>
+                <select id="game-filter-select" data-filter-category="game"></select>
+            </div>
+            <div class="filter-category">
+                <label for="content-filter-select">Content:</label>
+                <select id="content-filter-select" data-filter-category="content"></select>
+            </div>
+            <div class="filter-category">
+                <label for="type-filter-select">Type:</label>
+                <select id="type-filter-select" data-filter-category="type"></select>
+            </div>
+            <div class="filter-category">
+                <label for="subtype-filter-select">Sub Type:</label>
+                <select id="subtype-filter-select" data-filter-category="itemSubType"></select>
+            </div>
+            <div class="filter-category">
+                <label for="rarity-filter-select">Rarity:</label>
+                <select id="rarity-filter-select" data-filter-category="rarity"></select>
+            </div>
+            <div class="filter-category">
+                <label for="manufacturer-filter-select">Manufacturer:</label>
+                <select id="manufacturer-filter-select" data-filter-category="manufacturer"></select>
+            </div>
+            <div class="filter-category">
+                <label for="drop-source-filter-select">Drop Source:</label>
+                <select id="drop-source-filter-select" data-filter-category="dropSource"></select>
+            </div>
+            <div class="filter-category">
+                <label for="location-filter-select">Location:</label>
+                <select id="location-filter-select" data-filter-category="location"></select>
+            </div>
+            <div class="filter-category">
+                <label for="enemy-filter-select">Enemy:</label>
+                <select id="enemy-filter-select" data-filter-category="enemy"></select>
+            </div>
+            <div class="filter-category">
+                <label for="boss-filter-select">Boss:</label>
+                <select id="boss-filter-select" data-filter-category="boss"></select>
+            </div>
+            <div class="filter-category">
+                 <label for="quest-filter-select">Quest:</label>
+                <select id="quest-filter-select" data-filter-category="quest"></select>
+            </div>
+        </div>
+        <div class="search-and-progress">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search items...">
+            </div>
+
+            <div class="progress-panel">
+                <h2>Your Progress</h2>
+                <div class="progress-stats">
+                    <p>Items Found: <span id="checked-count">0</span> / <span id="total-count">0</span></p>
+                </div>
+                <div class="progress-bar-container">
+                    <div id="progress-bar" class="progress-bar" style="width: 0%;"></div>
+                </div>
+                <span id="progress-percentage" class="progress-percentage">0%</span>
+            </div>
+
+            <div class="action-buttons">
+                <button id="hide-completed-button" class="action-button">Hide Completed</button>
+                <button id="clear-all-button" class="action-button clear-button">Clear All (Filtered)</button>
+            </div>
+            
+            </div>
+    </div>
+
+    <main>
+        <ul id="item-list">
+            <li class="item-list-placeholder">Loading Items...</li>
+        </ul>
+    </main>
+
+    <button id="goToTopBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px"><path d="M0 0h24v24H0z" fill="none"/><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+    
+    <footer>
+        <p>&copy; 2025 Borderlands Holy Grail. Not affiliated with Gearbox Software or 2K.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,4790 @@
+[
+    {
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": null,          
+    "ItemType": null,          
+    "ItemSubType": null,          
+    "ItemRarity": null,        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": null,           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+}
+]
