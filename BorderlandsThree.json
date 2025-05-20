@@ -9068,18 +9068,18 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Nemesis",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Boss / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "Fire / Corrosive",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9088,6 +9088,804 @@
         { 
             "QuestName": null, 
             "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Mouthpiece", 
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ascension Bluff"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Night Flyer",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "I'm Rakkman",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Carnivora" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Occultist",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Troy Calypso", 
+            "respawns": true,
+            "DropRate": 30,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Great Vault"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Pestilence",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Heckle/Hyde",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Jakobs Estate" 
+        },
+        { 
+            "EnemyName": "Atomic & Sylestro",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Sylestro",
+                    "rate": 30
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Tazendeer Ruins" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Prompt Critical",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Evil Lilith", 
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Castle Crimson"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Fantastic Fustercluck DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Psycho Stabber",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Borman Nates",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Meridian Outskirts"
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Queen's Call",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tyreen the Destroyer", 
+            "respawns": true,
+            "DropRate": 9,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Destroyer's Rift"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Res",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Atlas",      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": "None",          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "5.6-6.1"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Shipping Encouraged",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "28.6-40"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Designer's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Roisen's Thorns",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Princess Tarantella II",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "S3RV-80S-EXECUTE",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Tediore",      
+    "DropSource": "Boss / Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Valkyrie Squad", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": "1.01"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        },
+        { 
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": "2.23"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Anointed X-2 & X-3",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": "15"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Scorpio",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Tediore",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "None",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Lt. Preston",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Tazendeer Ruins" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Scoville",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Challenge",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": "None / Fire",          
+    "Notes": "After destroying all Hot Sauce bottles in the DLC: Moxxi's heist of the Handsome Jackpot, Torgue sends you Mail with the Scoville Pistol.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Torgue's Marketing Mistakes",
+            "Location": "Handsome Jackpot DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Sellout",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Quest / Vendor",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire / Corrosive",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": "Sellout", 
+            "QuestLocation": "Ambermire" 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Veteran Rewards",
+            "Location": "Sanctuary III",
+            "DropRate": 2.22
+        }
+    ]
+},
+{
+    "ItemName": "Seventh Sense",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Quest",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": "Cryo",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": "Cold Case: Forgotten Answers", 
+            "QuestLocation": "The Cankerwood" 
         }
     ],          
 
@@ -9125,18 +9923,18 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "SkekSil",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Enemy",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "Fire / Shock / Corrosive",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9158,6 +9956,129 @@
             "TVHMDropRate": null,
             "UVHMDropRate": null,
             "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Skrakk",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ascension Bluff" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Superball",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Baron Noggin",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Meridian Metroplex" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "TNTina",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": "Fire",          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Anathema", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M1-M5",
+                    "rate": 44
+                },
+                {
+                    "condition": "M6+",
+                    "rate": 39.1
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Minos Prime"
         }
     ],
     "EnemyLocations": [
@@ -9182,18 +10103,18 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "The Blanc",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "DAHL",      
+    "DropSource": "Enemy / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Bounty of Blood",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9219,7 +10140,7 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
+            "EnemyName": "Ipswitch Dunne",
             "isUniqueEnemy": false,
             "respawns": true,
             "DropRate": null,
@@ -9227,30 +10148,30 @@
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "The Blastplains" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "Bounty of Blood DLC Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "The Companion",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "Fire",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9276,38 +10197,47 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
+            "EnemyName": "Anointed X-2 & X-3",
+            "isUniqueEnemy": true,
             "respawns": true,
             "DropRate": null,
-            "DropRates": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 15
+                },
+                {
+                    "condition": null,
+                    "rate": 30
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "The Anvil" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "The Duc",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9321,14 +10251,23 @@
 
     "BossLocations": [
         { 
-            "BossName": null, 
+            "BossName": "The Rampager", 
             "respawns": true,
             "DropRate": null,
-            "DropRates": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 10
+                },
+                {
+                    "condition": null,
+                    "rate": 20
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null
+            "LocationName": "The Forgotten Basilica"
         }
     ],
     "EnemyLocations": [
@@ -9346,25 +10285,25 @@
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "The Flood",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9390,38 +10329,38 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
+            "EnemyName": "Lagromar",
             "isUniqueEnemy": false,
             "respawns": true,
-            "DropRate": null,
+            "DropRate": 10,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Konrad's Hold" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Thunderball Fists",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Maliwan",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "Shock",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9447,39 +10386,39 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
+            "EnemyName": "Power Troopers",
+            "isUniqueEnemy": true,
             "respawns": true,
-            "DropRate": null,
+            "DropRate": 2.5,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Atlas HQ" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Tizzy",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "COV",      
+    "DropSource": "Boss / Chest / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
+    "Content": "Designer's Cut",           
+    "Elements": "Fire / Shock / Corrosive / Cryo / Radiation",          
+    "Notes": "Mayhem increases chances.",             
     "LocationFilter": true,
     "Points": null,               
     
@@ -9492,14 +10431,34 @@
 
     "BossLocations": [
         { 
-            "BossName": null, 
+            "BossName": "Heavyweight Harker", 
             "respawns": true,
             "DropRate": null,
-            "DropRates": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "5.6-6.1"
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null
+            "LocationName": "Stormblind Complex"
+        },
+        { 
+            "BossName": "Tyrant of Instinct", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "True Trial",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Instinct"
         }
     ],
     "EnemyLocations": [
@@ -9517,26 +10476,41 @@
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "The Hunker Bunker",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "26.6-37.2"
+                },
+                {
+                    "condition": "Fl4k",
+                    "rate": "19-26.7"
+                } 
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Designer's Cut DLC Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Trickshot",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Boss / Chest / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
+    "Content": "Designer's Cut",           
+    "Elements": "None",          
+    "Notes": "Mayhem increases chances.",             
     "LocationFilter": true,
     "Points": null,               
     
@@ -9549,14 +10523,19 @@
 
     "BossLocations": [
         { 
-            "BossName": null, 
+            "BossName": "Heavyweight Harker", 
             "respawns": true,
             "DropRate": null,
-            "DropRates": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "5.6-6.1"
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null
+            "LocationName": "Stormblind Complex"
         }
     ],
     "EnemyLocations": [
@@ -9574,25 +10553,40 @@
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "The Hunker Bunker",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "26.6-37.2"
+                },
+                {
+                    "condition": "Fl4k",
+                    "rate": "19-26.7"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Designer's Cut DLC Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Unforgiven",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9618,38 +10612,38 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
+            "EnemyName": "Indo Tyrant",
+            "isUniqueEnemy": true,
             "respawns": true,
-            "DropRate": null,
+            "DropRate": 10,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Floodmoor Basin" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Unkempt Harold",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Torgue",      
+    "DropSource": "Enemy / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Bounty of Blood",           
+    "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9675,38 +10669,38 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
+            "EnemyName": "Caber Dowd",
             "isUniqueEnemy": false,
             "respawns": true,
-            "DropRate": null,
+            "DropRate": 33,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Bloodsun Canyon" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "Bounty of Blood DLC Wide",
             "DropRate": null
         }
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Wagon Wheel",          
+    "ItemType": "Weapon",          
+    "ItemSubType": "Pistol",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Jakobs",      
+    "DropSource": "Enemy / World Drop",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
+    "Content": "Base Game",           
+    "Elements": "None",          
     "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
@@ -9732,876 +10726,21 @@
     ],
     "EnemyLocations": [
         { 
-            "EnemyName": null,
+            "EnemyName": "The Tink Train",
             "isUniqueEnemy": false,
             "respawns": true,
-            "DropRate": null,
+            "DropRate": 15,
             "DropRates": null,
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
-            "LocationName": null 
+            "LocationName": "Guts of Carnivora" 
         }
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
-            "DropRate": null
-        }
-    ]
-},
-{
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
-    "Challenge": null,         
-    "isTimeLimited": false,
-    "isEasterEggItem": false,
-    "isMissableItem": false,      
-    "Content": null,           
-    "Elements": null,          
-    "Notes": null,             
-    "LocationFilter": true,
-    "Points": null,               
-    
-    "QuestSources": [
-        { 
-            "QuestName": null, 
-            "QuestLocation": null 
-        }
-    ],          
-
-    "BossLocations": [
-        { 
-            "BossName": null, 
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null
-        }
-    ],
-    "EnemyLocations": [
-        { 
-            "EnemyName": null,
-            "isUniqueEnemy": false,
-            "respawns": true,
-            "DropRate": null,
-            "DropRates": null,
-            "NVHMDropRate": null,
-            "TVHMDropRate": null,
-            "UVHMDropRate": null,
-            "LocationName": null 
-        }
-    ],
-    "GeneralLocations": [ 
-        {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]
