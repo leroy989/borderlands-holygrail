@@ -76,8 +76,8 @@
       {
         "QuestName": "Wanted: Fresh Fish",
         "QuestLocation": "New Haven",
-        "QuestType": "Side Quest",
-        "QuestGiver": "New Haven Bounty Board"
+        "QuestType": null,
+        "QuestGiver": null
       }
     ],
     "BossLocations": [
