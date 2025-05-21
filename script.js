@@ -30,20 +30,19 @@ async function loadJSONData(filePath) {
     } catch (error) {
         console.error(`Error loading JSON data from ${filePath}:`, error);
         const container = document.getElementById('item-list');
-        if (container) { // Basic error display, can be improved
+        if (container) { 
             const errorLi = document.createElement('li');
             errorLi.className = 'item-list-placeholder error-message';
             errorLi.textContent = `Failed to load game data from ${filePath}. Check console.`;
             if (container.firstChild && container.firstChild.className && container.firstChild.className.includes('item-list-placeholder')) {
-                // If placeholder exists, replace it or append error
-                if (!container.innerHTML.includes('Failed to load game data')) { // Avoid duplicate messages
+                if (!container.innerHTML.includes('Failed to load game data')) { 
                     container.innerHTML += errorLi.outerHTML;
                 }
             } else {
                 container.innerHTML = errorLi.outerHTML;
             }
         }
-        throw error; // Re-throw to be caught by initializeApp logic if needed
+        throw error; 
     }
 }
 
@@ -80,7 +79,7 @@ function createItemListItem(item) {
     const listItem = document.createElement('li');
     let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-');
     listItem.className = `item-card ${rarityCardClass}`;
-    listItem.setAttribute('data-item-id', item.id); // item.id now uses uniqueStaticId
+    listItem.setAttribute('data-item-id', item.id); 
 
     if (item.Checked) {
         listItem.classList.add('card-is-checked');
@@ -284,21 +283,25 @@ function populateFilterDropdown(selectElement, uniqueValues, category, activeVal
     allOption.textContent = 'All';
     selectElement.appendChild(allOption);
 
-    if (sortFunction) uniqueValues.sort(sortFunction);
+    if (sortFunction) { // If a specific sort function is provided (like for Rarity or Game)
+        uniqueValues.sort(sortFunction);
+    } else if (uniqueValues.every(val => typeof val === 'string')) { // Default to localeCompare for string arrays for other filters
+        uniqueValues.sort((a, b) => a.localeCompare(b));
+    } // Numbers or mixed arrays would use default .sort() if no sortFunction is given.
 
     uniqueValues.forEach(value => {
         const option = document.createElement('option');
         option.value = String(value);
-        if (category === 'game') {
+        if (category === 'game') { // Game display names are custom
             if (value === "BorderlandsOne") option.textContent = "BL1";
             else if (value === "BorderlandsTwo") option.textContent = "BL2";
             else if (value === "BorderlandsTPS") option.textContent = "BL:TPS";
             else if (value === "BorderlandsThree") option.textContent = "BL3";
             else if (value === "TinyTinasWonderlands") option.textContent = "Wonderlands";
             else option.textContent = capitalizeFirstLetter(String(value));
-        } else if (category === 'rarity') {
+        } else if (category === 'rarity') { // Rarity is capitalized
             option.textContent = capitalizeFirstLetter(String(value));
-        } else {
+        } else { // Other filters use the value as is
             option.textContent = String(value);
         }
         selectElement.appendChild(option);
@@ -319,7 +322,7 @@ const getUniqueValues = (items, field, isMultiValueProperty = true) => {
             values.add(String(itemFieldValue).trim());
         }
     });
-    return Array.from(values);
+    return Array.from(values); // This array will be sorted by populateFilterDropdown or before calling it
 };
 
 const getFilteredItemsForOptions = (excludeCategory) => {
@@ -380,34 +383,37 @@ const getFilteredItemsForOptions = (excludeCategory) => {
 
 function populateDynamicFilters() {
     const { game, content, type, itemSubType, rarity, manufacturer, boss, enemy, dropSource, location, quest } = currentFilters;
-    populateFilterDropdown(document.getElementById('content-filter-select'), getUniqueValues(getFilteredItemsForOptions('content'), 'Content', false).sort(), 'content', content);
-    populateFilterDropdown(document.getElementById('type-filter-select'), getUniqueValues(getFilteredItemsForOptions('type'), 'ItemType', false).sort(), 'type', type);
-    populateFilterDropdown(document.getElementById('subtype-filter-select'), getUniqueValues(getFilteredItemsForOptions('itemSubType'), 'ItemSubType', false).filter(st => st !== null && st !== '').sort(), 'itemSubType', itemSubType);
-    populateFilterDropdown(document.getElementById('rarity-filter-select'), getUniqueValues(getFilteredItemsForOptions('rarity'), 'ItemRarity', false), 'rarity', rarity, (a, b) => rarityOrder.indexOf(a) - rarityOrder.indexOf(b));
-    populateFilterDropdown(document.getElementById('manufacturer-filter-select'), getUniqueValues(getFilteredItemsForOptions('manufacturer'), 'Manufacturer').sort(), 'manufacturer', manufacturer);
+    
+    // For filters that need alphabetical sorting, ensure .sort((a,b) => a.localeCompare(b)) is used
+    // or rely on populateFilterDropdown's default string sort.
+    populateFilterDropdown(document.getElementById('content-filter-select'), getUniqueValues(getFilteredItemsForOptions('content'), 'Content', false), 'content', content); // Default sort in populateFilterDropdown
+    populateFilterDropdown(document.getElementById('type-filter-select'), getUniqueValues(getFilteredItemsForOptions('type'), 'ItemType', false), 'type', type);
+    populateFilterDropdown(document.getElementById('subtype-filter-select'), getUniqueValues(getFilteredItemsForOptions('itemSubType'), 'ItemSubType', false).filter(st => st !== null && st !== ''), 'itemSubType', itemSubType);
+    populateFilterDropdown(document.getElementById('rarity-filter-select'), getUniqueValues(getFilteredItemsForOptions('rarity'), 'ItemRarity', false), 'rarity', rarity, (a, b) => rarityOrder.indexOf(a) - rarityOrder.indexOf(b)); // Custom sort
+    populateFilterDropdown(document.getElementById('manufacturer-filter-select'), getUniqueValues(getFilteredItemsForOptions('manufacturer'), 'Manufacturer'), 'manufacturer', manufacturer);
     
     const itemsForBoss = getFilteredItemsForOptions('boss');
     let uniqueBosses = (currentFilters.location !== 'all' && locationToBossesMap[currentFilters.location])
-        ? Array.from(new Set(itemsForBoss.flatMap(item => Array.isArray(item.Boss) ? item.Boss : []).filter(bName => locationToBossesMap[currentFilters.location].includes(bName)))).sort()
-        : getUniqueValues(itemsForBoss, 'Boss').sort();
-    populateFilterDropdown(document.getElementById('boss-filter-select'), uniqueBosses, 'boss', boss);
+        ? Array.from(new Set(itemsForBoss.flatMap(item => Array.isArray(item.Boss) ? item.Boss : []).filter(bName => locationToBossesMap[currentFilters.location].includes(bName)))).sort((a,b) => a.localeCompare(b))
+        : getUniqueValues(itemsForBoss, 'Boss').sort((a,b) => a.localeCompare(b));
+    populateFilterDropdown(document.getElementById('boss-filter-select'), uniqueBosses, 'boss', boss); // Pass pre-sorted
     
     const itemsForEnemy = getFilteredItemsForOptions('enemy');
-    const uniqueEnemies = getUniqueValues(itemsForEnemy, 'EnemyNames', true).sort();
-    populateFilterDropdown(document.getElementById('enemy-filter-select'), uniqueEnemies, 'enemy', enemy);
+    const uniqueEnemies = getUniqueValues(itemsForEnemy, 'EnemyNames', true).sort((a,b) => a.localeCompare(b));
+    populateFilterDropdown(document.getElementById('enemy-filter-select'), uniqueEnemies, 'enemy', enemy); // Pass pre-sorted
 
     const itemsRelevantForDropSourceFilter = getFilteredItemsForOptions('dropSource');
-    let uniqueDropSources = getUniqueValues(itemsRelevantForDropSourceFilter, 'DropSource').sort();
+    let uniqueDropSources = getUniqueValues(itemsRelevantForDropSourceFilter, 'DropSource').sort((a,b) => a.localeCompare(b));
     if (itemsRelevantForDropSourceFilter.some(item => item.isMissableItem === true) && !uniqueDropSources.includes('Missable')) {
         uniqueDropSources.push('Missable');
-        uniqueDropSources.sort();
+        uniqueDropSources.sort((a,b) => a.localeCompare(b)); // Re-sort
     }
-    populateFilterDropdown(document.getElementById('drop-source-filter-select'), uniqueDropSources, 'dropSource', currentFilters.dropSource);
+    populateFilterDropdown(document.getElementById('drop-source-filter-select'), uniqueDropSources, 'dropSource', currentFilters.dropSource); // Pass pre-sorted
 
     const itemsForLocation = getFilteredItemsForOptions('location').filter(item => item.LocationFilter === true || (item.GeneralLocations && item.GeneralLocations.some(gl => gl.Location)));
     let uniqueLocations;
     if (currentFilters.boss !== 'all' && bossToLocationsMap[currentFilters.boss]) {
-        uniqueLocations = Array.from(new Set(itemsForLocation.flatMap(item => Array.isArray(item.Location) ? item.Location : []).filter(lName => bossToLocationsMap[currentFilters.boss].includes(lName)))).sort();
+        uniqueLocations = Array.from(new Set(itemsForLocation.flatMap(item => Array.isArray(item.Location) ? item.Location : []).filter(lName => bossToLocationsMap[currentFilters.boss].includes(lName)))).sort((a,b) => a.localeCompare(b));
     } else if (currentFilters.enemy !== 'all') {
         const enemyLocationsSet = new Set();
         allItems.forEach(item => { 
@@ -421,16 +427,15 @@ function populateDynamicFilters() {
                 }
             }
         });
-        uniqueLocations = getUniqueValues(itemsForLocation, 'Location').filter(loc => enemyLocationsSet.has(loc)).sort();
-
+        uniqueLocations = getUniqueValues(itemsForLocation, 'Location').filter(loc => enemyLocationsSet.has(loc)).sort((a,b) => a.localeCompare(b));
     } else {
-        uniqueLocations = getUniqueValues(itemsForLocation, 'Location').sort();
+        uniqueLocations = getUniqueValues(itemsForLocation, 'Location').sort((a,b) => a.localeCompare(b));
     }
-    populateFilterDropdown(document.getElementById('location-filter-select'), uniqueLocations, 'location', location);
+    populateFilterDropdown(document.getElementById('location-filter-select'), uniqueLocations, 'location', location); // Pass pre-sorted
     
     const itemsForQuest = getFilteredItemsForOptions('quest');
-    const uniqueQuests = getUniqueValues(itemsForQuest, 'QuestNames', true).sort();
-    populateFilterDropdown(document.getElementById('quest-filter-select'), uniqueQuests, 'quest', quest);
+    const uniqueQuests = getUniqueValues(itemsForQuest, 'QuestNames', true).sort((a,b) => a.localeCompare(b));
+    populateFilterDropdown(document.getElementById('quest-filter-select'), uniqueQuests, 'quest', quest); // Pass pre-sorted
 }
 
 function renderItems() {
@@ -441,11 +446,9 @@ function renderItems() {
     populateDynamicFilters(); 
     
     let finalFilteredItems = getFilteredItemsForOptions(null); 
+    
+    // MODIFIED SORTING: Primarily by ItemName alphabetically using localeCompare
     finalFilteredItems.sort((a, b) => {
-        const gameA = gameOrder.indexOf(a.Game); const gameB = gameOrder.indexOf(b.Game);
-        if (gameA !== gameB) return gameA - gameB;
-        const rarityA = rarityOrder.indexOf(a.ItemRarity); const rarityB = rarityOrder.indexOf(b.ItemRarity);
-        if (rarityA !== rarityB) return rarityA - rarityB;
         return a.ItemName.localeCompare(b.ItemName);
     });
     
@@ -483,7 +486,6 @@ function updateSummary(filteredItems) {
 
 function saveProgress() {
     try {
-        // Ensure allItems are processed and have their 'id' (derived from uniqueStaticId)
         const progressToSave = allItems.filter(i => i.id).map(i => ({ id: i.id, Checked: i.Checked }));
         localStorage.setItem('borderlandsChecklistProgress', JSON.stringify(progressToSave));
     } catch (e) { console.error('Error saving progress:', e); }
@@ -495,17 +497,15 @@ function loadProgress() {
         if (progress && Array.isArray(progress)) { 
             progress.forEach(sItem => {
                 if (sItem && typeof sItem.id === 'string') { 
-                    const item = allItems.find(i => i.id === sItem.id); // Match using the new item.id
+                    const item = allItems.find(i => i.id === sItem.id); 
                     if (item) item.Checked = sItem.Checked;
                 }
             });
         }
     } catch (e) {
         console.error('Error loading progress:', e);
-        // Optionally clear corrupted progress: localStorage.removeItem('borderlandsChecklistProgress');
     }
 }
-
 
 function initializeFilters() {
     const filterSelects = document.querySelectorAll('select[data-filter-category]');
@@ -529,7 +529,8 @@ function initializeFilters() {
 
     const gameSelect = document.getElementById('game-filter-select');
     if (gameSelect) {
-        populateFilterDropdown(gameSelect, getUniqueValues(allItems, 'Game', false).sort((a,b) => gameOrder.indexOf(a) - gameOrder.indexOf(b)), 'game', currentFilters.game);
+        // Game filter uses a custom sort order
+        populateFilterDropdown(gameSelect, getUniqueValues(allItems, 'Game', false), 'game', currentFilters.game, (a,b) => gameOrder.indexOf(a) - gameOrder.indexOf(b));
     }
     
     const searchInput = document.getElementById('search-input');
@@ -565,7 +566,7 @@ function setupClearAllButton() {
         if (toClear.length === 0) return alert("No completed items in current selection.");
         if (confirm(`Uncheck ${toClear.length} completed item(s) based on current filters?`)) {
             toClear.forEach(item => {
-                const original = allItems.find(i => i.id === item.id); // Match by new ID
+                const original = allItems.find(i => i.id === item.id); 
                 if (original) original.Checked = false;
             });
             saveProgress(); renderItems(); alert(`Cleared ${toClear.length} item(s).`);
@@ -593,10 +594,10 @@ function setupGoToTopButton() {
 }
 
 async function initializeApp() {
-    allItems = [];
+    allItems = []; 
     bossToLocationsMap = {};
     locationToBossesMap = {};
-    currentFilters = { // Reset filters
+    currentFilters = { 
         game: 'all', content: 'all', type: 'all', itemSubType: 'all',
         rarity: 'all', manufacturer: 'all', boss: 'all', enemy: 'all',
         dropSource: 'all', location: 'all', quest: 'all',
@@ -607,10 +608,9 @@ async function initializeApp() {
     const searchInputEl = document.getElementById('search-input');
     if (searchInputEl) searchInputEl.value = '';
 
-    let missingIdErrorMessages = []; // To collect messages for the alert
+    let missingIdErrorMessages = []; 
 
     try {
-        // Simplified data loading (no UCP)
         let bl1Data = [], bl2Data = [], bltpsData = [], bl3Data = [], tinyTinaData = [];
 
         try { bl1Data = await loadJSONData('BorderlandsOne.json'); } catch (e) { console.warn("BL1 JSON load error:", e.message); }
@@ -633,34 +633,30 @@ async function initializeApp() {
             if (itemsForGame && Array.isArray(itemsForGame)) {
                 itemsForGame.forEach(rawItem => {
                     if (rawItem && typeof rawItem === 'object') {
-                        rawData.push({ ...rawItem, Game: gameKey });
+                        rawData.push({ ...rawItem, Game: gameKey }); 
                     }
                 });
             }
         });
         
         let processed = [];
-        rawData.forEach((rawItem) => {
+        rawData.forEach((rawItem) => { 
             if (!rawItem || typeof rawItem !== 'object' || !rawItem.ItemName || typeof rawItem.ItemName !== 'string' || rawItem.ItemName.trim() === '') {
                 console.warn('Skipping invalid raw item (missing ItemName or not an object):', rawItem);
                 missingIdErrorMessages.push(`Invalid item structure encountered (Game: ${rawItem.Game || 'Unknown'}, Item: ${rawItem.ItemName || 'Unknown'}).`);
                 return;
             }
             
-            // Check for uniqueStaticId
             if (!rawItem.uniqueStaticId || String(rawItem.uniqueStaticId).trim() === '') {
                 const errorMsg = `Item Name: "${rawItem.ItemName}", Game: "${rawItem.Game}" is MISSING uniqueStaticId.`;
                 console.error('CRITICAL ERROR: ' + errorMsg + ' Progress will NOT save correctly for this item.');
                 missingIdErrorMessages.push(errorMsg);
-
-                // Assign a temporary, non-stable fallback ID to prevent crashes but highlight the issue
                 rawItem.uniqueStaticId = `TEMP_ID_ERROR_${rawItem.Game}_${rawItem.ItemName.replace(/\s+/g, '_')}_${Math.random().toString(36).substring(2, 9)}`;
             }
 
             const item = { ...rawItem }; 
-            item.id = item.uniqueStaticId;
+            item.id = item.uniqueStaticId; 
 
-            // ... (rest of your item processing logic: ItemName trim, isTimeLimited, sources, etc.)
             item.ItemName = String(item.ItemName).trim();
             item.isTimeLimited = !!item.isTimeLimited;
 
@@ -754,7 +750,6 @@ async function initializeApp() {
         for (const b in bossToLocationsMap) bossToLocationsMap[b] = Array.from(bossToLocationsMap[b]).sort();
         for (const l in locationToBossesMap) locationToBossesMap[l] = Array.from(locationToBossesMap[l]).sort();
         
-        // Display alert if there were any missing ID errors
         if (missingIdErrorMessages.length > 0) {
             let alertMsg = `!! DATA WARNING !!\n${missingIdErrorMessages.length} item(s) are missing 'uniqueStaticId' or have issues.\nProgress for these items WILL NOT be saved correctly.\n\nExamples of problematic items:\n`;
             const maxExamples = 5;
