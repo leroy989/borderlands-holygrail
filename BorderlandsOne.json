@@ -76,7 +76,9 @@
     "QuestSources": [
         { 
             "QuestName": "Wanted: Fresh Fish", 
-            "QuestLocation": "New Haven" 
+            "QuestLocation": "New Haven",
+            "QuestType": "Side Quest",
+            "QuestGiver": "New Haven Bounty Board"
         }
     ],          
 
@@ -263,7 +265,7 @@
     "ItemSubType": "Sniper",          
     "ItemRarity": "Rare",        
     "Manufacturer": "Gearbox",      
-    "DropSource": "Chest / Easter Egg",
+    "DropSource": "Chest",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,

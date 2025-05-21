@@ -4508,7 +4508,7 @@
     "ItemSubType": "Assault Rifle",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Torgue",      
-    "DropSource": "Enemy / World Drop",
+    "DropSource": "Enemy / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
@@ -4554,7 +4554,7 @@
     "GeneralLocations": [ 
         {
             "Source": "World Drop",
-            "Location": "World Wide",
+            "Location": "Bounty of Blood DLC Wide",
             "DropRate": null
         }
     ]
@@ -5137,7 +5137,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Designer's Cut DLC Wide",
+            "Location": "Stormblind Complex",
             "DropRate": null,
             "DropRates": null
         }
@@ -5248,7 +5248,7 @@
     "isMissableItem": false,      
     "Content": "Base Game",           
     "Elements": "Fire / Shock / Corrosive / Cryo",          
-    "Notes": "Only Billy drops the dedicated Loot.",             
+    "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
     
@@ -5276,8 +5276,13 @@
             "EnemyName": "Psychobillies",
             "isUniqueEnemy": false,
             "respawns": true,
-            "DropRate": 10,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Billy",
+                    "rate": 10
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -6396,7 +6401,15 @@
             "DropRate": null,
             "DropRates": [
                 {
-                    "condition": "x3",
+                    "condition": "Black Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Red Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Yellow Power Trooper",
                     "rate": 2.5
                 }
             ],
@@ -7593,7 +7606,7 @@
     "isMissableItem": false,      
     "Content": "Base Game",           
     "Elements": "None / Fire / Shock / Corrosive / Cryo / Radiation",          
-    "Notes": "Only Billy drops the dedicated Loot.",             
+    "Notes": null,             
     "LocationFilter": true,
     "Points": null,               
     
@@ -7772,7 +7785,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Designer's Cut DLC Wide",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]
@@ -9550,7 +9563,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Designer's Cut DLC Wide",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]
@@ -10389,8 +10402,21 @@
             "EnemyName": "Power Troopers",
             "isUniqueEnemy": true,
             "respawns": true,
-            "DropRate": 2.5,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Black Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Red Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Yellow Power Trooper",
+                    "rate": 2.5
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -10492,7 +10518,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Designer's Cut DLC Wide",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]
@@ -10569,7 +10595,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Designer's Cut DLC Wide",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]
@@ -11470,7 +11496,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]
@@ -11516,8 +11542,17 @@
             "EnemyName": "Power Troopers",
             "isUniqueEnemy": true,
             "respawns": true,
-            "DropRate": "2.5",
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Blue Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Pink Power Trooper",
+                    "rate": 2.5
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -11946,8 +11981,17 @@
             "EnemyName": "Power Troopers",
             "isUniqueEnemy": true,
             "respawns": true,
-            "DropRate": 2.5,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Blue Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Pink Power Trooper",
+                    "rate": 2.5
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -13486,8 +13530,17 @@
             "EnemyName": "Power Troopers",
             "isUniqueEnemy": true,
             "respawns": true,
-            "DropRate": 2.5,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Blue Power Trooper",
+                    "rate": 2.5
+                },
+                {
+                    "condition": "Pink Power Trooper",
+                    "rate": 2.5
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -18970,7 +19023,7 @@
     "isMissableItem": false,      
     "Content": "Bloody Harvest",           
     "Elements": "Cryo",          
-    "Notes": null,             
+    "Notes": "Bloody Harvest Event Active",             
     "LocationFilter": true,
     "Points": null,               
     
@@ -19246,7 +19299,7 @@
     "isMissableItem": false,      
     "Content": "Broken Hearts Day",           
     "Elements": "Fire",          
-    "Notes": null,             
+    "Notes": "Broken Hearts Day Event Active",             
     "LocationFilter": true,
     "Points": null,               
     
@@ -20938,7 +20991,7 @@
     "GeneralLocations": [ 
         {
             "Source": "Launch Command",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": "16.7-23.5"
         },
         {
@@ -20999,7 +21052,7 @@
     "GeneralLocations": [ 
         {
             "Source": "Plunderdome",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": "16.7-23.5"
         },
         {
@@ -24285,7 +24338,7 @@
             "DropRate": null,
             "DropRates": [
                 {
-                    "Source": "5 Keys",
+                    "condition": "5 Keys",
                     "rate": 100
                 }
             ]
@@ -24336,7 +24389,7 @@
             "DropRate": null,
             "DropRates": [
                 {
-                    "Source": "Warty",
+                    "condition": "Warty",
                     "rate": 15
                 }
             ],
@@ -25847,7 +25900,7 @@
     "GeneralLocations": [ 
         {
             "Source": "Dreadnought Drydock",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": null,
             "DropRates": [
                 {
@@ -27051,7 +27104,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]
@@ -28244,7 +28297,7 @@
     "GeneralLocations": [ 
         {
             "Source": "The Hunker Bunker",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": null,
             "DropRates": [
                 {
@@ -28259,7 +28312,7 @@
         },
         {
             "Source": "World Drop",
-            "Location": "Stromblind Complex",
+            "Location": "Stormblind Complex",
             "DropRate": null
         }
     ]

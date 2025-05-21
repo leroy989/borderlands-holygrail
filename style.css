@@ -27,6 +27,90 @@ header p {
     color: #a0a0a0;
 }
 
+/* START: Hamburger Menu Styles */
+.hamburger-menu-container {
+    position: absolute; 
+    top: 15px;    
+    right: 20px;  
+    z-index: 1010; 
+    display: none;
+}
+
+#hamburger-btn {
+    background: #3a3a3a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 10px 15px;
+    font-size: 1.3em; 
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 1; 
+}
+#hamburger-btn:hover {
+    background: #4a4a4a;
+    border-color: #ff8c00;
+}
+
+#ucp-options-panel {
+    position: absolute;
+    top: calc(100% + 5px); 
+    right: 0;
+    background-color: #282828; 
+    border: 1px solid #404040;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    z-index: 1000; 
+    padding: 15px 20px;
+    min-width: 220px;
+}
+
+#ucp-options-panel.hidden {
+    display: none;
+}
+
+#ucp-options-panel h3 {
+    margin-top: 0;
+    color: #ff8c00;
+    font-size: 1.1em;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+#ucp-options-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ucp-options-list li {
+    margin-bottom: 10px;
+}
+
+#ucp-options-list label {
+    display: flex;
+    align-items: center;
+    color: #d0d0d0;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#ucp-options-list label:hover {
+    color: #ffffff;
+}
+
+#ucp-options-list input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #ff8c00; 
+    width: 17px; 
+    height: 17px; 
+    cursor: pointer;
+    vertical-align: middle; 
+}
+/* END: Hamburger Menu Styles */
+
+
 /* --- Controls Section --- */
 .controls-section {
     background-color: #1f1f1f; 
@@ -229,6 +313,13 @@ main {
     background-image: linear-gradient(rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.15) 100%), var(--rarity-gradient, var(--rarity-color-main));
     background-color: var(--rarity-color-main); 
 }
+.ucp-card-indicator { /* Optional style for UCP indicator on card name */
+    font-size: 0.7em;
+    color: #FFD700; /* Gold color for UCP */
+    font-weight: normal;
+    vertical-align: super;
+}
+
 
 .item-card .info-area {
     padding: 15px;
@@ -246,7 +337,7 @@ main {
     top: 1px;         
     right: 1px;        
     width: 85px;        
-    height: 85px; /* Adjusted as per user feedback */       
+    height: 85px;       
     padding: 2px; 
     box-sizing: border-box;
     z-index: 5; 
@@ -358,17 +449,17 @@ main {
     color: #FFFFFF; 
     font-weight: 900; 
 }
-/* NEW: Style for "Doesn't Respawn" text */
+
 .item-card .info-area .no-respawn-text {
-    font-size: 0.7em; /* Smaller text */
-    color: #FF4136;    /* Red color */
-    font-weight: normal; /* Not bold */
+    font-size: 0.7em; 
+    color: #FF4136;    
+    font-weight: normal; 
     margin-left: 5px;
     font-style: italic;
 }
 
 .item-card .info-area .source-location-detail,
-.item-card .info-area .source-drop-rate { /* NEW: Added drop rate here */
+.item-card .info-area .source-drop-rate { 
     font-size: 0.75em; 
     font-weight: normal; 
     color: #b0b0b0;    
@@ -378,7 +469,14 @@ main {
     margin-bottom: 4px; 
 }
 .item-card .info-area .source-drop-rate {
-    color: #87CEEB; /* Sky blue or another color to differentiate drop rate */
+    color: #87CEEB; 
+}
+
+.item-card .info-area .quest-detail-secondary { /* Kept for other potential uses */
+    font-size: 0.8em;
+    color: #bdbdbd; 
+    font-style: italic;
+    margin-left: 4px;
 }
 
 
@@ -534,6 +632,21 @@ main {
     .filter-category { min-width: 120px; flex-basis: calc(50% - 10px); }
     .filter-category label { font-size: 0.8em; }
     .filter-category select { font-size: 0.85em; padding: 6px 8px; padding-right: 25px; }
+
+    /* Hamburger Menu Responsive Adjustments */
+    .hamburger-menu-container {
+        top: 10px;
+        right: 10px;
+    }
+    #hamburger-btn {
+        padding: 8px 12px;
+        font-size: 1.1em;
+    }
+    #ucp-options-panel {
+        min-width: 180px;
+        padding: 10px 15px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -551,6 +664,18 @@ main {
     .filter-category select { font-size: 0.8em; }
     
     .action-buttons { flex-direction: column; gap: 10px; }
+
+     /* Hamburger Menu Responsive Adjustments */
+    #ucp-options-panel {
+        min-width: 150px; 
+    }
+    #ucp-options-list label {
+        font-size: 0.9em;
+    }
+     #ucp-options-list input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 #goToTopBtn {

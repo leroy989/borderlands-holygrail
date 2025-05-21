@@ -557,8 +557,13 @@
         { 
             "BossName": "Digi. Assassins", 
             "respawns": true,
-            "DropRate": 33,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Digi. Assassin Wot",
+                    "rate": 33
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -785,8 +790,13 @@
         { 
             "BossName": "Digi. Assassins", 
             "respawns": true,
-            "DropRate": 33,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Digi. Assassin Rouf",
+                    "rate": 33
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -1013,8 +1023,13 @@
         { 
             "BossName": "Digi. Assassins", 
             "respawns": true,
-            "DropRate": 33,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Digi. Assassin Reeth",
+                    "rate": 33
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -1371,8 +1386,13 @@
         { 
             "BossName": "Saturn 2.0", 
             "respawns": true,
-            "DropRate": 3.3,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x2",
+                    "rate": 3.3
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -1542,8 +1562,13 @@
         { 
             "BossName": "Digi. Assassins", 
             "respawns": true,
-            "DropRate": 33,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Digi. Assassin Oney",
+                    "rate": 33
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -3378,8 +3403,13 @@
         { 
             "BossName": "Bone Head 3.0", 
             "respawns": true,
-            "DropRate": 33,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x3",
+                    "rate": 33
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -4235,8 +4265,13 @@
         { 
             "BossName": "Digi. Assassins", 
             "respawns": true,
-            "DropRate": 1.25,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x4",
+                    "rate": 1.25
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -4625,8 +4660,13 @@
         { 
             "BossName": "Digi. Scorch", 
             "respawns": true,
-            "DropRate": 10,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x2",
+                    "rate": 10
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -4760,8 +4800,13 @@
         { 
             "BossName": "Digi. Doc Mercy", 
             "respawns": true,
-            "DropRate": 10,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x3",
+                    "rate": 10
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -4860,7 +4905,12 @@
             "BossName": "Saturn 2.0", 
             "respawns": true,
             "DropRate": 3.3,
-            "DropRates": null,
+            "DropRates": [
+                {
+                    "condition": "x2",
+                    "rate": 3.3
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
@@ -5453,8 +5503,13 @@
         { 
             "BossName": "Digi. Black Queen", 
             "respawns": true,
-            "DropRate": 10,
-            "DropRates": null,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "x2",
+                    "rate": 10
+                }
+            ],
             "NVHMDropRate": null,
             "TVHMDropRate": null,
             "UVHMDropRate": null,
