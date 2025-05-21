@@ -16,18 +16,6 @@ const rarityOrder = [
     'Legendary', 'Effervescent', 'Seraph', 'Pearlescent'
 ];
 
-// UCP State Management
-let ucpStates = {}; // Stores { BorderlandsOne: true, BorderlandsTwo: false, ... }
-const UCP_STATES_KEY = 'borderlandsUcpStates';
-
-const gameFileManifest = {
-    'BorderlandsOne': { base: 'BorderlandsOne.json', ucp: 'BorderlandsOneUcp.json', displayName: 'BL1 UCP' },
-    'BorderlandsTwo': { base: 'BorderlandsTwo.json', ucp: 'BorderlandsTwoUcp.json', displayName: 'BL2 UCP' },
-    'BorderlandsTPS': { base: 'BorderlandsTPS.json', ucp: 'BorderlandsTPSUcp.json', displayName: 'BL:TPS UCP' },
-    'BorderlandsThree': { base: 'BorderlandsThree.json', ucp: 'BorderlandsThreeUcp.json', displayName: 'BL3 UCP' },
-    'TinyTinasWonderlands': { base: 'TinyTinasWonderlands.json', ucp: 'TinyTinasWonderlandsUcp.json', displayName: 'Wonderlands UCP' }
-};
-
 // --- Helper Functions ---
 function capitalizeFirstLetter(string) {
     if (!string) return '';
@@ -40,10 +28,22 @@ async function loadJSONData(filePath) {
         if (!response.ok) throw new Error(`Failed to fetch ${filePath}: ${response.status} ${response.statusText}`);
         return await response.json();
     } catch (error) {
-        // console.error(`Error loading JSON data from ${filePath}:`, error); // Error will be handled by caller
-        // const container = document.getElementById('item-list');
-        // if (container) container.innerHTML = `<li class="item-list-placeholder error-message">Failed to load game data from ${filePath}. Check console.</li>`;
-        throw error; // Re-throw to be caught by initializeApp logic
+        console.error(`Error loading JSON data from ${filePath}:`, error);
+        const container = document.getElementById('item-list');
+        if (container) { // Basic error display, can be improved
+            const errorLi = document.createElement('li');
+            errorLi.className = 'item-list-placeholder error-message';
+            errorLi.textContent = `Failed to load game data from ${filePath}. Check console.`;
+            if (container.firstChild && container.firstChild.className && container.firstChild.className.includes('item-list-placeholder')) {
+                // If placeholder exists, replace it or append error
+                if (!container.innerHTML.includes('Failed to load game data')) { // Avoid duplicate messages
+                    container.innerHTML += errorLi.outerHTML;
+                }
+            } else {
+                container.innerHTML = errorLi.outerHTML;
+            }
+        }
+        throw error; // Re-throw to be caught by initializeApp logic if needed
     }
 }
 
@@ -80,7 +80,7 @@ function createItemListItem(item) {
     const listItem = document.createElement('li');
     let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-');
     listItem.className = `item-card ${rarityCardClass}`;
-    listItem.setAttribute('data-item-id', item.id);
+    listItem.setAttribute('data-item-id', item.id); // item.id now uses uniqueStaticId
 
     if (item.Checked) {
         listItem.classList.add('card-is-checked');
@@ -104,9 +104,7 @@ function createItemListItem(item) {
             case 'TinyTinasWonderlands': iconFileName = 'Tinalcon.png'; break;
         }
         if (iconFileName) {
-            // Add UCP indicator to alt text if UCP is active for this item's game
-            const ucpSuffix = item.isUCPActive ? " (UCP)" : "";
-            gameIconHTML = `<div class="game-icon-container"><img src="icons/games/${iconFileName}" alt="${item.Game} Icon${ucpSuffix}" class="game-icon"></div>`;
+            gameIconHTML = `<div class="game-icon-container"><img src="icons/games/${iconFileName}" alt="${item.Game} Icon" class="game-icon"></div>`;
         }
     }
     infoAreaHTML += gameIconHTML;
@@ -255,11 +253,10 @@ function createItemListItem(item) {
         : '';
 
     const namePlateRarityClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-');
-    const ucpIndicator = item.isUCPActive ? ' <span class="ucp-card-indicator">(UCP)</span>' : ''; // Optional visual indicator on nameplate
 
     listItem.innerHTML = `
         <div class="item-card-inner">
-            <div class="name-plate ${namePlateRarityClass}">${item.ItemName}${ucpIndicator}</div>
+            <div class="name-plate ${namePlateRarityClass}">${item.ItemName}</div>
             <div class="info-area">
                 ${infoAreaHTML}
             </div>
@@ -274,14 +271,14 @@ function createItemListItem(item) {
             listItem.classList.toggle('unavailable-and-not-checked', !item.Checked);
         }
         saveProgress();
-        renderItems(); // Only re-renders, doesn't reload all data
+        renderItems(); 
     });
     return listItem;
 }
 
 function populateFilterDropdown(selectElement, uniqueValues, category, activeValue, sortFunction = null) {
     if (!selectElement) return;
-    selectElement.innerHTML = ''; // Clear previous options
+    selectElement.innerHTML = ''; 
     const allOption = document.createElement('option');
     allOption.value = 'all';
     allOption.textContent = 'All';
@@ -327,7 +324,7 @@ const getUniqueValues = (items, field, isMultiValueProperty = true) => {
 
 const getFilteredItemsForOptions = (excludeCategory) => {
     return allItems.filter(item => {
-        if (!item || !item.Game) return false; // Basic item validity
+        if (!item || !item.Game) return false; 
         const gameMatch = (excludeCategory === 'game' || currentFilters.game === 'all') || item.Game === currentFilters.game;
         const contentMatch = (excludeCategory === 'content' || currentFilters.content === 'all') || item.Content === currentFilters.content;
         const typeMatch = (excludeCategory === 'type' || currentFilters.type === 'all') || item.ItemType === currentFilters.type;
@@ -413,7 +410,7 @@ function populateDynamicFilters() {
         uniqueLocations = Array.from(new Set(itemsForLocation.flatMap(item => Array.isArray(item.Location) ? item.Location : []).filter(lName => bossToLocationsMap[currentFilters.boss].includes(lName)))).sort();
     } else if (currentFilters.enemy !== 'all') {
         const enemyLocationsSet = new Set();
-        allItems.forEach(item => { // Check allItems to build the full map of enemy to locations
+        allItems.forEach(item => { 
             if (item.EnemyNames && item.EnemyNames.includes(currentFilters.enemy)) {
                 if (item.EnemyLocations) {
                     item.EnemyLocations.forEach(el => {
@@ -439,11 +436,11 @@ function populateDynamicFilters() {
 function renderItems() {
     const container = document.getElementById('item-list');
     if (!container) return;
-    container.innerHTML = ''; // Clear previous items
+    container.innerHTML = ''; 
     
-    populateDynamicFilters(); // Update filter dropdowns based on allItems
+    populateDynamicFilters(); 
     
-    let finalFilteredItems = getFilteredItemsForOptions(null); // Get items matching current filters
+    let finalFilteredItems = getFilteredItemsForOptions(null); 
     finalFilteredItems.sort((a, b) => {
         const gameA = gameOrder.indexOf(a.Game); const gameB = gameOrder.indexOf(b.Game);
         if (gameA !== gameB) return gameA - gameB;
@@ -486,23 +483,26 @@ function updateSummary(filteredItems) {
 
 function saveProgress() {
     try {
-        localStorage.setItem('borderlandsChecklistProgress', JSON.stringify(allItems.map(i => ({ id: i.id, Checked: i.Checked }))));
+        // Ensure allItems are processed and have their 'id' (derived from uniqueStaticId)
+        const progressToSave = allItems.filter(i => i.id).map(i => ({ id: i.id, Checked: i.Checked }));
+        localStorage.setItem('borderlandsChecklistProgress', JSON.stringify(progressToSave));
     } catch (e) { console.error('Error saving progress:', e); }
 }
 
 function loadProgress() {
     try {
         const progress = JSON.parse(localStorage.getItem('borderlandsChecklistProgress'));
-        if (progress && Array.isArray(progress)) { // Ensure progress is an array
+        if (progress && Array.isArray(progress)) { 
             progress.forEach(sItem => {
-                if (sItem && typeof sItem.id === 'string') { // Check sItem and sItem.id
-                    const item = allItems.find(i => i.id === sItem.id);
+                if (sItem && typeof sItem.id === 'string') { 
+                    const item = allItems.find(i => i.id === sItem.id); // Match using the new item.id
                     if (item) item.Checked = sItem.Checked;
                 }
             });
         }
     } catch (e) {
         console.error('Error loading progress:', e);
+        // Optionally clear corrupted progress: localStorage.removeItem('borderlandsChecklistProgress');
     }
 }
 
@@ -510,12 +510,12 @@ function loadProgress() {
 function initializeFilters() {
     const filterSelects = document.querySelectorAll('select[data-filter-category]');
     filterSelects.forEach(select => {
-        select.value = currentFilters[select.dataset.filterCategory] || 'all'; // Set to current or 'all'
+        select.value = currentFilters[select.dataset.filterCategory] || 'all'; 
         select.addEventListener('change', event => {
             const category = event.target.dataset.filterCategory;
             const value = event.target.value;
             currentFilters[category] = value;
-            // Reset dependent filters
+            
             if (category === 'game') {
                 ['content', 'type', 'itemSubType', 'rarity', 'manufacturer', 'boss', 'enemy', 'dropSource', 'location', 'quest'].forEach(c => currentFilters[c] = 'all');
             } else if (category === 'content') {
@@ -523,11 +523,10 @@ function initializeFilters() {
             } else if (category === 'type') {
                 currentFilters.itemSubType = 'all';
             }
-            renderItems(); // Re-render with new filter
+            renderItems(); 
         });
     });
 
-    // Populate the Game filter initially from allItems (which now respects UCP)
     const gameSelect = document.getElementById('game-filter-select');
     if (gameSelect) {
         populateFilterDropdown(gameSelect, getUniqueValues(allItems, 'Game', false).sort((a,b) => gameOrder.indexOf(a) - gameOrder.indexOf(b)), 'game', currentFilters.game);
@@ -566,7 +565,7 @@ function setupClearAllButton() {
         if (toClear.length === 0) return alert("No completed items in current selection.");
         if (confirm(`Uncheck ${toClear.length} completed item(s) based on current filters?`)) {
             toClear.forEach(item => {
-                const original = allItems.find(i => i.id === item.id);
+                const original = allItems.find(i => i.id === item.id); // Match by new ID
                 if (original) original.Checked = false;
             });
             saveProgress(); renderItems(); alert(`Cleared ${toClear.length} item(s).`);
@@ -593,175 +592,76 @@ function setupGoToTopButton() {
     }
 }
 
-// --- UCP Functions ---
-function saveUcpStates() {
-    try {
-        localStorage.setItem(UCP_STATES_KEY, JSON.stringify(ucpStates));
-    } catch (e) {
-        console.error('Error saving UCP states:', e);
-    }
-}
-
-function loadUcpStates() {
-    try {
-        const storedStates = localStorage.getItem(UCP_STATES_KEY);
-        if (storedStates) {
-            ucpStates = JSON.parse(storedStates);
-        } else {
-            gameOrder.forEach(gameKey => { ucpStates[gameKey] = false; }); // Default to false
-        }
-    } catch (e) {
-        console.error('Error loading UCP states:', e);
-        gameOrder.forEach(gameKey => { ucpStates[gameKey] = false; }); // Fallback
-    }
-}
-
-function setupHamburgerMenu() {
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const ucpOptionsPanel = document.getElementById('ucp-options-panel');
-
-    if (!hamburgerBtn || !ucpOptionsPanel) {
-        console.warn('Hamburger menu elements not found.');
-        return;
-    }
-
-    hamburgerBtn.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent click from immediately closing menu via document listener
-        ucpOptionsPanel.classList.toggle('hidden');
-    });
-    
-    document.addEventListener('click', (event) => {
-        if (!ucpOptionsPanel.classList.contains('hidden') && 
-            !hamburgerBtn.contains(event.target) && 
-            !ucpOptionsPanel.contains(event.target)) {
-            ucpOptionsPanel.classList.add('hidden');
-        }
-    });
-    populateUcpOptionsList();
-}
-
-function populateUcpOptionsList() {
-    const ucpOptionsList = document.getElementById('ucp-options-list');
-    if (!ucpOptionsList) return;
-    ucpOptionsList.innerHTML = ''; 
-
-    gameOrder.forEach(gameKey => {
-        const manifestEntry = gameFileManifest[gameKey];
-        if (manifestEntry) {
-            const listItem = document.createElement('li');
-            const label = document.createElement('label');
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.dataset.gamekey = gameKey;
-            checkbox.checked = ucpStates[gameKey] || false;
-
-            checkbox.addEventListener('change', (event) => {
-                handleUcpToggle(event.target.dataset.gamekey, event.target.checked);
-            });
-
-            label.appendChild(checkbox);
-            label.appendChild(document.createTextNode(` ${manifestEntry.displayName || gameKey + ' UCP'}`));
-            listItem.appendChild(label);
-            ucpOptionsList.appendChild(listItem);
-        }
-    });
-}
-
-async function handleUcpToggle(gameKey, isChecked) {
-    console.log(`UCP Toggled for ${gameKey}: ${isChecked}`);
-    ucpStates[gameKey] = isChecked;
-    saveUcpStates();
-
-    const itemListEl = document.getElementById('item-list');
-    if (itemListEl) {
-        itemListEl.innerHTML = '<li class="item-list-placeholder">Reloading data with new UCP settings...</li>';
-    }
-    // Reset filters to 'all' except search, as UCP data might have different filterable values
-    Object.keys(currentFilters).forEach(key => {
-        if (key !== 'search') currentFilters[key] = 'all';
-    });
-    const searchInputEl = document.getElementById('search-input');
-    if (searchInputEl) searchInputEl.value = ''; currentFilters.search = '';
-    
-    // Re-initialize the entire application to load new data sets
-    await initializeApp(); 
-}
-
 async function initializeApp() {
-    allItems = []; // Clear previous items
+    allItems = [];
     bossToLocationsMap = {};
     locationToBossesMap = {};
-
-    // Reset filter dropdowns in the UI to "All" visually as currentFilters object is reset
+    currentFilters = { // Reset filters
+        game: 'all', content: 'all', type: 'all', itemSubType: 'all',
+        rarity: 'all', manufacturer: 'all', boss: 'all', enemy: 'all',
+        dropSource: 'all', location: 'all', quest: 'all',
+        search: ''
+    };
     const filterSelectElements = document.querySelectorAll('#filter-collapsible-content select');
     filterSelectElements.forEach(sel => sel.value = 'all');
+    const searchInputEl = document.getElementById('search-input');
+    if (searchInputEl) searchInputEl.value = '';
 
+    let missingIdErrorMessages = []; // To collect messages for the alert
 
     try {
-        loadUcpStates(); // Load UCP preferences first
+        // Simplified data loading (no UCP)
+        let bl1Data = [], bl2Data = [], bltpsData = [], bl3Data = [], tinyTinaData = [];
 
-        const gameDataPromises = gameOrder.map(async (gameKey) => {
-            const manifestEntry = gameFileManifest[gameKey];
-            if (!manifestEntry) {
-                console.warn(`No manifest entry for gameKey: ${gameKey}`);
-                return { gameKey, data: [], ucpActive: false };
-            }
+        try { bl1Data = await loadJSONData('BorderlandsOne.json'); } catch (e) { console.warn("BL1 JSON load error:", e.message); }
+        try { bl2Data = await loadJSONData('BorderlandsTwo.json'); } catch (e) { console.warn("BL2 JSON load error:", e.message); }
+        try { bltpsData = await loadJSONData('BorderlandsTPS.json'); } catch (e) { console.warn("BLTPS JSON load error:", e.message); }
+        try { bl3Data = await loadJSONData('BorderlandsThree.json'); } catch (e) { console.warn("BL3 JSON load error:", e.message); }
+        try { tinyTinaData = await loadJSONData('TinyTinasWonderlands.json'); } catch (e) { console.warn("TTWL JSON load error:", e.message); }
 
-            let dataFileToLoad = manifestEntry.base;
-            let ucpActiveForThisGame = false;
-
-            if (ucpStates[gameKey]) {
-                try {
-                    const ucpData = await loadJSONData(manifestEntry.ucp);
-                    console.log(`Successfully loaded UCP data for ${gameKey} from ${manifestEntry.ucp}`);
-                    return { gameKey, data: ucpData, ucpActive: true };
-                } catch (ucpError) {
-                    console.warn(`Failed to load UCP data for ${gameKey} from ${manifestEntry.ucp}. Error: ${ucpError.message}. Falling back to base data.`);
-                    ucpStates[gameKey] = false; 
-                    saveUcpStates(); 
-                    dataFileToLoad = manifestEntry.base; 
-                    ucpActiveForThisGame = false;
-                }
-            }
-            
-            try {
-                const baseData = await loadJSONData(dataFileToLoad);
-                return { gameKey, data: baseData, ucpActive: ucpActiveForThisGame };
-            } catch (baseError) {
-                console.error(`CRITICAL: Failed to load base data for ${gameKey} from ${dataFileToLoad}. Error: ${baseError.message}`);
-                const list = document.getElementById('item-list');
-                if(list && list.innerHTML.includes('Reloading data')) { // Prevent double error message if already showing loading
-                     list.innerHTML = `<li class="item-list-placeholder error-message">Failed to load critical game data for ${gameKey}. App may not function correctly.</li>`;
-                } else if (list) {
-                     list.innerHTML += `<li class="item-list-placeholder error-message">Failed to load critical game data for ${gameKey}.</li>`;
-                }
-                return { gameKey, data: [], ucpActive: false };
-            }
-        });
-
-        const loadedGames = await Promise.all(gameDataPromises);
+        const gameDataMap = {
+            BorderlandsOne: bl1Data,
+            BorderlandsTwo: bl2Data,
+            BorderlandsTPS: bltpsData,
+            BorderlandsThree: bl3Data,
+            TinyTinasWonderlands: tinyTinaData
+        };
 
         let rawData = [];
-        loadedGames.forEach(loadedGame => {
-            if (loadedGame.data && Array.isArray(loadedGame.data) && loadedGame.data.length > 0) {
-                loadedGame.data.forEach(rawItem => {
-                    if (rawItem && typeof rawItem === 'object') { // Ensure rawItem is an object
-                        const itemWithGame = { ...rawItem, Game: loadedGame.gameKey, isUCPActive: loadedGame.ucpActive };
-                        rawData.push(itemWithGame);
+        gameOrder.forEach(gameKey => {
+            const itemsForGame = gameDataMap[gameKey];
+            if (itemsForGame && Array.isArray(itemsForGame)) {
+                itemsForGame.forEach(rawItem => {
+                    if (rawItem && typeof rawItem === 'object') {
+                        rawData.push({ ...rawItem, Game: gameKey });
                     }
                 });
             }
         });
         
         let processed = [];
-        rawData.forEach((rawItem, idx) => {
-            if (!rawItem || typeof rawItem !== 'object' || rawItem.ItemName === null || (typeof rawItem.ItemName === 'string' && rawItem.ItemName.trim() === '')) {
+        rawData.forEach((rawItem) => {
+            if (!rawItem || typeof rawItem !== 'object' || !rawItem.ItemName || typeof rawItem.ItemName !== 'string' || rawItem.ItemName.trim() === '') {
+                console.warn('Skipping invalid raw item (missing ItemName or not an object):', rawItem);
+                missingIdErrorMessages.push(`Invalid item structure encountered (Game: ${rawItem.Game || 'Unknown'}, Item: ${rawItem.ItemName || 'Unknown'}).`);
                 return;
             }
-            const item = { ...rawItem }; // item inherits Game and isUCPActive
+            
+            // Check for uniqueStaticId
+            if (!rawItem.uniqueStaticId || String(rawItem.uniqueStaticId).trim() === '') {
+                const errorMsg = `Item Name: "${rawItem.ItemName}", Game: "${rawItem.Game}" is MISSING uniqueStaticId.`;
+                console.error('CRITICAL ERROR: ' + errorMsg + ' Progress will NOT save correctly for this item.');
+                missingIdErrorMessages.push(errorMsg);
 
+                // Assign a temporary, non-stable fallback ID to prevent crashes but highlight the issue
+                rawItem.uniqueStaticId = `TEMP_ID_ERROR_${rawItem.Game}_${rawItem.ItemName.replace(/\s+/g, '_')}_${Math.random().toString(36).substring(2, 9)}`;
+            }
+
+            const item = { ...rawItem }; 
+            item.id = item.uniqueStaticId;
+
+            // ... (rest of your item processing logic: ItemName trim, isTimeLimited, sources, etc.)
             item.ItemName = String(item.ItemName).trim();
-            item.id = `${item.Game}_${item.isUCPActive ? 'UCP_' : ''}${item.ItemName.replace(/\s+/g, '_')}_${idx}`;
             item.isTimeLimited = !!item.isTimeLimited;
 
             const flatBosses = new Set();
@@ -783,7 +683,7 @@ async function initializeApp() {
                                     condition: dr.condition ? String(dr.condition) : "Base",
                                     rate: (dr.rate !== null && dr.rate !== undefined) ? String(dr.rate) : null
                                 })).filter(dr => dr.rate !== null);
-                            } else if (s_obj.DropRate !== null && s_obj.DropRate !== undefined) { // Legacy support
+                            } else if (s_obj.DropRate !== null && s_obj.DropRate !== undefined) { 
                                 s_obj.DropRates = [{ condition: "Base", rate: String(s_obj.DropRate) }];
                                 delete s_obj.DropRate;
                             } else {
@@ -846,17 +746,32 @@ async function initializeApp() {
             item.LocationFilter = !!item.LocationFilter;
             item.isMissableItem = !!item.isMissableItem;
             item.Points = Number(item.Points) || 0;
-            item.Checked = !!item.Checked; // Will be overridden by loadProgress if applicable
+            item.Checked = !!item.Checked; 
             processed.push(item);
         });
         allItems = processed;
+        
         for (const b in bossToLocationsMap) bossToLocationsMap[b] = Array.from(bossToLocationsMap[b]).sort();
         for (const l in locationToBossesMap) locationToBossesMap[l] = Array.from(locationToBossesMap[l]).sort();
-        console.log('Processed allItems:', allItems.length, 'items. UCP States:', ucpStates);
+        
+        // Display alert if there were any missing ID errors
+        if (missingIdErrorMessages.length > 0) {
+            let alertMsg = `!! DATA WARNING !!\n${missingIdErrorMessages.length} item(s) are missing 'uniqueStaticId' or have issues.\nProgress for these items WILL NOT be saved correctly.\n\nExamples of problematic items:\n`;
+            const maxExamples = 5;
+            for(let i = 0; i < Math.min(missingIdErrorMessages.length, maxExamples); i++) {
+                alertMsg += `- ${missingIdErrorMessages[i]}\n`;
+            }
+            if (missingIdErrorMessages.length > maxExamples) {
+                alertMsg += `\n...and ${missingIdErrorMessages.length - maxExamples} more.`;
+            }
+            alertMsg += "\nPlease check the developer console (F12) for full details and fix your JSON data.";
+            alert(alertMsg);
+        }
+        
+        console.log('Processed allItems:', allItems.length, 'items.');
 
         loadProgress(); 
         initializeFilters(); 
-        setupHamburgerMenu(); 
         setupHideCompletedButton();
         setupClearAllButton();
         setupGoToTopButton();
