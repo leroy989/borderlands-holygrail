@@ -24857,17 +24857,17 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
+    "ItemName": "Acsetic",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
     "Manufacturer": null,      
-    "DropSource": null,
+    "DropSource": "World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
+    "Content": "Director's Cut",           
     "Elements": null,          
     "Notes": null,             
     "LocationFilter": true,
@@ -24877,6 +24877,5373 @@
         { 
             "QuestName": null, 
             "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Artisan",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Avenger",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Brawler",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Mantis",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Master",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Pilgrim",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rabbit",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Stormbringer",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Tiger",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Warrior",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Breaker",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Skag of Survival", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Survival"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Death's Blessings",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "The Seer", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Amara",
+                    "rate": 40.8
+                },
+                {
+                    "condition": "Others",
+                    "rate": 6.1
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Scryer's Crypt"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Dragon",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tink of Cunning", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": 100
+                },
+                {
+                    "condition": "M4+",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Cunning"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Elementalist",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Sera of Supremacy", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Supremacy"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Golden Rule",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Jackbot", 
+            "respawns": true,
+            "DropRate": 33.3,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "VIP Tower"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Handsome Jackpot DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Kensei",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Amara",
+                    "rate": "5.6-6.1"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "0.8-0.9"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Dreadnought Drydock",
+            "Location": "Stromblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Amara",
+                    "rate": "16.7-23.5"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "3.5-4.9"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stormblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Muse",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Evil Lilith", 
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Castle Crimson"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Fantastic Fustercluck DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Nimbus",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Sera of Supremacy", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Supremacy"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Phasezerker",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Hag of Fervor", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Fervor"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Spiritual Driver",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Valkyrie Squad", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 1.01
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        },
+        {
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 2.23
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Atomic & Sylestro",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Sylestro M4+",
+                    "rate": 30
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Tazendeer Ruins" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Stone",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Amara",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Fungal Gorger",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Cankerwood" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Guns, Love, and Tentacles DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Baby Boomer",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Commander",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Firewalker",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Grenadier",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Guzzler",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Lemniscate",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Low-Life",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": null,
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Marksman",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Shield Maiden",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Tactician",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Tank Gal",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bear Trooper",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Anointed X-4",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Blast Master",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "King Gnasher",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ambermire" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bloodletter",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Skag of Survival", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Survival"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Eternal Flame",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Moze",
+                    "rate": "5.6-6.1"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "0.8-0.9"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Dam, WTF",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Moze",
+                    "rate": "12.5-15"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "2.4-2.9"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stromblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Flare",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Evil Mordecai", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": 15,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Castle Crimson"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Fantastic Fustercluck DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Green Monster",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Jackbot", 
+            "respawns": true,
+            "DropRate": 33.3,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "VIP Tower"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Handsome Jackpot DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Heat Exchanger",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "The Seer", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Moze",
+                    "rate": 40.8
+                },
+                {
+                    "condition": "Others",
+                    "rate": 6.1
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Scryer's Crypt"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Mind Sweeper",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Archer Rowe",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Meridian Metroplex" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Raging Bear",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Billy, The Anointed", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 30
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Jakobs Estate"
+        },
+        {
+            "BossName": "Valkyrie Squad", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 1.01
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        },
+        {
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 2.23
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rocketeer",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Tumorhead",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Lectra City" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Sapper",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Moze",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Empowered Grawn", 
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Negul Neshai"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Guns, Love, and Tentacles DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bushmaster",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "D.A.R.P.A.W.",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Divergent",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Full Automaton",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Headcase",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Hellhound",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Overdrive",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Supercharger",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "T4mer",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Thrillbot",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Trainer",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bounty Hunter",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Lt. Preston",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Tazendeer Ruins" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Cmdl3t",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Fl4k",
+                    "rate": "5.6-6.1"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "0.8-0.9"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "The Hunker Bunker",
+            "Location": "Stromblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Fl4k",
+                    "rate": "19-26.7"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "4-5.6"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stromblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Cosmic Stalker",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tyrant of Instinct", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Instinct"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "DE4DEYE",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Mother of Grogans",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Vice",
+                    "rate": 30
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Anvil" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Friend-Bot",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Arbalest of Discipline", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": 100
+                },
+                {
+                    "condition": "M4+",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Discipline"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Peregrine",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Dr. Benedict", 
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Benediction of Pain"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Fantastic Fustercluck DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "R4kk P4k",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tink of Cunning", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Fl4k, M4+",
+                    "rate": 50
+                },
+                {
+                    "condition": "Others, M4+",
+                    "rate": 13
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Cunning"
+        },
+        {
+            "BossName": "Valkyrie Squad", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 1.01
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        },
+        {
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 2.23
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rakk Commander",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Azalea",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Jakobs Estate" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Red Fang",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tyrant of Instinct", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Instinct"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Roll Reversal",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "The Seer", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Fl4k",
+                    "rate": 40.8
+                },
+                {
+                    "condition": "Others",
+                    "rate": 6.1
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Scryer's Crypt"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "St4ckbot",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Handsome Jackpot DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Tr4iner",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "FL4K",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Shiverous the Unscathed",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Negul Neshai" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Guns, Love, and Tentacles DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Agent",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Bulldog",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Deceiver",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Disruptor",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Freedom Fighter",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Gadgeteer",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rabble Rouser",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Radical",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Ringleader",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Ruffian",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Troublemaker",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Antifreeze",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Arbalest of Discipline", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Zane, M4+",
+                    "rate": 50
+                },
+                {
+                    "condition": "Others, M4+",
+                    "rate": 13
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Discipline"
+        },
+        { 
+            "BossName": "Valkyrie Squad", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 1.01
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        },
+        { 
+            "BossName": "Wotan", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M4+",
+                    "rate": 2.23
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Midnight's Cairn"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Cold Warrior",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Tremendous Rex", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Cistern of Slaughter"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Conductor",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Voltborn",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Negul Neshai" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Guns, Love, and Tentacles DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Critical Mass",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "The Seer", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Zane",
+                    "rate": 40.8
+                },
+                {
+                    "condition": "Others",
+                    "rate": 6.1
+
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Scryer's Crypt"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Executor",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Baron Noggin",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Meridian Metroplex" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Hustler",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Fantastic Fustercluck",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Locomöbius", 
+            "respawns": true,
+            "DropRate": 10,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Sapphire's Run"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Fantastic Fustercluck DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Infiltrator",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Skrakk",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ascension Bluff" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Seein' Dead",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Handsome Jackpot",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Jackbot", 
+            "respawns": true,
+            "DropRate": 33.3,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "VIP Tower"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Handsome Jackpot DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Shockerator",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Hag of Fervor", 
+            "respawns": true,
+            "DropRate": 50,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Trial of Fervor"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Spy",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Zane",
+                    "rate": "5.6-6.1"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "0.8-0.9"
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Madwidth Power",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Zane",
+                    "rate": "9.5-13.3"
+                },
+                {
+                    "condition": "Others",
+                    "rate": "2-2.8"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stormblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Techspert",          
+    "ItemType": "Class Mod",          
+    "ItemSubType": "Zane",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": null,      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Rachel the Anointed",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": 15,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Cathedral of the Twin Gods" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Mysterious Artifact",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Quest",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": "Horror at Scryer's Crypt", 
+            "QuestLocation": "Scryer's Crypt" 
         }
     ],          
 
@@ -24914,17 +30281,17 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Road Warrior",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Quest / Vendor",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
+    "Content": "Base Game",           
     "Elements": null,          
     "Notes": null,             
     "LocationFilter": true,
@@ -24932,8 +30299,65 @@
     
     "QuestSources": [
         { 
-            "QuestName": null, 
-            "QuestLocation": null 
+            "QuestName": "Blood Drive", 
+            "QuestLocation": "The Droughts" 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Veteran Rewards",
+            "Location": "Sanctuary III",
+            "DropRate": 2.22
+        }
+    ]
+},
+{
+    "ItemName": "Vendetta",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Epic",        
+    "Manufacturer": null,      
+    "DropSource": "Quest",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Bounty of Blood",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": "The Name of the Law", 
+            "QuestLocation": "Ashfall Peaks" 
         }
     ],          
 
@@ -24971,12 +30395,384 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
+    "ItemName": "Commander Planetoid",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Melee",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Sheega",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Devil's Razor" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Company Man",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
     "Manufacturer": null,      
-    "DropSource": null,
+    "DropSource": "Boss / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Hemovorous", 
+            "respawns": true,
+            "DropRate": "102.5-125",
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Darkthirst Dominion"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "Director's Cut DLC Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Cosmic Crater",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Slam",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Artemis",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Floodmoor Basin" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Deathless",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Universal",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Phoenix",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Deathrattle",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": "5.6-6.1",
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Dreadnought Drydock",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "23.3-32.8"
+                },
+                {
+                    "condition": "Amara",
+                    "rate": "16.7-23.5"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stormblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Electric Banjo",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Psychobillies",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Billy lvl: 27+",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Ambermire" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Grave",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
@@ -24991,6 +30787,893 @@
         { 
             "QuestName": null, 
             "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Graveward", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Floating Tomb"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Holy Grail",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / Chest / World Drop DLC",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": "5.6-6.1",
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Dreadnought Drydock",
+            "Location": "Stormblind Complex",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": null,
+                    "rate": "23.3-32.8"
+                },
+                {
+                    "condition": "Amara",
+                    "rate": "16.7-23.5"
+                }
+            ]
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stormblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Launch Pad",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Slam",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Red Rain", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Slaughterstar 3000"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Loaded Dice",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Universal",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Agonizer 9000, Pain & Terror", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "M6+",
+                    "rate": 5.7
+                },
+                {
+                    "condition": "M4/5",
+                    "rate": 7.5
+                },
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Guts of Carnivora"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Lunacy",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Empowered Grawn", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Negul Neshai"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Moxxi's Endowment",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Universal",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "The Tink Train",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Guts of Carnivora" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Otto Idol",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Universal",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Rachel the Anointed",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Cathedral of the Twin Gods" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Phoenix Tears",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Phoenix",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Pull Out Method",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Slam",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "DJ Deadsk4g",
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Rocket Boots",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Slide",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Blue Fire", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 50
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Slaughterstar 3000"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Safegaurd",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Slam",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Big Donny & The Big-D",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "Big Donny lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Shlooter",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Vault Card",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Director's Cut",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Vault Card #2",
+            "Location": "World Wide",
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "5 Keys",
+                    "rate": 100
+                }
+            ]
+        }
+    ]
+},
+{
+    "ItemName": "Splatter Gun",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Slide",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Road Dog",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 10
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "The Splinterlands" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Static Charge",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Melee",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Artemis",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Floodmoor Basin" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "The Pearl of Ineffable Knowledge",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Quest",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Guns, Love, and Tentacles",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": "The Call of Gythian", 
+            "QuestLocation": "Heart's Desire" 
         }
     ],          
 
@@ -25028,17 +31711,79 @@
     ]
 },
 {
-    "ItemName": null,          
-    "ItemType": null,          
-    "ItemSubType": null,          
-    "ItemRarity": null,        
-    "Manufacturer": null,      
-    "DropSource": null,
+    "ItemName": "Toboggan",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / Chest / World Drop DLC",
     "Challenge": null,         
     "isTimeLimited": false,
     "isEasterEggItem": false,
     "isMissableItem": false,      
-    "Content": null,           
+    "Content": "Designer's Cut",           
+    "Elements": null,          
+    "Notes": "Mayhem increases chances.",             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Heavyweight Harker", 
+            "respawns": true,
+            "DropRate": "5.6-6.1",
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Stormblind Complex"
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": null,
+            "isUniqueEnemy": false,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "Plunderdome",
+            "Location": "Stormblind Complex",
+            "DropRate": "16.7-23.5"
+        },
+        {
+            "Source": "World Drop",
+            "Location": "Stormblind Complex",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Unleash the Dragon",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Unique",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
     "Elements": null,          
     "Notes": null,             
     "LocationFilter": true,
@@ -25065,6 +31810,135 @@
     ],
     "EnemyLocations": [
         { 
+            "EnemyName": "El Dragon Jr.",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Jakobs Estate" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": null,
+            "Location": null,
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "Victory Rush",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Universal",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Enemy / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": null, 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": null,
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": null
+        }
+    ],
+    "EnemyLocations": [
+        { 
+            "EnemyName": "Azalea",
+            "isUniqueEnemy": true,
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 15
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Jakobs Estate" 
+        }
+    ],
+    "GeneralLocations": [ 
+        {
+            "Source": "World Drop",
+            "Location": "World Wide",
+            "DropRate": null
+        }
+    ]
+},
+{
+    "ItemName": "White Elephant",          
+    "ItemType": "Artifact",          
+    "ItemSubType": "Melee",          
+    "ItemRarity": "Legendary",        
+    "Manufacturer": "Eridian",      
+    "DropSource": "Boss / World Drop",
+    "Challenge": null,         
+    "isTimeLimited": false,
+    "isEasterEggItem": false,
+    "isMissableItem": false,      
+    "Content": "Base Game",           
+    "Elements": null,          
+    "Notes": null,             
+    "LocationFilter": true,
+    "Points": null,               
+    
+    "QuestSources": [
+        { 
+            "QuestName": null, 
+            "QuestLocation": null 
+        }
+    ],          
+
+    "BossLocations": [
+        { 
+            "BossName": "Agonizer 9000, Pain & Terror", 
+            "respawns": true,
+            "DropRate": null,
+            "DropRates": [
+                {
+                    "condition": "lvl: 27+",
+                    "rate": 1.2
+                }
+            ],
+            "NVHMDropRate": null,
+            "TVHMDropRate": null,
+            "UVHMDropRate": null,
+            "LocationName": "Guts of Carnivora"
+        }
+    ],
+    "EnemyLocations": [
+        { 
             "EnemyName": null,
             "isUniqueEnemy": false,
             "respawns": true,
@@ -25078,8 +31952,8 @@
     ],
     "GeneralLocations": [ 
         {
-            "Source": null,
-            "Location": null,
+            "Source": "World Drop",
+            "Location": "World Wide",
             "DropRate": null
         }
     ]

@@ -11999,7 +11999,7 @@
 {
     "ItemName": "Grenadier",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Torgue",      
     "DropSource": "World Drop",
@@ -12056,7 +12056,7 @@
 {
     "ItemName": "Gunner",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Vladof",      
     "DropSource": "World Drop",
@@ -12113,7 +12113,7 @@
 {
     "ItemName": "Ranger",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "Boss / Other",
@@ -12208,7 +12208,7 @@
 {
     "ItemName": "Rifleman",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "World Drop",
@@ -12265,7 +12265,7 @@
 {
     "ItemName": "Shock Trooper",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "World Drop",
@@ -12322,7 +12322,7 @@
 {
     "ItemName": "Specialist",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Hyperion",      
     "DropSource": "World Drop",
@@ -12379,7 +12379,7 @@
 {
     "ItemName": "Tactician",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Anshin",      
     "DropSource": "World Drop",
@@ -12436,7 +12436,7 @@
 {
     "ItemName": "Veteran",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "World Drop",
@@ -12493,7 +12493,7 @@
 {
     "ItemName": "Legendary Engineer",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "DAHL",      
     "DropSource": "Enemy",
@@ -12559,7 +12559,7 @@
 {
     "ItemName": "Legendary Pointman",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Pangolin",      
     "DropSource": "Enemy",
@@ -12625,7 +12625,7 @@
 {
     "ItemName": "Legendary Ranger",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Anshin",      
     "DropSource": "Enemy",
@@ -12691,7 +12691,7 @@
 {
     "ItemName": "Legendary Soldier",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "DAHL",      
     "DropSource": "Boss / Enemy / World Drop",
@@ -12777,7 +12777,7 @@
 {
     "ItemName": "Slayer Of Terramorphous",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Axton Class Mod",          
+    "ItemSubType": "Axton",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "DAHL",      
     "DropSource": "Boss",
@@ -12843,7 +12843,7 @@
 {
     "ItemName": "Barbarian",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "Boss / Other",
@@ -12938,7 +12938,7 @@
 {
     "ItemName": "Blister",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -12995,7 +12995,7 @@
 {
     "ItemName": "Crunch",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13052,7 +13052,7 @@
 {
     "ItemName": "Meat",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13109,7 +13109,7 @@
 {
     "ItemName": "Reaper",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13166,7 +13166,7 @@
 {
     "ItemName": "Slab",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13223,7 +13223,7 @@
 {
     "ItemName": "Toast",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13280,7 +13280,7 @@
 {
     "ItemName": "Wound",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13337,7 +13337,7 @@
 {
     "ItemName": "Legendary Psycho",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Bandit",      
     "DropSource": "Boss / World Drop",
@@ -13403,7 +13403,7 @@
 {
     "ItemName": "Legendary Reaper",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Bandit",      
     "DropSource": "Enemy",
@@ -13469,7 +13469,7 @@
 {
     "ItemName": "Legendary Sickle",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Bandit",      
     "DropSource": "Enemy",
@@ -13535,7 +13535,7 @@
 {
     "ItemName": "Legendary Torch",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Bandit",      
     "DropSource": "Enemy",
@@ -13601,7 +13601,7 @@
 {
     "ItemName": "Slayer of Terramorphous",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Krieg Class Mod",          
+    "ItemSubType": "Krieg",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Boss",
@@ -13667,7 +13667,7 @@
 {
     "ItemName": "Beast",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Torgue",      
     "DropSource": "World Drop",
@@ -13724,7 +13724,7 @@
 {
     "ItemName": "Berserker",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Torgue",      
     "DropSource": "World Drop",
@@ -13781,7 +13781,7 @@
 {
     "ItemName": "Devastator",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13838,7 +13838,7 @@
 {
     "ItemName": "Monk",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Vladof",      
     "DropSource": "Boss / Other",
@@ -13933,7 +13933,7 @@
 {
     "ItemName": "Raider",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -13990,7 +13990,7 @@
 {
     "ItemName": "Renegade",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Jakobs",      
     "DropSource": "World Drop",
@@ -14047,7 +14047,7 @@
 {
     "ItemName": "Tank",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Pangolin",      
     "DropSource": "World Drop",
@@ -14104,7 +14104,7 @@
 {
     "ItemName": "War Dog",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "World Drop",
@@ -14161,7 +14161,7 @@
 {
     "ItemName": "Legendary Berserker",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Bandit",      
     "DropSource": "Boss / Enemy / World Drop",
@@ -14247,7 +14247,7 @@
 {
     "ItemName": "Legendary Gunzerker",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Torgue",      
     "DropSource": "Enemy",
@@ -14313,7 +14313,7 @@
 {
     "ItemName": "Legendary Hoarder",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Vladof",      
     "DropSource": "Enemy",
@@ -14379,7 +14379,7 @@
 {
     "ItemName": "Legendary Titan",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Anshin",      
     "DropSource": "Enemy",
@@ -14445,7 +14445,7 @@
 {
     "ItemName": "Slayer Of Terramorphous",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Salvador Class Mod",          
+    "ItemSubType": "Salvador",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Bandit",      
     "DropSource": "Boss",
@@ -14511,7 +14511,7 @@
 {
     "ItemName": "Anarchist",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Vladof",      
     "DropSource": "World Drop",
@@ -14568,7 +14568,7 @@
 {
     "ItemName": "Catalyst",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "World Drop",
@@ -14625,7 +14625,7 @@
 {
     "ItemName": "Jill of All Trades",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Tediore",      
     "DropSource": "World Drop",
@@ -14682,7 +14682,7 @@
 {
     "ItemName": "Necromancer",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Tediore",      
     "DropSource": "Boss / Other",
@@ -14777,7 +14777,7 @@
 {
     "ItemName": "Prodigy",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "World Drop",
@@ -14834,7 +14834,7 @@
 {
     "ItemName": "Punk",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -14891,7 +14891,7 @@
 {
     "ItemName": "Sweetheart",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Anshin",      
     "DropSource": "World Drop",
@@ -14948,7 +14948,7 @@
 {
     "ItemName": "Technophile",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Pangolin",      
     "DropSource": "World Drop",
@@ -15005,7 +15005,7 @@
 {
     "ItemName": "Zapper",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "World Drop",
@@ -15062,7 +15062,7 @@
 {
     "ItemName": "Legendary Anarchist",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Vladof",      
     "DropSource": "Enemy",
@@ -15128,7 +15128,7 @@
 {
     "ItemName": "Legendary Catalyst",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Enemy",
@@ -15194,7 +15194,7 @@
 {
     "ItemName": "Legendary Mechromancer",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Hyperion",      
     "DropSource": "Boss / World Drop",
@@ -15260,7 +15260,7 @@
 {
     "ItemName": "Legendary Roboteer",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Hyperion",      
     "DropSource": "Enemy",
@@ -15326,7 +15326,7 @@
 {
     "ItemName": "Slayer Of Terramorphous",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Gaige Class Mod",          
+    "ItemSubType": "Gaige",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Boss",
@@ -15392,7 +15392,7 @@
 {
     "ItemName": "Banshee",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -15449,7 +15449,7 @@
 {
     "ItemName": "Cleric",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "Boss / Other",
@@ -15544,7 +15544,7 @@
 {
     "ItemName": "Fox",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "World Drop",
@@ -15601,7 +15601,7 @@
 {
     "ItemName": "Matriarch",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Pangolin",      
     "DropSource": "World Drop",
@@ -15658,7 +15658,7 @@
 {
     "ItemName": "Trickster",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Vladof",      
     "DropSource": "World Drop",
@@ -15715,7 +15715,7 @@
 {
     "ItemName": "Warder",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Anshin",      
     "DropSource": "World Drop",
@@ -15772,7 +15772,7 @@
 {
     "ItemName": "Witch",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "World Drop",
@@ -15829,7 +15829,7 @@
 {
     "ItemName": "Legendary Binder",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Enemy",
@@ -15895,7 +15895,7 @@
 {
     "ItemName": "Legendary Cat",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Hyperion",      
     "DropSource": "Enemy",
@@ -15961,7 +15961,7 @@
 {
     "ItemName": "Legendary Nurse",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Anshin",      
     "DropSource": "Enemy",
@@ -16027,7 +16027,7 @@
 {
     "ItemName": "Legendary Siren",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Boss / Enemy / World Drop",
@@ -16113,7 +16113,7 @@
 {
     "ItemName": "Slayer Of Terramorphous",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Maya Class Mod",          
+    "ItemSubType": "Maya",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Boss",
@@ -16179,7 +16179,7 @@
 {
     "ItemName": "Infiltrator",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "World Drop",
@@ -16236,7 +16236,7 @@
 {
     "ItemName": "Killer",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Hyperion",      
     "DropSource": "World Drop",
@@ -16293,7 +16293,7 @@
 {
     "ItemName": "Professional",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "DAHL",      
     "DropSource": "World Drop",
@@ -16350,7 +16350,7 @@
 {
     "ItemName": "Rogue",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Boss / Other",
@@ -16445,7 +16445,7 @@
 {
     "ItemName": "Shot",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Hyperion",      
     "DropSource": "World Drop",
@@ -16502,7 +16502,7 @@
 {
     "ItemName": "Spy",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Maliwan",      
     "DropSource": "World Drop",
@@ -16559,7 +16559,7 @@
 {
     "ItemName": "Stalker",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Vladof",      
     "DropSource": "World Drop",
@@ -16616,7 +16616,7 @@
 {
     "ItemName": "Survivor",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Epic",        
     "Manufacturer": "Bandit",      
     "DropSource": "World Drop",
@@ -16673,7 +16673,7 @@
 {
     "ItemName": "Legendary Hunter",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Jakobs",      
     "DropSource": "Boss / Enemy / World Drop",
@@ -16759,7 +16759,7 @@
 {
     "ItemName": "Legendary Killer",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Hyperion",      
     "DropSource": "Enemy",
@@ -16825,7 +16825,7 @@
 {
     "ItemName": "Legendary Ninja",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Maliwan",      
     "DropSource": "Enemy",
@@ -16891,7 +16891,7 @@
 {
     "ItemName": "Legendary Sniper",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Jakobs",      
     "DropSource": "Enemy",
@@ -16957,7 +16957,7 @@
 {
     "ItemName": "Slayer Of Terramorphous",          
     "ItemType": "Class Mod",          
-    "ItemSubType": "Zer0 Class Mod",          
+    "ItemSubType": "Zer0",          
     "ItemRarity": "Legendary",        
     "Manufacturer": "Jakobs",      
     "DropSource": "Boss",
