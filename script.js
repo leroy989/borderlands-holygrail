@@ -11,17 +11,27 @@ let currentFilters = {
 let hideCompletedActive = false;
 let scoreSystemEnabled = false; 
 const SCORE_SYSTEM_ENABLED_KEY = 'checklistScoreSystemEnabled';
-const PROGRESS_STORAGE_KEY = 'borderlandsChecklistProgress_v2'; // Changed key for new structure
+const PROGRESS_STORAGE_KEY = 'borderlandsChecklistProgress_v2'; 
 
 const gameOrder = ['BorderlandsOne', 'BorderlandsTwo', 'BorderlandsTPS', 'BorderlandsThree', 'TinyTinasWonderlands'];
-const rarityOrder = [
-    'Common', 'Uncommon', 'Rare', 'Cursed', 'Epic', 'E-tech', 'Gemstone',
+const rarityOrder = [ // Updated for "E-Tech"
+    'Common', 'Uncommon', 'Rare', 'Cursed', 'Epic', 
+    'E-Tech', // Changed from 'E-tech'
+    'Gemstone',
     'Legendary', 'Effervescent', 'Seraph', 'Pearlescent'
 ];
-const RARITY_POINTS = {
-    'Common': 1, 'Uncommon': 3, 'Rare': 5, 'Cursed': 8, 'Epic': 10,
-    'E-tech': 12, 'Gemstone': 15, 'Legendary': 20, 'Effervescent': 25,
-    'Seraph': 30, 'Pearlescent': 50
+const RARITY_POINTS = { // Updated for "E-Tech" key
+    'Common': 1, 
+    'Uncommon': 3, 
+    'Rare': 5, 
+    'Cursed': 8, 
+    'Epic': 10,
+    'E-Tech': 12,  // Key changed to 'E-Tech'
+    'Gemstone': 15, 
+    'Legendary': 20, 
+    'Effervescent': 25,
+    'Seraph': 30, 
+    'Pearlescent': 50
 };
 
 // --- Helper Functions ---
@@ -87,8 +97,6 @@ function formatItemTimestamp(isoString) {
     if (!isoString) return '';
     try {
         const date = new Date(isoString);
-        // Using toLocaleString for a user-friendly local time format.
-        // You can customize options for more specific formatting.
         return date.toLocaleString(undefined, { 
             year: 'numeric', month: 'short', day: 'numeric', 
             hour: '2-digit', minute: '2-digit' 
@@ -101,7 +109,9 @@ function formatItemTimestamp(isoString) {
 
 function createItemListItem(item) {
     const listItem = document.createElement('li');
-    let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-');
+    let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-').replace('-tech', '-tech-rarity'); // Ensure E-Tech gets a unique class if needed for styling
+    if (item.ItemRarity === 'E-Tech') rarityCardClass = 'e-tech'; // More specific class for E-Tech
+    
     listItem.className = `item-card ${rarityCardClass}`;
     listItem.setAttribute('data-item-id', item.id); 
 
@@ -144,7 +154,7 @@ function createItemListItem(item) {
     }
     addInlineInfo("Type", (item.ItemType && item.ItemType !== 'Unknown Type' ? item.ItemType : null));
     if (item.ItemSubType && item.ItemSubType.trim() !== '') { addInlineInfo("Sub Type", item.ItemSubType); }
-    addInlineInfo("Rarity", item.ItemRarity);
+    addInlineInfo("Rarity", item.ItemRarity); // This will now display "E-Tech" correctly
     addInlineInfo("Content", item.Content);
     if (item.isTimeLimited && !item.Checked) { addInlineInfo("Availability", "<span style='color: #FF9800;'>Time-Limited (Currently Unobtainable)</span>");}
     const elementsArray = (item.Elements && Array.isArray(item.Elements) && item.Elements.length > 0) ? item.Elements.filter(el => el && String(el).trim() !== '') : [];
@@ -155,7 +165,6 @@ function createItemListItem(item) {
     if (item.GeneralLocations && Array.isArray(item.GeneralLocations) && item.GeneralLocations.length > 0) { let generalListItems = ''; item.GeneralLocations.forEach(gl => { if (gl && typeof gl === 'object') { const sourceName = gl.Source; const locationName = gl.Location; if (sourceName || locationName) { generalListItems += `<li>`; if(sourceName) generalListItems += `<strong>${sourceName}</strong>`; else if(locationName) generalListItems += `<strong>${locationName}</strong>`; if (sourceName && locationName) { generalListItems += `<div class="source-location-detail">Location: ${locationName}</div>`;} generalListItems = appendDropRatesToHTML(gl, generalListItems); generalListItems += `</li>`;}}}); if (generalListItems.trim() !== '') {addBlockInfo("Also Found In", `<ul>${generalListItems}</ul>`);}}
     if (item.Notes && item.Notes.trim() !== '') { addBlockInfo("Notes", `<p class="note-text">${item.Notes}</p>`);}
 
-    // Add timestamp display if item is checked and has a timestamp
     if (item.Checked && item.checkedTimestamp) {
         infoAreaHTML += `<div class="item-checked-timestamp">Found: ${formatItemTimestamp(item.checkedTimestamp)}</div>`;
     }
@@ -166,6 +175,21 @@ function createItemListItem(item) {
     const pointsDisplayHTML = (scoreSystemEnabled && typeof item.points === 'number' && item.points > 0) 
                             ? `<span class="item-points">${item.points} PTS</span>` 
                             : '';
+    
+    // Ensure the class for E-Tech is specifically handled if it was 'e-tech' before
+    // This is now handled by the `rarityCardClass` generation at the top of this function.
+    // For example, CSS should have `.e-tech-rarity` if `item.ItemRarity` is "E-Tech".
+    // The `toLowerCase().replace('-tech', '-tech-rarity')` handles this to an extent,
+    // or the more specific assignment `if (item.ItemRarity === 'E-Tech') rarityCardClass = 'e-tech-rarity';`
+    // ensures a distinct class. The CSS file uses `.item-card.e-tech` for "E-tech".
+    // We should ensure the CSS rule is `.item-card.e-tech-rarity` or that `rarityCardClass` becomes `e-tech`
+    // if the CSS has `.item-card.e-tech`.
+    // Let's make `rarityCardClass` for E-Tech specifically 'e-tech' to match existing CSS if that's the case.
+    if (item.ItemRarity === 'E-Tech') {
+        rarityCardClass = 'e-tech'; // To match CSS like .item-card.e-tech
+    }
+
+
     const nameplateClasses = `name-plate ${rarityCardClass}${pointsDisplayHTML ? ' has-points' : ''}`;
 
     listItem.innerHTML = `
@@ -184,9 +208,9 @@ function createItemListItem(item) {
     listItem.addEventListener('click', () => {
         item.Checked = !item.Checked;
         if (item.Checked) {
-            item.checkedTimestamp = new Date().toISOString(); // Record timestamp when checked
+            item.checkedTimestamp = new Date().toISOString(); 
         } else {
-            item.checkedTimestamp = null; // Clear timestamp when unchecked
+            item.checkedTimestamp = null; 
         }
         listItem.classList.toggle('card-is-checked', item.Checked);
         if(item.isTimeLimited) { 
@@ -213,7 +237,7 @@ function populateFilterDropdown(selectElement, uniqueValues, category, activeVal
     } 
     uniqueValues.forEach(value => {
         const option = document.createElement('option');
-        option.value = String(value);
+        option.value = String(value); // This value will be "E-Tech"
         if (category === 'game') { 
             if (value === "BorderlandsOne") option.textContent = "BL1";
             else if (value === "BorderlandsTwo") option.textContent = "BL2";
@@ -222,7 +246,8 @@ function populateFilterDropdown(selectElement, uniqueValues, category, activeVal
             else if (value === "TinyTinasWonderlands") option.textContent = "Wonderlands";
             else option.textContent = capitalizeFirstLetter(String(value));
         } else if (category === 'rarity') { 
-            option.textContent = capitalizeFirstLetter(String(value));
+            // Display the rarity value as it is (it's already correctly cased e.g. "E-Tech")
+            option.textContent = String(value); 
         } else { 
             option.textContent = String(value);
         }
@@ -312,21 +337,16 @@ function formatTimeDuration(totalMilliseconds) {
     if (isNaN(totalMilliseconds) || totalMilliseconds <= 0) {
         return "0m";
     }
-
     let seconds = Math.floor(totalMilliseconds / 1000);
     let minutes = Math.floor(seconds / 60);
     let hours = Math.floor(minutes / 60);
     let days = Math.floor(hours / 24);
-
     minutes %= 60;
     hours %= 24;
-
     let parts = [];
     if (days > 0) parts.push(days + "d");
     if (hours > 0) parts.push(hours + "h");
-    // Always show minutes if it's the largest unit or if there are other units
     if (minutes > 0 || parts.length === 0) parts.push(minutes + "m"); 
-    
     return parts.length > 0 ? parts.join(" ") : "0m";
 }
 
@@ -364,33 +384,31 @@ function updateSummary(filteredItems) {
         scoreDisplayContainer.style.display = 'none';
     }
 
-    // Calculate and display total time played
-    const checkedTimestamps = allItems // Use allItems to get global min/max timestamps
+    const checkedTimestamps = allItems 
         .filter(item => item.Checked && item.checkedTimestamp)
-        .map(item => new Date(item.checkedTimestamp).getTime()); // Convert to milliseconds
+        .map(item => new Date(item.checkedTimestamp).getTime()); 
 
-    if (checkedTimestamps.length >= 1) { // Need at least one to show something, or two for a duration
+    if (checkedTimestamps.length >= 1) { 
         const minTimestamp = Math.min(...checkedTimestamps);
         const maxTimestamp = Math.max(...checkedTimestamps);
-        const durationMs = maxTimestamp - minTimestamp;
+        const durationMs = (checkedTimestamps.length > 1) ? (maxTimestamp - minTimestamp) : 0; // Duration is 0 if only one item
         
         totalTimePlayedEl.textContent = formatTimeDuration(durationMs);
         totalTimePlayedContainer.style.display = 'block';
     } else {
-        totalTimePlayedEl.textContent = "0m"; // Or "N/A"
-        totalTimePlayedContainer.style.display = 'none'; // Hide if no items are checked
+        totalTimePlayedEl.textContent = "0m"; 
+        totalTimePlayedContainer.style.display = 'none'; 
     }
 }
-
 
 function saveProgress() {
     try {
         const progressToSave = allItems
-            .filter(i => i.id) // Ensure item has an ID
+            .filter(i => i.id) 
             .map(i => ({ 
                 id: i.id, 
                 Checked: i.Checked, 
-                checkedTimestamp: i.checkedTimestamp // Save timestamp
+                checkedTimestamp: i.checkedTimestamp 
             }));
         localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(progressToSave));
     } catch (e) { console.error('Error saving progress:', e); }
@@ -405,7 +423,7 @@ function loadProgress() {
                     const item = allItems.find(i => i.id === sItem.id); 
                     if (item) {
                         item.Checked = sItem.Checked;
-                        item.checkedTimestamp = sItem.checkedTimestamp || null; // Load timestamp
+                        item.checkedTimestamp = sItem.checkedTimestamp || null; 
                     }
                 }
             });
@@ -450,7 +468,7 @@ function setupClearAllButton() {
                 const original = allItems.find(i => i.id === item.id); 
                 if (original) {
                     original.Checked = false;
-                    original.checkedTimestamp = null; // Clear timestamp
+                    original.checkedTimestamp = null; 
                 }
             });
             saveProgress(); renderItems(); alert(`Cleared ${toClear.length} item(s).`);
@@ -519,8 +537,19 @@ async function initializeApp() {
             item.id = item.uniqueStaticId; 
             item.ItemName = String(item.ItemName).trim();
             item.isTimeLimited = !!item.isTimeLimited;
+            
+            // Normalize ItemRarity - Specific handling for E-Tech
+            let processedRarity;
+            let rawOriginalRarity = rawItem.ItemRarity ? String(rawItem.ItemRarity).trim() : '';
+            if (rawOriginalRarity.toLowerCase() === 'e-tech') {
+                processedRarity = 'E-Tech';
+            } else {
+                processedRarity = rawOriginalRarity ? capitalizeFirstLetter(rawOriginalRarity) : 'Common';
+            }
+            item.ItemRarity = processedRarity;
+
             item.points = RARITY_POINTS[item.ItemRarity] || 0;
-            item.checkedTimestamp = null; // Initialize timestamp
+            item.checkedTimestamp = null; 
 
             const flatBosses = new Set(); const flatEnemyNames = new Set(); const flatQuestNames = new Set(); const flatLocations = new Set();
             ['BossLocations', 'EnemyLocations', 'GeneralLocations', 'QuestSources'].forEach(sourceKey => { if (item[sourceKey] && Array.isArray(item[sourceKey])) { item[sourceKey].forEach(s_obj => { if (typeof s_obj === 'object' && s_obj !== null) { if (sourceKey === 'BossLocations' || sourceKey === 'EnemyLocations') { s_obj.respawns = s_obj.respawns !== false; if (s_obj.isUniqueEnemy !== undefined) s_obj.isUniqueEnemy = !!s_obj.isUniqueEnemy;} if (Array.isArray(s_obj.DropRates)) { s_obj.DropRates = s_obj.DropRates.map(dr => ({condition: dr.condition ? String(dr.condition) : "Base", rate: (dr.rate !== null && dr.rate !== undefined) ? String(dr.rate) : null })).filter(dr => dr.rate !== null);} else if (s_obj.DropRate !== null && s_obj.DropRate !== undefined) { s_obj.DropRates = [{ condition: "Base", rate: String(s_obj.DropRate) }]; delete s_obj.DropRate;} else {s_obj.DropRates = [];} s_obj.NVHMDropRate = (typeof s_obj.NVHMDropRate === 'number') ? s_obj.NVHMDropRate : null; s_obj.TVHMDropRate = (typeof s_obj.TVHMDropRate === 'number') ? s_obj.TVHMDropRate : null; s_obj.UVHMDropRate = (typeof s_obj.UVHMDropRate === 'number') ? s_obj.UVHMDropRate : null; if (sourceKey === 'QuestSources') { s_obj.QuestGiver = (s_obj.QuestGiver && typeof s_obj.QuestGiver === 'string') ? s_obj.QuestGiver.trim() : null; s_obj.QuestType = (s_obj.QuestType && typeof s_obj.QuestType === 'string') ? s_obj.QuestType.trim() : null;} const name = s_obj.BossName || s_obj.EnemyName || (sourceKey === 'QuestSources' ? s_obj.QuestName : s_obj.Source); const locName = s_obj.LocationName || s_obj.Location || (sourceKey === 'QuestSources' ? s_obj.QuestLocation : null); if (name && String(name).trim()) { const trimmedName = String(name).trim(); if (sourceKey === 'BossLocations') flatBosses.add(trimmedName); if (sourceKey === 'EnemyLocations') flatEnemyNames.add(trimmedName); if (sourceKey === 'QuestSources') flatQuestNames.add(trimmedName);} if (locName && String(locName).trim()) { const locationToAdd = String(locName).trim(); flatLocations.add(locationToAdd); if (sourceKey === 'BossLocations' && name && String(name).trim()) { const bName = String(name).trim(); if (!bossToLocationsMap[bName]) bossToLocationsMap[bName] = new Set(); bossToLocationsMap[bName].add(locationToAdd); if (!locationToBossesMap[locationToAdd]) locationToBossesMap[locationToAdd] = new Set(); locationToBossesMap[locationToAdd].add(bName);}}}});} else {item[sourceKey] = [];}});
@@ -530,7 +559,7 @@ async function initializeApp() {
             item.ItemType = (item.ItemType !== null && item.ItemType !== undefined) ? String(item.ItemType).trim() : 'Unknown Type'; if (item.ItemType === '') item.ItemType = 'Unknown Type';
             item.ItemSubType = (item.ItemSubType !== null && item.ItemSubType !== undefined) ? String(item.ItemSubType).trim() : null; if (item.ItemSubType === '') item.ItemSubType = null;
             item.Content = item.Content ? String(item.Content).trim() : ''; item.Challenge = item.Challenge ? String(item.Challenge).trim() : ''; item.Notes = item.Notes ? String(item.Notes).trim() : '';
-            item.ItemRarity = item.ItemRarity ? capitalizeFirstLetter(String(item.ItemRarity)) : 'Common';
+            // item.ItemRarity is already set by the E-Tech specific logic above
             item.LocationFilter = !!item.LocationFilter; item.isMissableItem = !!item.isMissableItem;
             item.Checked = !!item.Checked; 
             processed.push(item);
