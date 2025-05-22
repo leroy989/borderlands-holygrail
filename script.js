@@ -1,5 +1,5 @@
 // --- Global Variables ---
-let allItems = [];
+let allItems = []; // Holds the master list of items from JSON files
 let bossToLocationsMap = {};
 let locationToBossesMap = {};
 let currentFilters = {
@@ -9,38 +9,38 @@ let currentFilters = {
     search: ''
 };
 let hideCompletedActive = false;
-let scoreSystemEnabled = false; 
-const SCORE_SYSTEM_ENABLED_KEY = 'checklistScoreSystemEnabled';
-const PROGRESS_STORAGE_KEY = 'borderlandsChecklistProgress_v2'; 
+
+// Profile System Variables
+const APP_DATA_KEY = 'borderlandsAppUserData_v1'; // New key for all profile data
+let appData = {
+    profileNames: ['Default'],
+    activeProfileName: 'Default',
+    profileData: {
+        'Default': {
+            progress: [], // Array of { id: "uniqueStaticId", Checked: boolean, checkedTimestamp: "ISOString" | null }
+            scoreSystemEnabled: false
+        }
+    }
+};
+let scoreSystemEnabled = false; // This will be set based on the active profile
 
 const gameOrder = ['BorderlandsOne', 'BorderlandsTwo', 'BorderlandsTPS', 'BorderlandsThree', 'TinyTinasWonderlands'];
-const rarityOrder = [ // Updated for "E-Tech"
-    'Common', 'Uncommon', 'Rare', 'Cursed', 'Epic', 
-    'E-Tech', // Changed from 'E-tech'
-    'Gemstone',
-    'Legendary', 'Effervescent', 'Seraph', 'Pearlescent'
+const rarityOrder = [
+    'Common', 'Uncommon', 'Rare', 'Cursed', 'Epic', 'E-Tech',
+    'Gemstone', 'Legendary', 'Effervescent', 'Seraph', 'Pearlescent'
 ];
-const RARITY_POINTS = { // Updated for "E-Tech" key
-    'Common': 1, 
-    'Uncommon': 3, 
-    'Rare': 5, 
-    'Cursed': 8, 
-    'Epic': 10,
-    'E-Tech': 12,  // Key changed to 'E-Tech'
-    'Gemstone': 15, 
-    'Legendary': 20, 
-    'Effervescent': 25,
-    'Seraph': 30, 
-    'Pearlescent': 50
+const RARITY_POINTS = {
+    'Common': 1, 'Uncommon': 3, 'Rare': 5, 'Cursed': 8, 'Epic': 10,
+    'E-Tech': 12, 'Gemstone': 15, 'Legendary': 20, 'Effervescent': 25,
+    'Seraph': 30, 'Pearlescent': 50
 };
 
 // --- Helper Functions ---
-function capitalizeFirstLetter(string) {
+function capitalizeFirstLetter(string) { /* ... same as before ... */ 
     if (!string) return '';
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
-
-async function loadJSONData(filePath) {
+async function loadJSONData(filePath) { /* ... same as before ... */ 
     try {
         const response = await fetch(filePath);
         if (!response.ok) throw new Error(`Failed to fetch ${filePath}: ${response.status} ${response.statusText}`);
@@ -63,8 +63,7 @@ async function loadJSONData(filePath) {
         throw error; 
     }
 }
-
-function appendDropRatesToHTML(sourceObject, listHTMLString) {
+function appendDropRatesToHTML(sourceObject, listHTMLString) { /* ... same as before ... */ 
     let html = listHTMLString;
     if (sourceObject.DropRates && sourceObject.DropRates.length > 0) {
         sourceObject.DropRates.forEach(dr => {
@@ -92,8 +91,7 @@ function appendDropRatesToHTML(sourceObject, listHTMLString) {
     }
     return html;
 }
-
-function formatItemTimestamp(isoString) {
+function formatItemTimestamp(isoString) { /* ... same as before ... */ 
     if (!isoString) return '';
     try {
         const date = new Date(isoString);
@@ -106,24 +104,225 @@ function formatItemTimestamp(isoString) {
         return "Invalid Date";
     }
 }
+function formatTimeDuration(totalMilliseconds) { /* ... same as before ... */
+    if (isNaN(totalMilliseconds) || totalMilliseconds <= 0) {
+        return "0m";
+    }
+    let seconds = Math.floor(totalMilliseconds / 1000);
+    let minutes = Math.floor(seconds / 60);
+    let hours = Math.floor(minutes / 60);
+    let days = Math.floor(hours / 24);
+    minutes %= 60;
+    hours %= 24;
+    let parts = [];
+    if (days > 0) parts.push(days + "d");
+    if (hours > 0) parts.push(hours + "h");
+    if (minutes > 0 || parts.length === 0) parts.push(minutes + "m"); 
+    return parts.length > 0 ? parts.join(" ") : "0m";
+}
 
-function createItemListItem(item) {
+// --- Profile System Functions ---
+function loadAppData() {
+    const storedData = localStorage.getItem(APP_DATA_KEY);
+    if (storedData) {
+        try {
+            appData = JSON.parse(storedData);
+            // Ensure essential structure exists
+            if (!appData.profileNames || !appData.activeProfileName || !appData.profileData) {
+                throw new Error("Stored appData is missing core properties.");
+            }
+            if (!appData.profileData[appData.activeProfileName]) {
+                // Active profile missing, try to default or fix
+                appData.activeProfileName = appData.profileNames[0] || 'Default';
+                if (!appData.profileData[appData.activeProfileName]) {
+                    appData.profileData[appData.activeProfileName] = { progress: [], scoreSystemEnabled: false };
+                }
+            }
+        } catch (e) {
+            console.error("Error parsing stored app data, resetting to default:", e);
+            // Reset to default if parsing fails or structure is bad
+            appData = {
+                profileNames: ['Default'],
+                activeProfileName: 'Default',
+                profileData: {
+                    'Default': { progress: [], scoreSystemEnabled: false }
+                }
+            };
+            saveAppData(); // Save the fresh default
+        }
+    } else {
+        // First time run or cleared storage, initialize with a default profile
+        appData = {
+            profileNames: ['Default'],
+            activeProfileName: 'Default',
+            profileData: {
+                'Default': { progress: [], scoreSystemEnabled: false }
+            }
+        };
+        saveAppData();
+    }
+    // Set the global scoreSystemEnabled based on the active profile
+    const activeProfile = appData.profileData[appData.activeProfileName];
+    scoreSystemEnabled = activeProfile ? activeProfile.scoreSystemEnabled : false;
+}
+
+function saveAppData() {
+    try {
+        localStorage.setItem(APP_DATA_KEY, JSON.stringify(appData));
+    } catch (e) {
+        console.error("Error saving app data to localStorage:", e);
+    }
+}
+
+function getActiveProfileData() {
+    if (appData.activeProfileName && appData.profileData[appData.activeProfileName]) {
+        return appData.profileData[appData.activeProfileName];
+    }
+    // Fallback to a new default if something is wrong, though loadAppData should prevent this
+    console.warn("Active profile data not found, returning empty default. Active:", appData.activeProfileName);
+    return { progress: [], scoreSystemEnabled: false }; 
+}
+
+function applyActiveProfileToAllItems() {
+    const activeProfile = getActiveProfileData();
+    allItems.forEach(item => {
+        const savedItemState = activeProfile.progress.find(pItem => pItem.id === item.id);
+        if (savedItemState) {
+            item.Checked = savedItemState.Checked;
+            item.checkedTimestamp = savedItemState.checkedTimestamp || null;
+        } else {
+            item.Checked = false;
+            item.checkedTimestamp = null;
+        }
+    });
+    // Update global scoreSystemEnabled from the active profile
+    scoreSystemEnabled = activeProfile.scoreSystemEnabled;
+    const scoreToggle = document.getElementById('toggle-score-system');
+    if (scoreToggle) {
+        scoreToggle.checked = scoreSystemEnabled;
+    }
+}
+
+function isProfileNameValidAndUnique(name) {
+    const trimmedName = name.trim();
+    if (!trimmedName) {
+        alert("Profile name cannot be empty.");
+        return false;
+    }
+    if (appData.profileNames.includes(trimmedName)) {
+        alert(`Profile name "${trimmedName}" already exists.`);
+        return false;
+    }
+    if (trimmedName.length > 30) { // Arbitrary length limit
+        alert("Profile name is too long (max 30 characters).");
+        return false;
+    }
+    return trimmedName;
+}
+
+function populateProfileDropdown() {
+    const profileSelect = document.getElementById('profile-select');
+    if (!profileSelect) return;
+    profileSelect.innerHTML = '';
+    appData.profileNames.forEach(name => {
+        const option = document.createElement('option');
+        option.value = name;
+        option.textContent = name;
+        profileSelect.appendChild(option);
+    });
+    profileSelect.value = appData.activeProfileName;
+    
+    const progressPanelTitle = document.getElementById('progress-panel-title');
+    if (progressPanelTitle) {
+        progressPanelTitle.textContent = `${appData.activeProfileName}'s Progress`;
+    }
+}
+
+function handleCreateProfile() {
+    const newProfileName = prompt("Enter name for new profile:");
+    if (newProfileName) {
+        const validatedName = isProfileNameValidAndUnique(newProfileName);
+        if (validatedName) {
+            appData.profileNames.push(validatedName);
+            appData.profileData[validatedName] = {
+                progress: [],
+                scoreSystemEnabled: false // Default setting for new profile
+            };
+            handleSwitchProfile(validatedName); // Switch to and save the new profile
+        }
+    }
+}
+
+function handleDeleteProfile() {
+    if (appData.profileNames.length <= 1) {
+        alert("Cannot delete the last profile.");
+        return;
+    }
+    const profileNameToDelete = appData.activeProfileName;
+    if (confirm(`Are you sure you want to delete profile "${profileNameToDelete}"? This action cannot be undone.`)) {
+        // Remove from names list
+        appData.profileNames = appData.profileNames.filter(name => name !== profileNameToDelete);
+        // Delete data
+        delete appData.profileData[profileNameToDelete];
+        // Switch to the first available profile (or 'Default' if it exists, otherwise first in list)
+        const newActiveProfile = appData.profileNames.includes('Default') ? 'Default' : appData.profileNames[0];
+        handleSwitchProfile(newActiveProfile); // This will save and refresh
+    }
+}
+
+function handleSwitchProfile(profileName) {
+    if (appData.profileNames.includes(profileName)) {
+        appData.activeProfileName = profileName;
+        saveAppData(); // Save the new active profile name first
+        
+        // Reset filters to avoid state bleed from previous profile's context
+        currentFilters = { game: 'all', content: 'all', type: 'all', itemSubType: 'all', rarity: 'all', manufacturer: 'all', boss: 'all', enemy: 'all', dropSource: 'all', location: 'all', quest: 'all', search: '' };
+        const filterSelectElements = document.querySelectorAll('#filter-collapsible-content select');
+        filterSelectElements.forEach(sel => sel.value = 'all');
+        const searchInputEl = document.getElementById('search-input');
+        if (searchInputEl) searchInputEl.value = '';
+
+        // Re-apply profile data to allItems and refresh UI
+        applyActiveProfileToAllItems(); 
+        populateProfileDropdown(); // Update dropdown selection
+        initializeFilters(); // Re-init filters based on potentially different allItems stats (though allItems content is fixed)
+        renderItems(); // This will re-render cards and update summary
+    } else {
+        console.error("Attempted to switch to non-existent profile:", profileName);
+    }
+}
+
+function setupProfileControls() {
+    const profileSelect = document.getElementById('profile-select');
+    const createBtn = document.getElementById('create-profile-btn');
+    const deleteBtn = document.getElementById('delete-profile-btn');
+
+    if (profileSelect) {
+        populateProfileDropdown();
+        profileSelect.addEventListener('change', (e) => handleSwitchProfile(e.target.value));
+    }
+    if (createBtn) {
+        createBtn.addEventListener('click', handleCreateProfile);
+    }
+    if (deleteBtn) {
+        deleteBtn.addEventListener('click', handleDeleteProfile);
+    }
+}
+
+
+// --- Core Application Logic ---
+function createItemListItem(item) { /* ... Modified for timestamp, ensure no other profile-specific display needed here without state ... */ 
     const listItem = document.createElement('li');
-    let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-').replace('-tech', '-tech-rarity'); // Ensure E-Tech gets a unique class if needed for styling
-    if (item.ItemRarity === 'E-Tech') rarityCardClass = 'e-tech'; // More specific class for E-Tech
+    let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-');
+    if (item.ItemRarity === 'E-Tech') { // Ensure CSS class for E-Tech is 'e-tech'
+        rarityCardClass = 'e-tech';
+    }
     
     listItem.className = `item-card ${rarityCardClass}`;
     listItem.setAttribute('data-item-id', item.id); 
 
-    if (item.Checked) {
-        listItem.classList.add('card-is-checked');
-    }
-    if (item.isTimeLimited) {
-        listItem.classList.add('time-limited-item');
-        if (!item.Checked) {
-             listItem.classList.add('unavailable-and-not-checked');
-        }
-    }
+    if (item.Checked) { listItem.classList.add('card-is-checked'); }
+    if (item.isTimeLimited) { listItem.classList.add('time-limited-item'); if (!item.Checked) { listItem.classList.add('unavailable-and-not-checked');}}
 
     let infoAreaHTML = '';
     let gameIconHTML = '';
@@ -136,25 +335,15 @@ function createItemListItem(item) {
             case 'BorderlandsThree': iconFileName = 'BL3Icon.png'; break;
             case 'TinyTinasWonderlands': iconFileName = 'Tinalcon.png'; break;
         }
-        if (iconFileName) {
-            gameIconHTML = `<div class="game-icon-container"><img src="icons/games/${iconFileName}" alt="${item.Game} Icon" class="game-icon"></div>`;
-        }
+        if (iconFileName) { gameIconHTML = `<div class="game-icon-container"><img src="icons/games/${iconFileName}" alt="${item.Game} Icon" class="game-icon"></div>`;}
     }
     infoAreaHTML += gameIconHTML;
 
-    function addInlineInfo(label, value) {
-        if (value && (typeof value === 'string' ? value.trim() !== '' : true) ) {
-            infoAreaHTML += `<div class="info-line"><span class="info-label">${label}:</span> <span class="info-value">${value}</span></div>`;
-        }
-    }
-    function addBlockInfo(label, contentHTML) {
-        if (contentHTML && contentHTML.trim() !== '') {
-            infoAreaHTML += `<h3>${label}:</h3>${contentHTML}`;
-        }
-    }
+    function addInlineInfo(label, value) { if (value && (typeof value === 'string' ? value.trim() !== '' : true) ) { infoAreaHTML += `<div class="info-line"><span class="info-label">${label}:</span> <span class="info-value">${value}</span></div>`;}}
+    function addBlockInfo(label, contentHTML) { if (contentHTML && contentHTML.trim() !== '') { infoAreaHTML += `<h3>${label}:</h3>${contentHTML}`;}}
     addInlineInfo("Type", (item.ItemType && item.ItemType !== 'Unknown Type' ? item.ItemType : null));
     if (item.ItemSubType && item.ItemSubType.trim() !== '') { addInlineInfo("Sub Type", item.ItemSubType); }
-    addInlineInfo("Rarity", item.ItemRarity); // This will now display "E-Tech" correctly
+    addInlineInfo("Rarity", item.ItemRarity); 
     addInlineInfo("Content", item.Content);
     if (item.isTimeLimited && !item.Checked) { addInlineInfo("Availability", "<span style='color: #FF9800;'>Time-Limited (Currently Unobtainable)</span>");}
     const elementsArray = (item.Elements && Array.isArray(item.Elements) && item.Elements.length > 0) ? item.Elements.filter(el => el && String(el).trim() !== '') : [];
@@ -169,27 +358,8 @@ function createItemListItem(item) {
         infoAreaHTML += `<div class="item-checked-timestamp">Found: ${formatItemTimestamp(item.checkedTimestamp)}</div>`;
     }
 
-    const manufacturerText = (item.Manufacturer && item.Manufacturer.length > 0)
-        ? `Manufacturer: ${item.Manufacturer.join(' / ')}`
-        : '';
-    const pointsDisplayHTML = (scoreSystemEnabled && typeof item.points === 'number' && item.points > 0) 
-                            ? `<span class="item-points">${item.points} PTS</span>` 
-                            : '';
-    
-    // Ensure the class for E-Tech is specifically handled if it was 'e-tech' before
-    // This is now handled by the `rarityCardClass` generation at the top of this function.
-    // For example, CSS should have `.e-tech-rarity` if `item.ItemRarity` is "E-Tech".
-    // The `toLowerCase().replace('-tech', '-tech-rarity')` handles this to an extent,
-    // or the more specific assignment `if (item.ItemRarity === 'E-Tech') rarityCardClass = 'e-tech-rarity';`
-    // ensures a distinct class. The CSS file uses `.item-card.e-tech` for "E-tech".
-    // We should ensure the CSS rule is `.item-card.e-tech-rarity` or that `rarityCardClass` becomes `e-tech`
-    // if the CSS has `.item-card.e-tech`.
-    // Let's make `rarityCardClass` for E-Tech specifically 'e-tech' to match existing CSS if that's the case.
-    if (item.ItemRarity === 'E-Tech') {
-        rarityCardClass = 'e-tech'; // To match CSS like .item-card.e-tech
-    }
-
-
+    const manufacturerText = (item.Manufacturer && item.Manufacturer.length > 0) ? `Manufacturer: ${item.Manufacturer.join(' / ')}` : '';
+    const pointsDisplayHTML = (scoreSystemEnabled && typeof item.points === 'number' && item.points > 0) ? `<span class="item-points">${item.points} PTS</span>` : '';
     const nameplateClasses = `name-plate ${rarityCardClass}${pointsDisplayHTML ? ' has-points' : ''}`;
 
     listItem.innerHTML = `
@@ -207,22 +377,16 @@ function createItemListItem(item) {
 
     listItem.addEventListener('click', () => {
         item.Checked = !item.Checked;
-        if (item.Checked) {
-            item.checkedTimestamp = new Date().toISOString(); 
-        } else {
-            item.checkedTimestamp = null; 
-        }
+        if (item.Checked) { item.checkedTimestamp = new Date().toISOString(); } else { item.checkedTimestamp = null; }
         listItem.classList.toggle('card-is-checked', item.Checked);
-        if(item.isTimeLimited) { 
-            listItem.classList.toggle('unavailable-and-not-checked', !item.Checked);
-        }
-        saveProgress();
+        if(item.isTimeLimited) { listItem.classList.toggle('unavailable-and-not-checked', !item.Checked); }
+        saveCurrentProfileProgress(); // Modified to save to active profile
         renderItems(); 
     });
     return listItem;
 }
 
-function populateFilterDropdown(selectElement, uniqueValues, category, activeValue, sortFunction = null) {
+function populateFilterDropdown(selectElement, uniqueValues, category, activeValue, sortFunction = null) { /* ... same as before ... */ 
     if (!selectElement) return;
     selectElement.innerHTML = ''; 
     const allOption = document.createElement('option');
@@ -237,7 +401,7 @@ function populateFilterDropdown(selectElement, uniqueValues, category, activeVal
     } 
     uniqueValues.forEach(value => {
         const option = document.createElement('option');
-        option.value = String(value); // This value will be "E-Tech"
+        option.value = String(value); 
         if (category === 'game') { 
             if (value === "BorderlandsOne") option.textContent = "BL1";
             else if (value === "BorderlandsTwo") option.textContent = "BL2";
@@ -246,7 +410,6 @@ function populateFilterDropdown(selectElement, uniqueValues, category, activeVal
             else if (value === "TinyTinasWonderlands") option.textContent = "Wonderlands";
             else option.textContent = capitalizeFirstLetter(String(value));
         } else if (category === 'rarity') { 
-            // Display the rarity value as it is (it's already correctly cased e.g. "E-Tech")
             option.textContent = String(value); 
         } else { 
             option.textContent = String(value);
@@ -255,8 +418,7 @@ function populateFilterDropdown(selectElement, uniqueValues, category, activeVal
     });
     selectElement.value = activeValue;
 }
-
-const getUniqueValues = (items, field, isMultiValueProperty = true) => {
+const getUniqueValues = (items, field, isMultiValueProperty = true) => { /* ... same as before ... */ 
     let values = new Set();
     items.forEach(item => {
         const itemFieldValue = item[field];
@@ -271,8 +433,7 @@ const getUniqueValues = (items, field, isMultiValueProperty = true) => {
     });
     return Array.from(values); 
 };
-
-const getFilteredItemsForOptions = (excludeCategory) => {
+const getFilteredItemsForOptions = (excludeCategory) => { /* ... same as before ... */ 
     return allItems.filter(item => {
         if (!item || !item.Game) return false; 
         const gameMatch = (excludeCategory === 'game' || currentFilters.game === 'all') || item.Game === currentFilters.game;
@@ -294,8 +455,7 @@ const getFilteredItemsForOptions = (excludeCategory) => {
         return gameMatch && contentMatch && typeMatch && subTypeMatch && rarityMatch && manufacturerMatch && bossFilterMatch && enemyFilterMatch && finalDropSourceMatch && locationFilterMatch && questMatch && searchMatch;
     });
 };
-
-function populateDynamicFilters() {
+function populateDynamicFilters() { /* ... same as before, uses localeCompare for most sorts ... */ 
     const { game, content, type, itemSubType, rarity, manufacturer, boss, enemy, dropSource, location, quest } = currentFilters;
     populateFilterDropdown(document.getElementById('content-filter-select'), getUniqueValues(getFilteredItemsForOptions('content'), 'Content', false), 'content', content); 
     populateFilterDropdown(document.getElementById('type-filter-select'), getUniqueValues(getFilteredItemsForOptions('type'), 'ItemType', false), 'type', type);
@@ -320,8 +480,7 @@ function populateDynamicFilters() {
     const uniqueQuests = getUniqueValues(itemsForQuest, 'QuestNames', true).sort((a,b) => a.localeCompare(b));
     populateFilterDropdown(document.getElementById('quest-filter-select'), uniqueQuests, 'quest', quest); 
 }
-
-function renderItems() {
+function renderItems() { /* ... same as before ... */ 
     const container = document.getElementById('item-list');
     if (!container) return;
     container.innerHTML = ''; 
@@ -332,25 +491,7 @@ function renderItems() {
     if (itemsToDisplay.length === 0) { container.innerHTML = `<li class="item-list-placeholder">No items found.</li>`; } else { itemsToDisplay.forEach(item => container.appendChild(createItemListItem(item))); }
     updateSummary(finalFilteredItems); 
 }
-
-function formatTimeDuration(totalMilliseconds) {
-    if (isNaN(totalMilliseconds) || totalMilliseconds <= 0) {
-        return "0m";
-    }
-    let seconds = Math.floor(totalMilliseconds / 1000);
-    let minutes = Math.floor(seconds / 60);
-    let hours = Math.floor(minutes / 60);
-    let days = Math.floor(hours / 24);
-    minutes %= 60;
-    hours %= 24;
-    let parts = [];
-    if (days > 0) parts.push(days + "d");
-    if (hours > 0) parts.push(hours + "h");
-    if (minutes > 0 || parts.length === 0) parts.push(minutes + "m"); 
-    return parts.length > 0 ? parts.join(" ") : "0m";
-}
-
-function updateSummary(filteredItems) {
+function updateSummary(filteredItems) { /* ... Modified for profile-aware score and new total time ... */ 
     const checkedCountEl = document.getElementById('checked-count');
     const totalCountEl = document.getElementById('total-count');
     const progressBarEl = document.getElementById('progress-bar');
@@ -374,7 +515,8 @@ function updateSummary(filteredItems) {
     totalCountEl.textContent = displayTotalCount;
     progressBarEl.style.width = `${percentage}%`;
     progressPercentEl.textContent = `${Math.round(percentage)}%`;
-
+    
+    // Score system is now based on global scoreSystemEnabled (set by active profile)
     if (scoreSystemEnabled) {
         let currentScore = 0;
         checkedProgressRelevantItems.forEach(item => { currentScore += (item.points || 0); });
@@ -384,14 +526,14 @@ function updateSummary(filteredItems) {
         scoreDisplayContainer.style.display = 'none';
     }
 
-    const checkedTimestamps = allItems 
-        .filter(item => item.Checked && item.checkedTimestamp)
-        .map(item => new Date(item.checkedTimestamp).getTime()); 
-
-    if (checkedTimestamps.length >= 1) { 
-        const minTimestamp = Math.min(...checkedTimestamps);
-        const maxTimestamp = Math.max(...checkedTimestamps);
-        const durationMs = (checkedTimestamps.length > 1) ? (maxTimestamp - minTimestamp) : 0; // Duration is 0 if only one item
+    const allCheckedItemsInCurrentProfile = allItems
+        .filter(item => item.Checked && item.checkedTimestamp);
+        
+    if (allCheckedItemsInCurrentProfile.length >= 1) { 
+        const timestamps = allCheckedItemsInCurrentProfile.map(item => new Date(item.checkedTimestamp).getTime());
+        const minTimestamp = Math.min(...timestamps);
+        const maxTimestamp = Math.max(...timestamps);
+        const durationMs = (allCheckedItemsInCurrentProfile.length > 1) ? (maxTimestamp - minTimestamp) : 0;
         
         totalTimePlayedEl.textContent = formatTimeDuration(durationMs);
         totalTimePlayedContainer.style.display = 'block';
@@ -401,39 +543,26 @@ function updateSummary(filteredItems) {
     }
 }
 
-function saveProgress() {
-    try {
-        const progressToSave = allItems
-            .filter(i => i.id) 
-            .map(i => ({ 
-                id: i.id, 
-                Checked: i.Checked, 
-                checkedTimestamp: i.checkedTimestamp 
+// Modified saveProgress to saveCurrentProfileProgress
+function saveCurrentProfileProgress() {
+    const activeProfile = getActiveProfileData();
+    if (activeProfile) {
+        activeProfile.progress = allItems
+            .filter(i => i.id && (i.Checked || i.checkedTimestamp)) // Save if checked or has a timestamp (in case it was just unchecked)
+            .map(i => ({
+                id: i.id,
+                Checked: i.Checked,
+                checkedTimestamp: i.checkedTimestamp
             }));
-        localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(progressToSave));
-    } catch (e) { console.error('Error saving progress:', e); }
-}
-
-function loadProgress() {
-    try {
-        const progress = JSON.parse(localStorage.getItem(PROGRESS_STORAGE_KEY));
-        if (progress && Array.isArray(progress)) { 
-            progress.forEach(sItem => {
-                if (sItem && typeof sItem.id === 'string') { 
-                    const item = allItems.find(i => i.id === sItem.id); 
-                    if (item) {
-                        item.Checked = sItem.Checked;
-                        item.checkedTimestamp = sItem.checkedTimestamp || null; 
-                    }
-                }
-            });
-        }
-    } catch (e) {
-        console.error('Error loading progress:', e);
+        saveAppData();
+    } else {
+        console.error("No active profile found to save progress.");
     }
 }
 
-function initializeFilters() {
+// loadProgress is now handled by applyActiveProfileToAllItems
+
+function initializeFilters() { /* ... same as before ... */ 
     const filterSelects = document.querySelectorAll('select[data-filter-category]');
     filterSelects.forEach(select => {
         select.value = currentFilters[select.dataset.filterCategory] || 'all'; 
@@ -450,33 +579,32 @@ function initializeFilters() {
     const searchInput = document.getElementById('search-input');
     if(searchInput) { searchInput.value = currentFilters.search || ''; searchInput.addEventListener('input', e => { currentFilters.search = e.target.value.trim(); renderItems(); });}
 }
-
-function setupHideCompletedButton() {
+function setupHideCompletedButton() { /* ... same as before ... */ 
     const btn = document.getElementById('hide-completed-button');
     if(btn) { btn.classList.toggle('active', hideCompletedActive); btn.textContent = hideCompletedActive ? 'Show All' : 'Hide Completed'; btn.addEventListener('click', () => { hideCompletedActive = !hideCompletedActive; btn.classList.toggle('active', hideCompletedActive); btn.textContent = hideCompletedActive ? 'Show All' : 'Hide Completed'; renderItems(); });}
 }
-
-function setupClearAllButton() {
+function setupClearAllButton() { /* Modified for profiles */
     const btn = document.getElementById('clear-all-button');
     if(btn) btn.addEventListener('click', () => {
         const filtered = getFilteredItemsForOptions(null);
         if (filtered.length === 0) return alert("No items visible to clear.");
         const toClear = filtered.filter(i => i.Checked);
         if (toClear.length === 0) return alert("No completed items in current selection.");
-        if (confirm(`Uncheck ${toClear.length} completed item(s) based on current filters? This will also clear their timestamps.`)) {
+        if (confirm(`Uncheck ${toClear.length} completed item(s) based on current filters for profile "${appData.activeProfileName}"? This will also clear their timestamps.`)) {
             toClear.forEach(item => {
-                const original = allItems.find(i => i.id === item.id); 
-                if (original) {
-                    original.Checked = false;
-                    original.checkedTimestamp = null; 
+                const originalItemInAllItems = allItems.find(i => i.id === item.id); 
+                if (originalItemInAllItems) {
+                    originalItemInAllItems.Checked = false;
+                    originalItemInAllItems.checkedTimestamp = null; 
                 }
             });
-            saveProgress(); renderItems(); alert(`Cleared ${toClear.length} item(s).`);
+            saveCurrentProfileProgress(); 
+            renderItems(); 
+            alert(`Cleared ${toClear.length} item(s) for profile "${appData.activeProfileName}".`);
         }
     });
 }
-
-function setupGoToTopButton() {
+function setupGoToTopButton() { /* ... same as before ... */ 
     const goToTopBtn = document.getElementById('goToTopBtn');
     if (!goToTopBtn) return;
     window.onscroll = function() { scrollFunction(); };
@@ -484,22 +612,19 @@ function setupGoToTopButton() {
     if (goToTopBtn) { goToTopBtn.addEventListener('click', function() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });}
 }
 
-function loadScoreSystemState() {
-    const savedState = localStorage.getItem(SCORE_SYSTEM_ENABLED_KEY);
-    scoreSystemEnabled = savedState === 'true'; 
-}
-
-function saveScoreSystemState() {
-    localStorage.setItem(SCORE_SYSTEM_ENABLED_KEY, scoreSystemEnabled);
-}
-
+// Score system state is now per-profile, managed by appData
 function setupScoreSystemToggle() {
     const toggleCheckbox = document.getElementById('toggle-score-system');
     if (toggleCheckbox) {
+        const activeProfile = getActiveProfileData();
+        scoreSystemEnabled = activeProfile.scoreSystemEnabled; // Set global from profile
         toggleCheckbox.checked = scoreSystemEnabled; 
+
         toggleCheckbox.addEventListener('change', () => {
-            scoreSystemEnabled = toggleCheckbox.checked;
-            saveScoreSystemState();
+            scoreSystemEnabled = toggleCheckbox.checked; // Update global
+            const currentActiveProfile = getActiveProfileData();
+            currentActiveProfile.scoreSystemEnabled = scoreSystemEnabled; // Update profile data
+            saveAppData(); // Save all app data (which includes this profile's setting)
             renderItems(); 
         });
     }
@@ -516,7 +641,7 @@ async function initializeApp() {
     if (searchInputEl) searchInputEl.value = '';
 
     let missingIdErrorMessages = []; 
-    loadScoreSystemState();
+    loadAppData(); // Load all profile data and set active profile
 
     try {
         let bl1Data = [], bl2Data = [], bltpsData = [], bl3Data = [], tinyTinaData = [];
@@ -537,17 +662,10 @@ async function initializeApp() {
             item.id = item.uniqueStaticId; 
             item.ItemName = String(item.ItemName).trim();
             item.isTimeLimited = !!item.isTimeLimited;
-            
-            // Normalize ItemRarity - Specific handling for E-Tech
             let processedRarity;
             let rawOriginalRarity = rawItem.ItemRarity ? String(rawItem.ItemRarity).trim() : '';
-            if (rawOriginalRarity.toLowerCase() === 'e-tech') {
-                processedRarity = 'E-Tech';
-            } else {
-                processedRarity = rawOriginalRarity ? capitalizeFirstLetter(rawOriginalRarity) : 'Common';
-            }
+            if (rawOriginalRarity.toLowerCase() === 'e-tech') { processedRarity = 'E-Tech';} else { processedRarity = rawOriginalRarity ? capitalizeFirstLetter(rawOriginalRarity) : 'Common';}
             item.ItemRarity = processedRarity;
-
             item.points = RARITY_POINTS[item.ItemRarity] || 0;
             item.checkedTimestamp = null; 
 
@@ -559,9 +677,8 @@ async function initializeApp() {
             item.ItemType = (item.ItemType !== null && item.ItemType !== undefined) ? String(item.ItemType).trim() : 'Unknown Type'; if (item.ItemType === '') item.ItemType = 'Unknown Type';
             item.ItemSubType = (item.ItemSubType !== null && item.ItemSubType !== undefined) ? String(item.ItemSubType).trim() : null; if (item.ItemSubType === '') item.ItemSubType = null;
             item.Content = item.Content ? String(item.Content).trim() : ''; item.Challenge = item.Challenge ? String(item.Challenge).trim() : ''; item.Notes = item.Notes ? String(item.Notes).trim() : '';
-            // item.ItemRarity is already set by the E-Tech specific logic above
             item.LocationFilter = !!item.LocationFilter; item.isMissableItem = !!item.isMissableItem;
-            item.Checked = !!item.Checked; 
+            item.Checked = false; // Default to false, will be updated by applyActiveProfileToAllItems
             processed.push(item);
         });
         allItems = processed;
@@ -572,8 +689,9 @@ async function initializeApp() {
         if (missingIdErrorMessages.length > 0) { let alertMsg = `!! DATA WARNING !!\n${missingIdErrorMessages.length} item(s) are missing 'uniqueStaticId' or have issues.\nProgress for these items WILL NOT be saved correctly.\n\nExamples of problematic items:\n`; const maxExamples = 5; for(let i = 0; i < Math.min(missingIdErrorMessages.length, maxExamples); i++) { alertMsg += `- ${missingIdErrorMessages[i]}\n`;} if (missingIdErrorMessages.length > maxExamples) { alertMsg += `\n...and ${missingIdErrorMessages.length - maxExamples} more.`;} alertMsg += "\nPlease check the developer console (F12) for full details and fix your JSON data."; alert(alertMsg);}
         console.log('Processed allItems:', allItems.length, 'items.');
 
-        loadProgress(); 
+        applyActiveProfileToAllItems(); // Apply saved progress for the active profile
         initializeFilters(); 
+        setupProfileControls(); // Initialize profile UI elements
         setupScoreSystemToggle(); 
         setupHideCompletedButton();
         setupClearAllButton();
