@@ -27,6 +27,36 @@ header p {
     color: #a0a0a0;
 }
 
+/* Styles for Score System Toggle */
+.global-options-panel {
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #383838;
+    width: 100%;
+    max-width: 600px; 
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.toggle-option { 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0; 
+}
+.toggle-option input[type="checkbox"]#toggle-score-system { 
+    width: 16px;
+    height: 16px;
+}
+.toggle-option label[for="toggle-score-system"] {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+
 /* --- Controls Section --- */
 .controls-section {
     background-color: #1f1f1f; 
@@ -144,9 +174,7 @@ header p {
 .progress-bar { height: 100%; background-color: #00ff00; width: 0%; border-radius: 10px; transition: width 0.5s ease-out; display: flex; align-items: center; justify-content: center; }
 .progress-percentage { color: #00ff00; font-weight: bold; font-size: 1.1em; }
 .action-buttons { display: flex; gap: 15px; justify-content: center; margin-top: 10px; }
-.toggle-option { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 15px; }
-.toggle-option input[type="checkbox"] { width: 18px; height: 18px; accent-color: #ff8c00; cursor: pointer; }
-.toggle-option label { color: #eee; font-size: 0.9em; cursor: pointer; }
+/* .toggle-option defined above in .global-options-panel for consistency */
 
 main {
     padding: 20px;
@@ -218,7 +246,7 @@ main {
 
 .item-card .name-plate {
     color: var(--rarity-text-color, #ffffff); 
-    padding: 12px 15px;
+    padding: 12px 5px; /* Adjusted padding for points */
     text-align: center;
     font-size: 1.4em; 
     font-weight: 900; 
@@ -228,7 +256,31 @@ main {
     position: relative;
     background-image: linear-gradient(rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.15) 100%), var(--rarity-gradient, var(--rarity-color-main));
     background-color: var(--rarity-color-main); 
+    display: flex; /* For points and name alignment */
+    align-items: center;
 }
+.item-card .name-plate.has-points {
+   justify-content: flex-start; 
+}
+
+.item-points {
+    font-size: 0.6em; 
+    font-weight: 700;
+    color: #FFD700; 
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 10px; 
+    margin-left: 5px; /* Added for spacing from edge */
+    white-space: nowrap; 
+}
+
+.item-name-text { 
+    flex-grow: 1; 
+    text-align: center; 
+}
+
 
 .item-card .info-area {
     padding: 15px;
@@ -240,6 +292,17 @@ main {
     overflow-y: auto; 
     position: relative; 
 }
+
+/* Timestamp on Card */
+.item-checked-timestamp {
+    font-size: 0.7em;
+    color: #999;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px dashed #444;
+    text-align: right;
+}
+
 
 .game-icon-container {
     position: absolute; 
@@ -515,6 +578,18 @@ main {
     text-shadow: 0 0 8px rgba(0,255,0,0.7);
     z-index: 10; 
 }
+
+/* Progress Panel Score & Time Display */
+#score-display-container,
+#total-time-played-container {
+    color: #00ff00; 
+    font-weight: bold;
+}
+#score-display-container #total-score,
+#total-time-played-container #total-time-played {
+    color: #fff; 
+}
+
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 1200px) { 

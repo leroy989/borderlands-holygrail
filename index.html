@@ -71,11 +71,20 @@
                 <h2>Your Progress</h2>
                 <div class="progress-stats">
                     <p>Items Found: <span id="checked-count">0</span> / <span id="total-count">0</span></p>
+                    <p id="score-display-container" style="display: none;">Score: <span id="total-score">0</span></p>
+                    <p id="total-time-played-container" style="display: none;">Total Time: <span id="total-time-played">0d 0h 0m</span></p>
                 </div>
                 <div class="progress-bar-container">
                     <div id="progress-bar" class="progress-bar" style="width: 0%;"></div>
                 </div>
                 <span id="progress-percentage" class="progress-percentage">0%</span>
+            </div>
+
+            <div class="global-options-panel">
+            <div class="toggle-option">
+                <input type="checkbox" id="toggle-score-system" />
+                <label for="toggle-score-system">Enable Score System</label>
+            </div>
             </div>
 
             <div class="action-buttons">
