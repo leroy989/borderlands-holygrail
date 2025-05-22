@@ -9,6 +9,7 @@ let currentFilters = {
     search: ''
 };
 let hideCompletedActive = false;
+let saveTimeoutId = null; // For debouncing save operations
 
 // Profile System Variables
 const APP_DATA_KEY = 'borderlandsAppUserData_v1'; // New key for all profile data
@@ -119,6 +120,13 @@ function formatTimeDuration(totalMilliseconds) { /* ... same as before ... */
     if (hours > 0) parts.push(hours + "h");
     if (minutes > 0 || parts.length === 0) parts.push(minutes + "m"); 
     return parts.length > 0 ? parts.join(" ") : "0m";
+}
+
+function debouncedSaveCurrentProfileProgress() {
+    clearTimeout(saveTimeoutId);
+    saveTimeoutId = setTimeout(() => {
+        saveCurrentProfileProgress(); // This is your existing save function
+    }, 750); // Adjust delay as needed (e.g., 500-1000ms)
 }
 
 // --- Profile System Functions ---
@@ -380,7 +388,7 @@ function createItemListItem(item) { /* ... Modified for timestamp, ensure no oth
         if (item.Checked) { item.checkedTimestamp = new Date().toISOString(); } else { item.checkedTimestamp = null; }
         listItem.classList.toggle('card-is-checked', item.Checked);
         if(item.isTimeLimited) { listItem.classList.toggle('unavailable-and-not-checked', !item.Checked); }
-        saveCurrentProfileProgress(); // Modified to save to active profile
+        debouncedSaveCurrentProfileProgress(); // Modified to save to active profile
         renderItems(); 
     });
     return listItem;
