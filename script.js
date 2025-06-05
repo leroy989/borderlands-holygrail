@@ -9,54 +9,57 @@ let currentFilters = {
     search: ''
 };
 let hideCompletedActive = false;
-let scoreSystemEnabled = false; 
-const SCORE_SYSTEM_ENABLED_KEY = 'checklistScoreSystemEnabled';
-const APP_DATA_KEY = 'borderlandsAppUserData_v1'; 
+let scoreSystemEnabled = false;
+const SCORE_SYSTEM_ENABLED_KEY = 'checklistScoreSystemEnabled'; // Not currently used, but kept for potential future use
+const APP_DATA_KEY = 'borderlandsAppUserData_v1';
 let appData = {
     profileNames: ['Default'],
     activeProfileName: 'Default',
     profileData: {
         'Default': {
-            progress: [], 
+            progress: [],
             scoreSystemEnabled: false
         }
     }
 };
 let wasRenderTriggeredBySearch = false;
-let saveTimeoutId = null; 
+let saveTimeoutId = null;
 
 const gameOrder = ['BorderlandsOne', 'BorderlandsTwo', 'BorderlandsTPS', 'BorderlandsThree', 'TinyTinasWonderlands'];
 const rarityOrder = [
     'Common', 'Uncommon', 'Rare', 'Cursed', 'Epic', 'E-Tech',
-    'Gemstone', 'Legendary', 'Effervescent', 'Seraph', 'Pearlescent'
+    'Gemstone', 'Glitch', 'Legendary', 'Effervescent', 'Seraph', 'Pearlescent' // Added Glitch
 ];
 const RARITY_POINTS = {
     'Common': 1, 'Uncommon': 3, 'Rare': 5, 'Cursed': 8, 'Epic': 10,
-    'E-Tech': 12, 'Gemstone': 15, 'Legendary': 20, 'Effervescent': 25,
-    'Seraph': 30, 'Pearlescent': 50
+    'E-Tech': 12, 'Gemstone': 15, 'Glitch': 18, 'Legendary': 20, // Added Glitch points
+    'Effervescent': 25, 'Seraph': 30, 'Pearlescent': 50
 };
 
 // --- Helper Functions ---
-function capitalizeFirstLetter(string) { 
+function capitalizeFirstLetter(string) {
     if (!string) return '';
+    // Handle "E-Tech" specifically if it might come in as "e-tech"
+    if (string.toLowerCase() === 'e-tech') return 'E-Tech';
+    if (string.toLowerCase() === 'glitch') return 'Glitch'; // Ensure Glitch is capitalized correctly
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
-async function loadJSONData(filePath) { 
+async function loadJSONData(filePath) {
     try {
         const response = await fetch(filePath);
         if (response.status === 404) {
             console.info(`Optional data file not found (will be ignored): ${filePath}`);
-            return []; 
+            return [];
         }
         if (!response.ok) {
             throw new Error(`Failed to fetch ${filePath}: ${response.status} ${response.statusText}`);
         }
         return await response.json();
     } catch (error) {
-        throw error; 
+        throw error;
     }
 }
-function appendDropRatesToHTML(sourceObject, listHTMLString) { 
+function appendDropRatesToHTML(sourceObject, listHTMLString) {
     let html = listHTMLString;
     if (sourceObject.DropRates && sourceObject.DropRates.length > 0) {
         sourceObject.DropRates.forEach(dr => {
@@ -84,13 +87,13 @@ function appendDropRatesToHTML(sourceObject, listHTMLString) {
     }
     return html;
 }
-function formatItemTimestamp(isoString) { 
+function formatItemTimestamp(isoString) {
     if (!isoString) return '';
     try {
         const date = new Date(isoString);
-        return date.toLocaleString(undefined, { 
-            year: 'numeric', month: 'short', day: 'numeric', 
-            hour: '2-digit', minute: '2-digit' 
+        return date.toLocaleString(undefined, {
+            year: 'numeric', month: 'short', day: 'numeric',
+            hour: '2-digit', minute: '2-digit'
         });
     } catch (e) {
         console.warn("Error formatting timestamp:", isoString, e);
@@ -110,12 +113,12 @@ function formatTimeDuration(totalMilliseconds) {
     let parts = [];
     if (days > 0) parts.push(days + "d");
     if (hours > 0) parts.push(hours + "h");
-    if (minutes > 0 || parts.length === 0) parts.push(minutes + "m"); 
+    if (minutes > 0 || parts.length === 0) parts.push(minutes + "m");
     return parts.length > 0 ? parts.join(" ") : "0m";
 }
 
 // --- Profile System Functions ---
-function loadAppData() { 
+function loadAppData() {
     const storedData = localStorage.getItem(APP_DATA_KEY);
     if (storedData) {
         try {
@@ -140,7 +143,7 @@ function loadAppData() {
         } catch (e) {
             console.error("Error parsing stored app data, resetting to default:", e);
             appData = { profileNames: ['Default'], activeProfileName: 'Default', profileData: { 'Default': { progress: [], scoreSystemEnabled: false }}};
-            saveAppData(); 
+            saveAppData();
         }
     } else {
         appData = { profileNames: ['Default'], activeProfileName: 'Default', profileData: { 'Default': { progress: [], scoreSystemEnabled: false }}};
@@ -149,14 +152,14 @@ function loadAppData() {
     const activeProfile = appData.profileData[appData.activeProfileName] || { progress: [], scoreSystemEnabled: false }; // Fallback
     scoreSystemEnabled = activeProfile.scoreSystemEnabled || false; // Ensure boolean
 }
-function saveAppData() { 
+function saveAppData() {
     try {
         localStorage.setItem(APP_DATA_KEY, JSON.stringify(appData));
     } catch (e) {
         console.error("Error saving app data to localStorage:", e);
     }
 }
-function getActiveProfileData() { 
+function getActiveProfileData() {
     if (appData.activeProfileName && appData.profileData[appData.activeProfileName]) {
         const profile = appData.profileData[appData.activeProfileName];
         // Ensure progress is an array, default if not
@@ -166,9 +169,9 @@ function getActiveProfileData() {
         return profile;
     }
     console.warn("Active profile data not found, returning empty default. Active:", appData.activeProfileName);
-    return { progress: [], scoreSystemEnabled: false }; 
+    return { progress: [], scoreSystemEnabled: false };
 }
-function applyActiveProfileToAllItems() { 
+function applyActiveProfileToAllItems() {
     const activeProfile = getActiveProfileData();
     // Ensure activeProfile.progress is an array before calling .find on it
     const progressData = Array.isArray(activeProfile.progress) ? activeProfile.progress : [];
@@ -189,7 +192,7 @@ function applyActiveProfileToAllItems() {
         scoreToggle.checked = scoreSystemEnabled;
     }
 }
-function isProfileNameValidAndUnique(name) { 
+function isProfileNameValidAndUnique(name) {
     const trimmedName = name.trim();
     if (!trimmedName) {
         alert("Profile name cannot be empty.");
@@ -200,13 +203,13 @@ function isProfileNameValidAndUnique(name) {
         alert(`Profile name "${trimmedName}" already exists.`);
         return false;
     }
-    if (trimmedName.length > 30) { 
+    if (trimmedName.length > 30) {
         alert("Profile name is too long (max 30 characters).");
         return false;
     }
     return trimmedName;
 }
-function populateProfileDropdown() { 
+function populateProfileDropdown() {
     const profileSelect = document.getElementById('profile-select');
     if (!profileSelect) return;
     profileSelect.innerHTML = '';
@@ -219,13 +222,13 @@ function populateProfileDropdown() {
         });
     }
     profileSelect.value = appData.activeProfileName;
-    
+
     const progressPanelTitle = document.getElementById('progress-panel-title');
     if (progressPanelTitle) {
         progressPanelTitle.textContent = `${appData.activeProfileName || 'Default'}'s Progress`;
     }
 }
-function handleCreateProfile() { 
+function handleCreateProfile() {
     const newProfileName = prompt("Enter name for new profile:");
     if (newProfileName) {
         const validatedName = isProfileNameValidAndUnique(newProfileName);
@@ -234,13 +237,13 @@ function handleCreateProfile() {
             appData.profileNames.push(validatedName);
             appData.profileData[validatedName] = {
                 progress: [],
-                scoreSystemEnabled: false 
+                scoreSystemEnabled: false
             };
-            handleSwitchProfile(validatedName); 
+            handleSwitchProfile(validatedName);
         }
     }
 }
-function handleDeleteProfile() { 
+function handleDeleteProfile() {
     if (!Array.isArray(appData.profileNames) || appData.profileNames.length <= 1) {
         alert("Cannot delete the last profile.");
         return;
@@ -251,7 +254,7 @@ function handleDeleteProfile() {
         delete appData.profileData[profileNameToDelete];
         const newActiveProfile = (Array.isArray(appData.profileNames) && appData.profileNames.includes('Default')) ? 'Default' : (appData.profileNames[0] || null);
         if (newActiveProfile) {
-            handleSwitchProfile(newActiveProfile); 
+            handleSwitchProfile(newActiveProfile);
         } else {
             // This case should ideally not happen if we ensure 'Default' is always creatable
             console.error("No profiles left to switch to after deletion.");
@@ -263,25 +266,25 @@ function handleDeleteProfile() {
         }
     }
 }
-function handleSwitchProfile(profileName) { 
+function handleSwitchProfile(profileName) {
     if (Array.isArray(appData.profileNames) && appData.profileNames.includes(profileName)) {
         appData.activeProfileName = profileName;
-        saveAppData(); 
+        saveAppData();
         currentFilters = { game: 'all', content: 'all', type: 'all', itemSubType: 'all', rarity: 'all', manufacturer: 'all', boss: 'all', enemy: 'all', dropSource: 'all', location: 'all', quest: 'all', search: '' };
         const filterSelectElements = document.querySelectorAll('#filter-collapsible-content select');
         filterSelectElements.forEach(sel => sel.value = 'all');
         const searchInputEl = document.getElementById('search-input');
         if (searchInputEl) searchInputEl.value = '';
-        applyActiveProfileToAllItems(); 
-        populateProfileDropdown(); 
+        applyActiveProfileToAllItems();
+        populateProfileDropdown();
         initializeFilters(); // This will re-populate dropdowns based on allItems and current (reset) filters
         wasRenderTriggeredBySearch = false; // Ensure search scroll flag is reset
-        renderItems(); 
+        renderItems();
     } else {
         console.error("Attempted to switch to non-existent profile:", profileName);
     }
 }
-function setupProfileControls() { 
+function setupProfileControls() {
     const profileSelect = document.getElementById('profile-select');
     const createBtn = document.getElementById('create-profile-btn');
     const deleteBtn = document.getElementById('delete-profile-btn');
@@ -302,13 +305,13 @@ function debouncedSaveCurrentProfileProgress() {
     clearTimeout(saveTimeoutId);
     saveTimeoutId = setTimeout(() => {
         saveCurrentProfileProgress();
-    }, 750); 
+    }, 750);
 }
 function saveCurrentProfileProgress() {
     const activeProfile = getActiveProfileData();
     if (activeProfile) { // activeProfile is guaranteed to have .progress as an array
         activeProfile.progress = allItems
-            .filter(i => i.id && (i.Checked || i.checkedTimestamp)) 
+            .filter(i => i.id && (i.Checked || i.checkedTimestamp))
             .map(i => ({
                 id: i.id,
                 Checked: i.Checked,
@@ -321,14 +324,16 @@ function saveCurrentProfileProgress() {
 }
 
 // --- Core Application Logic ---
-function createItemListItem(item) { 
+function createItemListItem(item) {
     const listItem = document.createElement('li');
     let rarityCardClass = item.ItemRarity.toLowerCase().replace(/\s+/g, '-');
-    if (item.ItemRarity === 'E-Tech') { 
+    if (item.ItemRarity === 'E-Tech') { // Ensure E-Tech keeps its specific class if needed beyond simple lowercasing
         rarityCardClass = 'e-tech';
+    } else if (item.ItemRarity === 'Glitch') { // Ensure Glitch gets a 'glitch' class
+        rarityCardClass = 'glitch';
     }
     listItem.className = `item-card ${rarityCardClass}`;
-    listItem.setAttribute('data-item-id', item.id); 
+    listItem.setAttribute('data-item-id', item.id);
     if (item.Checked) { listItem.classList.add('card-is-checked'); }
     if (item.isTimeLimited) { listItem.classList.add('time-limited-item'); if (!item.Checked) { listItem.classList.add('unavailable-and-not-checked');}}
     let infoAreaHTML = '';
@@ -349,7 +354,7 @@ function createItemListItem(item) {
     function addBlockInfo(label, contentHTML) { if (contentHTML && contentHTML.trim() !== '') { infoAreaHTML += `<h3>${label}:</h3>${contentHTML}`;}}
     addInlineInfo("Type", (item.ItemType && item.ItemType !== 'Unknown Type' ? item.ItemType : null));
     if (item.ItemSubType && item.ItemSubType.trim() !== '') { addInlineInfo("Sub Type", item.ItemSubType); }
-    addInlineInfo("Rarity", item.ItemRarity); 
+    addInlineInfo("Rarity", item.ItemRarity);
     addInlineInfo("Content", item.Content);
     if (item.isTimeLimited && !item.Checked) { addInlineInfo("Availability", "<span style='color: #FF9800;'>Time-Limited (Currently Unobtainable)</span>");}
     const elementsArray = (item.Elements && Array.isArray(item.Elements) && item.Elements.length > 0) ? item.Elements.filter(el => el && String(el).trim() !== '') : [];
@@ -380,144 +385,179 @@ function createItemListItem(item) {
         if (item.Checked) { item.checkedTimestamp = new Date().toISOString(); } else { item.checkedTimestamp = null; }
         listItem.classList.toggle('card-is-checked', item.Checked);
         if(item.isTimeLimited) { listItem.classList.toggle('unavailable-and-not-checked', !item.Checked); }
-        debouncedSaveCurrentProfileProgress(); 
+        debouncedSaveCurrentProfileProgress();
         wasRenderTriggeredBySearch = false; // Click is not a search
-        renderItems(); 
+        renderItems();
     });
     return listItem;
 }
 
-function populateFilterDropdown(selectElement, uniqueValues, category, activeValue, sortFunction = null) { 
+function populateFilterDropdown(selectElement, uniqueValues, category, activeValue, sortFunction = null) {
     if (!selectElement) return;
-    selectElement.innerHTML = ''; 
+    selectElement.innerHTML = '';
     const allOption = document.createElement('option');
     allOption.value = 'all';
     allOption.textContent = 'All';
     selectElement.appendChild(allOption);
-    if (sortFunction) { uniqueValues.sort(sortFunction);} else if (Array.isArray(uniqueValues) && uniqueValues.every(val => typeof val === 'string')) { uniqueValues.sort((a, b) => a.localeCompare(b));} 
+    if (sortFunction) { uniqueValues.sort(sortFunction);} else if (Array.isArray(uniqueValues) && uniqueValues.every(val => typeof val === 'string')) { uniqueValues.sort((a, b) => a.localeCompare(b));}
     if (Array.isArray(uniqueValues)) { // Ensure uniqueValues is an array before forEach
         uniqueValues.forEach(value => {
             const option = document.createElement('option');
-            option.value = String(value); 
+            option.value = String(value);
             if (category === 'game') { if (value === "BorderlandsOne") option.textContent = "BL1"; else if (value === "BorderlandsTwo") option.textContent = "BL2"; else if (value === "BorderlandsTPS") option.textContent = "BL:TPS"; else if (value === "BorderlandsThree") option.textContent = "BL3"; else if (value === "TinyTinasWonderlands") option.textContent = "Wonderlands"; else option.textContent = capitalizeFirstLetter(String(value));} else if (category === 'rarity') { option.textContent = String(value); } else { option.textContent = String(value);}
             selectElement.appendChild(option);
         });
     }
     selectElement.value = activeValue;
 }
-const getUniqueValues = (items, field, isMultiValueProperty = true) => { 
+const getUniqueValues = (items, field, isMultiValueProperty = true) => {
     let values = new Set();
     if (!Array.isArray(items)) return []; // Guard against items not being an array
     items.forEach(item => {
         const itemFieldValue = item[field];
         if (itemFieldValue === null || itemFieldValue === undefined) return;
-        if (isMultiValueProperty && Array.isArray(itemFieldValue)) {
-            itemFieldValue.forEach(val => { if (val !== null && val !== undefined && String(val).trim() !== '') values.add(String(val).trim());});
-        } else if (String(itemFieldValue).trim() !== '') {
+
+        if (Array.isArray(itemFieldValue)) { // Handles cases like item.Location which is an array
+            itemFieldValue.forEach(val => {
+                if (val !== null && val !== undefined && String(val).trim() !== '') {
+                    values.add(String(val).trim());
+                }
+            });
+        } else if (isMultiValueProperty && typeof itemFieldValue === 'string' && itemFieldValue.includes(' / ')) {
+            // This handles other string properties that might be multi-valued and use " / "
+            // For 'Location', this path might be less common if item.Location is always an array post-processing
+            itemFieldValue.split(' / ').forEach(val => {
+                 if (val !== null && val !== undefined && String(val).trim() !== '') {
+                    values.add(String(val).trim());
+                }
+            });
+        } else if (String(itemFieldValue).trim() !== '') { // Handles single string values
             values.add(String(itemFieldValue).trim());
         }
     });
-    return Array.from(values); 
+    return Array.from(values);
 };
-const getFilteredItemsForOptions = (excludeCategory) => { 
+const getFilteredItemsForOptions = (excludeCategory) => {
     if (!Array.isArray(allItems)) return []; // Guard against allItems not being an array
     return allItems.filter(item => {
-        if (!item || !item.Game) return false; 
+        if (!item || !item.Game) return false;
         const gameMatch = (excludeCategory === 'game' || currentFilters.game === 'all') || item.Game === currentFilters.game;
         const contentMatch = (excludeCategory === 'content' || currentFilters.content === 'all') || item.Content === currentFilters.content;
         const typeMatch = (excludeCategory === 'type' || currentFilters.type === 'all') || item.ItemType === currentFilters.type;
         const subTypeMatch = (excludeCategory === 'itemSubType' || currentFilters.itemSubType === 'all') || item.ItemSubType === currentFilters.itemSubType;
         const rarityMatch = (excludeCategory === 'rarity' || currentFilters.rarity === 'all') || item.ItemRarity === currentFilters.rarity;
         const manufacturerMatch = (excludeCategory === 'manufacturer' || currentFilters.manufacturer === 'all') || (Array.isArray(item.Manufacturer) && item.Manufacturer.includes(currentFilters.manufacturer));
-        let bossFilterMatch = (excludeCategory === 'boss' || currentFilters.boss === 'all') || (Array.isArray(item.Boss) && item.Boss.includes(currentFilters.boss));
-        let enemyFilterMatch = (excludeCategory === 'enemy' || currentFilters.enemy === 'all') || (Array.isArray(item.EnemyNames) && item.EnemyNames.includes(currentFilters.enemy));
-        let locationFilterMatch = (excludeCategory === 'location' || currentFilters.location === 'all') || (Array.isArray(item.Location) && item.Location.includes(currentFilters.location));
+
+        const bossFilterMatch = (excludeCategory === 'boss' || currentFilters.boss === 'all') ||
+                               (item.Boss && Array.isArray(item.Boss) && item.Boss.includes(currentFilters.boss));
+        const enemyFilterMatch = (excludeCategory === 'enemy' || currentFilters.enemy === 'all') ||
+                                (item.EnemyNames && Array.isArray(item.EnemyNames) && item.EnemyNames.includes(currentFilters.enemy));
+        const locationFilterMatch = (excludeCategory === 'location' || currentFilters.location === 'all') ||
+                                  (item.Location && Array.isArray(item.Location) && item.Location.includes(currentFilters.location));
+
         let finalDropSourceMatch;
         if (excludeCategory === 'dropSource' || currentFilters.dropSource === 'all') { finalDropSourceMatch = true; } else if (currentFilters.dropSource === 'Missable') { finalDropSourceMatch = item.isMissableItem === true; } else { finalDropSourceMatch = (Array.isArray(item.DropSource) && item.DropSource.includes(currentFilters.dropSource));}
         const questMatch = (excludeCategory === 'quest' || currentFilters.quest === 'all') || (Array.isArray(item.QuestNames) && item.QuestNames.includes(currentFilters.quest));
-        if (currentFilters.location !== 'all' && !['location', 'boss', 'enemy', 'quest', 'itemSubType'].includes(excludeCategory) ) { let isValid = (item.BossLocations && item.BossLocations.some(bl => bl.LocationName === currentFilters.location)) || (item.EnemyLocations && Array.isArray(item.EnemyLocations) && item.EnemyLocations.some(el => el.LocationName === currentFilters.location)) || (item.QuestSources && Array.isArray(item.QuestSources) && item.QuestSources.some(qs => qs.QuestLocation === currentFilters.location)) || (item.GeneralLocations && Array.isArray(item.GeneralLocations) && item.GeneralLocations.some(gl => gl.Location === currentFilters.location)); if (!isValid) return false;}
-        if (currentFilters.boss !== 'all' && !['boss', 'location', 'enemy', 'quest', 'itemSubType'].includes(excludeCategory)) { if (!(item.BossLocations && item.BossLocations.some(bl => bl.BossName === currentFilters.boss))) return false;}
+
+        // Cross-filter validation: If a specific location is selected, ensure the item is found in that location.
+        if (currentFilters.location !== 'all' && !['location', 'boss', 'enemy', 'quest', 'itemSubType'].includes(excludeCategory) ) {
+            if (!(item.Location && Array.isArray(item.Location) && item.Location.includes(currentFilters.location))) {
+                return false;
+            }
+        }
+        // Cross-filter validation: If a specific boss is selected, ensure the item can drop from that boss.
+        if (currentFilters.boss !== 'all' && !['boss', 'location', 'enemy', 'quest', 'itemSubType'].includes(excludeCategory)) {
+            if (!(item.Boss && Array.isArray(item.Boss) && item.Boss.includes(currentFilters.boss))) {
+                return false;
+            }
+        }
+
         let searchMatch = true;
         if (currentFilters.search !== '') { const s = currentFilters.search.toLowerCase(); searchMatch = ['ItemName', 'ItemType', 'ItemSubType', 'Content', 'Challenge', 'Notes'].some(p => item[p] && String(item[p]).toLowerCase().includes(s)) || (item.QuestNames && item.QuestNames.some(qn => qn.toLowerCase().includes(s))) || (item.EnemyNames && item.EnemyNames.some(en => en.toLowerCase().includes(s))) || ['Manufacturer', 'DropSource', 'Boss', 'Location', 'Elements'].some(p => item[p] && Array.isArray(item[p]) && item[p].some(val => String(val).toLowerCase().includes(s)));}
         return gameMatch && contentMatch && typeMatch && subTypeMatch && rarityMatch && manufacturerMatch && bossFilterMatch && enemyFilterMatch && finalDropSourceMatch && locationFilterMatch && questMatch && searchMatch;
     });
 };
-function populateDynamicFilters() { 
+function populateDynamicFilters() {
     const { game, content, type, itemSubType, rarity, manufacturer, boss, enemy, dropSource, location, quest } = currentFilters;
-    populateFilterDropdown(document.getElementById('content-filter-select'), getUniqueValues(getFilteredItemsForOptions('content'), 'Content', false), 'content', content); 
+    populateFilterDropdown(document.getElementById('content-filter-select'), getUniqueValues(getFilteredItemsForOptions('content'), 'Content', false), 'content', content);
     populateFilterDropdown(document.getElementById('type-filter-select'), getUniqueValues(getFilteredItemsForOptions('type'), 'ItemType', false), 'type', type);
     populateFilterDropdown(document.getElementById('subtype-filter-select'), getUniqueValues(getFilteredItemsForOptions('itemSubType'), 'ItemSubType', false).filter(st => st !== null && st !== ''), 'itemSubType', itemSubType);
-    populateFilterDropdown(document.getElementById('rarity-filter-select'), getUniqueValues(getFilteredItemsForOptions('rarity'), 'ItemRarity', false), 'rarity', rarity, (a, b) => rarityOrder.indexOf(a) - rarityOrder.indexOf(b)); 
+    populateFilterDropdown(document.getElementById('rarity-filter-select'), getUniqueValues(getFilteredItemsForOptions('rarity'), 'ItemRarity', false), 'rarity', rarity, (a, b) => rarityOrder.indexOf(a) - rarityOrder.indexOf(b));
     populateFilterDropdown(document.getElementById('manufacturer-filter-select'), getUniqueValues(getFilteredItemsForOptions('manufacturer'), 'Manufacturer'), 'manufacturer', manufacturer);
+
     const itemsForBoss = getFilteredItemsForOptions('boss');
-    let uniqueBosses = (currentFilters.location !== 'all' && locationToBossesMap[currentFilters.location]) ? Array.from(new Set(itemsForBoss.flatMap(item => Array.isArray(item.Boss) ? item.Boss : []).filter(bName => locationToBossesMap[currentFilters.location].includes(bName)))).sort((a,b) => a.localeCompare(b)) : getUniqueValues(itemsForBoss, 'Boss').sort((a,b) => a.localeCompare(b));
-    populateFilterDropdown(document.getElementById('boss-filter-select'), uniqueBosses, 'boss', boss); 
+    let uniqueBosses = (currentFilters.location !== 'all' && locationToBossesMap[currentFilters.location])
+        ? Array.from(new Set(itemsForBoss.flatMap(item => Array.isArray(item.Boss) ? item.Boss : []).filter(bName => locationToBossesMap[currentFilters.location].includes(bName)))).sort((a,b) => a.localeCompare(b))
+        : getUniqueValues(itemsForBoss, 'Boss').sort((a,b) => a.localeCompare(b));
+    populateFilterDropdown(document.getElementById('boss-filter-select'), uniqueBosses, 'boss', boss);
+
     const itemsForEnemy = getFilteredItemsForOptions('enemy');
     const uniqueEnemies = getUniqueValues(itemsForEnemy, 'EnemyNames', true).sort((a,b) => a.localeCompare(b));
-    populateFilterDropdown(document.getElementById('enemy-filter-select'), uniqueEnemies, 'enemy', enemy); 
+    populateFilterDropdown(document.getElementById('enemy-filter-select'), uniqueEnemies, 'enemy', enemy);
+
     const itemsRelevantForDropSourceFilter = getFilteredItemsForOptions('dropSource');
     let uniqueDropSources = getUniqueValues(itemsRelevantForDropSourceFilter, 'DropSource').sort((a,b) => a.localeCompare(b));
     if (itemsRelevantForDropSourceFilter.some(item => item.isMissableItem === true) && !uniqueDropSources.includes('Missable')) { uniqueDropSources.push('Missable'); uniqueDropSources.sort((a,b) => a.localeCompare(b));}
-    populateFilterDropdown(document.getElementById('drop-source-filter-select'), uniqueDropSources, 'dropSource', currentFilters.dropSource); 
+    populateFilterDropdown(document.getElementById('drop-source-filter-select'), uniqueDropSources, 'dropSource', currentFilters.dropSource);
+
     const itemsForLocation = getFilteredItemsForOptions('location').filter(item => item.LocationFilter === true || (item.GeneralLocations && item.GeneralLocations.some(gl => gl.Location)));
     let uniqueLocations;
-    if (currentFilters.boss !== 'all' && bossToLocationsMap[currentFilters.boss]) { uniqueLocations = Array.from(new Set(itemsForLocation.flatMap(item => Array.isArray(item.Location) ? item.Location : []).filter(lName => bossToLocationsMap[currentFilters.boss].includes(lName)))).sort((a,b) => a.localeCompare(b));} else if (currentFilters.enemy !== 'all') { const enemyLocationsSet = new Set(); allItems.forEach(item => { if (item.EnemyNames && item.EnemyNames.includes(currentFilters.enemy)) { if (item.EnemyLocations) { item.EnemyLocations.forEach(el => { if (el.EnemyName === currentFilters.enemy && el.LocationName) { enemyLocationsSet.add(el.LocationName);}});}}}); uniqueLocations = getUniqueValues(itemsForLocation, 'Location').filter(loc => enemyLocationsSet.has(loc)).sort((a,b) => a.localeCompare(b));} else { uniqueLocations = getUniqueValues(itemsForLocation, 'Location').sort((a,b) => a.localeCompare(b));}
-    populateFilterDropdown(document.getElementById('location-filter-select'), uniqueLocations, 'location', location); 
+    if (currentFilters.boss !== 'all' && bossToLocationsMap[currentFilters.boss]) {
+        uniqueLocations = Array.from(new Set(itemsForLocation.flatMap(item => Array.isArray(item.Location) ? item.Location : []).filter(lName => bossToLocationsMap[currentFilters.boss].includes(lName)))).sort((a,b) => a.localeCompare(b));
+    } else if (currentFilters.enemy !== 'all') {
+        const enemyLocationsSet = new Set();
+        allItems.forEach(item => {
+            if (item.EnemyNames && item.EnemyNames.includes(currentFilters.enemy)) {
+                if (item.EnemyLocations) {
+                    item.EnemyLocations.forEach(el => {
+                        if (el.EnemyName === currentFilters.enemy && el.LocationName) {
+                            String(el.LocationName).split(' / ').map(l => l.trim()).filter(Boolean).forEach(sl => enemyLocationsSet.add(sl));
+                        }
+                    });
+                }
+            }
+        });
+        uniqueLocations = getUniqueValues(itemsForLocation, 'Location').filter(loc => enemyLocationsSet.has(loc)).sort((a,b) => a.localeCompare(b));
+    } else {
+        uniqueLocations = getUniqueValues(itemsForLocation, 'Location').sort((a,b) => a.localeCompare(b));
+    }
+    populateFilterDropdown(document.getElementById('location-filter-select'), uniqueLocations, 'location', location);
+
     const itemsForQuest = getFilteredItemsForOptions('quest');
     const uniqueQuests = getUniqueValues(itemsForQuest, 'QuestNames', true).sort((a,b) => a.localeCompare(b));
-    populateFilterDropdown(document.getElementById('quest-filter-select'), uniqueQuests, 'quest', quest); 
+    populateFilterDropdown(document.getElementById('quest-filter-select'), uniqueQuests, 'quest', quest);
 }
 
 function renderItems() {
     const container = document.getElementById('item-list');
     if (!container) return;
-    container.innerHTML = ''; 
-    
-    populateDynamicFilters(); 
-    
-    let finalFilteredItems = getFilteredItemsForOptions(null); 
+    container.innerHTML = '';
+
+    populateDynamicFilters();
+
+    let finalFilteredItems = getFilteredItemsForOptions(null);
     finalFilteredItems.sort((a, b) => a.ItemName.localeCompare(b.ItemName));
-    
+
     const itemsToDisplay = hideCompletedActive ? finalFilteredItems.filter(item => !item.Checked) : finalFilteredItems;
-    
+
     let hasActualItems = false;
     if (itemsToDisplay.length === 0) {
         container.innerHTML = `<li class="item-list-placeholder">No items found.</li>`;
     } else {
         itemsToDisplay.forEach(item => container.appendChild(createItemListItem(item)));
-        hasActualItems = true; 
+        hasActualItems = true;
     }
     updateSummary(finalFilteredItems);
 
-    // MODIFIED SCROLL LOGIC with headerOffset
     if (wasRenderTriggeredBySearch) {
             if (currentFilters.search !== '' && hasActualItems) {
                 const itemListElement = document.getElementById('item-list');
                 if (itemListElement) {
-                    // Define how many pixels from the top of the viewport you want the item list to start.
-                    // A smaller number means closer to the top.
-                    // Adjust this value to your preference.
-                    const desiredPaddingAboveList = 20; // e.g., 20px padding from the viewport top.
-
-                    // Calculate the target scroll position
+                    const desiredPaddingAboveList = 20;
                     const elementRect = itemListElement.getBoundingClientRect();
                     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                    
                     let targetScrollY = elementRect.top + scrollTop - desiredPaddingAboveList;
-                    
-                    // Ensure we don't try to scroll to a negative position
                     targetScrollY = Math.max(0, targetScrollY);
-
-                    // For very short lists (e.g., 1-2 rows):
-                    // The logic above will bring the top of the list near the top of the screen.
-                    // If the list is very short, it will naturally sit there, and if the
-                    // page isn't long enough to scroll further, the browser won't.
-                    // The phrase "go to bottom of page if its like 1 row" is a bit ambiguous.
-                    // Usually, users expect search results to appear near the top.
-                    // If the list is very short, scrolling its top to near the viewport top is standard.
-                    // If the entire content of the page (including the short list) is less than
-                    // the viewport height, it won't scroll much, which might be what you mean by "go to bottom."
-
                     window.scrollTo({
                         top: targetScrollY,
                         behavior: 'smooth'
@@ -527,7 +567,7 @@ function renderItems() {
             wasRenderTriggeredBySearch = false; // Reset the flag
         }
 }
-function updateSummary(filteredItems) { 
+function updateSummary(filteredItems) {
     const checkedCountEl = document.getElementById('checked-count');
     const totalCountEl = document.getElementById('total-count');
     const progressBarEl = document.getElementById('progress-bar');
@@ -590,9 +630,9 @@ function initializeFilters() {
     if (gameSelect && allItems.length > 0) { // Ensure allItems is populated before getting unique values
         populateFilterDropdown(gameSelect, getUniqueValues(allItems, 'Game', false), 'game', currentFilters.game, (a,b) => gameOrder.indexOf(a) - gameOrder.indexOf(b));
     }
-    
+
     const searchInput = document.getElementById('search-input');
-    if (searchInput) { 
+    if (searchInput) {
         searchInput.value = currentFilters.search || ''; // Set initial value from any persisted filter state
 
         searchInput.addEventListener('keydown', (e) => {
@@ -601,14 +641,14 @@ function initializeFilters() {
                 const newSearchTerm = searchInput.value.trim();
                 // Update and render even if the term is the same, user explicitly hit Enter
                 currentFilters.search = newSearchTerm;
-                wasRenderTriggeredBySearch = true; 
+                wasRenderTriggeredBySearch = true;
                 renderItems();
             }
         });
 
         searchInput.addEventListener('blur', () => {
             const newSearchTerm = searchInput.value.trim();
-            // Only render on blur if the search term has actually changed 
+            // Only render on blur if the search term has actually changed
             // from what's currently set in filters.
             if (currentFilters.search !== newSearchTerm) {
                 currentFilters.search = newSearchTerm;
@@ -618,11 +658,11 @@ function initializeFilters() {
         });
     }
 }
-function setupHideCompletedButton() { 
+function setupHideCompletedButton() {
     const btn = document.getElementById('hide-completed-button');
     if(btn) { btn.classList.toggle('active', hideCompletedActive); btn.textContent = hideCompletedActive ? 'Show All' : 'Hide Completed'; btn.addEventListener('click', () => { hideCompletedActive = !hideCompletedActive; btn.classList.toggle('active', hideCompletedActive); btn.textContent = hideCompletedActive ? 'Show All' : 'Hide Completed'; wasRenderTriggeredBySearch = false; renderItems(); });}
 }
-function setupClearAllButton() { 
+function setupClearAllButton() {
     const btn = document.getElementById('clear-all-button');
     if(btn) btn.addEventListener('click', () => {
         const filtered = getFilteredItemsForOptions(null);
@@ -631,19 +671,19 @@ function setupClearAllButton() {
         if (toClear.length === 0) return alert("No completed items in current selection.");
         if (confirm(`Uncheck ${toClear.length} completed item(s) based on current filters for profile "${appData.activeProfileName}"? This will also clear their timestamps.`)) {
             toClear.forEach(item => {
-                const originalItemInAllItems = allItems.find(i => i.id === item.id); 
+                const originalItemInAllItems = allItems.find(i => i.id === item.id);
                 if (originalItemInAllItems) {
                     originalItemInAllItems.Checked = false;
-                    originalItemInAllItems.checkedTimestamp = null; 
+                    originalItemInAllItems.checkedTimestamp = null;
                 }
             });
-            debouncedSaveCurrentProfileProgress(); 
-            wasRenderTriggeredBySearch = false; renderItems(); 
+            debouncedSaveCurrentProfileProgress();
+            wasRenderTriggeredBySearch = false; renderItems();
             alert(`Cleared ${toClear.length} item(s) for profile "${appData.activeProfileName}".`);
         }
     });
 }
-function setupGoToTopButton() { 
+function setupGoToTopButton() {
     const goToTopBtn = document.getElementById('goToTopBtn');
     if (!goToTopBtn) return;
     window.onscroll = function() { scrollFunction(); };
@@ -651,22 +691,22 @@ function setupGoToTopButton() {
     if (goToTopBtn) { goToTopBtn.addEventListener('click', function() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0; });}
 }
 
-function setupScoreSystemToggle() { 
+function setupScoreSystemToggle() {
     const toggleCheckbox = document.getElementById('toggle-score-system');
     if (toggleCheckbox) {
-        toggleCheckbox.checked = scoreSystemEnabled; 
+        toggleCheckbox.checked = scoreSystemEnabled;
         toggleCheckbox.addEventListener('change', () => {
-            scoreSystemEnabled = toggleCheckbox.checked; 
+            scoreSystemEnabled = toggleCheckbox.checked;
             const currentActiveProfile = getActiveProfileData();
-            currentActiveProfile.scoreSystemEnabled = scoreSystemEnabled; 
-            saveAppData(); 
-            wasRenderTriggeredBySearch = false; renderItems(); 
+            currentActiveProfile.scoreSystemEnabled = scoreSystemEnabled;
+            saveAppData();
+            wasRenderTriggeredBySearch = false; renderItems();
         });
     }
 }
 
 async function initializeApp() {
-    allItems = []; 
+    allItems = [];
     bossToLocationsMap = {};
     locationToBossesMap = {};
     currentFilters = { game: 'all', content: 'all', type: 'all', itemSubType: 'all', rarity: 'all', manufacturer: 'all', boss: 'all', enemy: 'all', dropSource: 'all', location: 'all', quest: 'all', search: '' };
@@ -675,8 +715,8 @@ async function initializeApp() {
     const searchInputEl = document.getElementById('search-input');
     if (searchInputEl) searchInputEl.value = '';
 
-    let missingIdErrorMessages = []; 
-    loadAppData(); 
+    let missingIdErrorMessages = [];
+    loadAppData();
 
     try {
         let bl1Data = [], bl2Data = [], bltpsData = [], bl3Data = [], tinyTinaData = [];
@@ -688,51 +728,115 @@ async function initializeApp() {
         const gameDataMap = { BorderlandsOne: bl1Data, BorderlandsTwo: bl2Data, BorderlandsTPS: bltpsData, BorderlandsThree: bl3Data, TinyTinasWonderlands: tinyTinaData };
         let rawData = [];
         gameOrder.forEach(gameKey => { const itemsForGame = gameDataMap[gameKey]; if (itemsForGame && Array.isArray(itemsForGame)) { itemsForGame.forEach(rawItem => { if (rawItem && typeof rawItem === 'object') { rawData.push({ ...rawItem, Game: gameKey }); }});}});
-        
+
         let processed = [];
-        rawData.forEach((rawItem) => { 
+        rawData.forEach((rawItem) => {
             if (!rawItem || typeof rawItem !== 'object' || !rawItem.ItemName || typeof rawItem.ItemName !== 'string' || rawItem.ItemName.trim() === '') { console.warn('Skipping invalid raw item:', rawItem); missingIdErrorMessages.push(`Invalid item structure (Game: ${rawItem.Game || 'N/A'}, Item: ${rawItem.ItemName || 'N/A'}).`); return; }
             if (!rawItem.uniqueStaticId || String(rawItem.uniqueStaticId).trim() === '') { const errorMsg = `Item: "${rawItem.ItemName}", Game: "${rawItem.Game}" MISSING uniqueStaticId.`; console.error('CRITICAL: ' + errorMsg); missingIdErrorMessages.push(errorMsg); rawItem.uniqueStaticId = `TEMP_ID_ERROR_${rawItem.Game}_${rawItem.ItemName.replace(/\s+/g, '_')}_${Math.random().toString(36).substring(2, 9)}`;}
-            const item = { ...rawItem }; 
-            item.id = item.uniqueStaticId; 
+            const item = { ...rawItem };
+            item.id = item.uniqueStaticId;
             item.ItemName = String(item.ItemName).trim();
             item.isTimeLimited = !!item.isTimeLimited;
             let processedRarity;
             let rawOriginalRarity = rawItem.ItemRarity ? String(rawItem.ItemRarity).trim() : '';
-            if (rawOriginalRarity.toLowerCase() === 'e-tech') { processedRarity = 'E-Tech';} else { processedRarity = rawOriginalRarity ? capitalizeFirstLetter(rawOriginalRarity) : 'Common';}
+
+            // Ensure "Glitch" and "E-Tech" are capitalized correctly if they come in as lowercase
+            if (rawOriginalRarity.toLowerCase() === 'e-tech') {
+                processedRarity = 'E-Tech';
+            } else if (rawOriginalRarity.toLowerCase() === 'glitch') {
+                processedRarity = 'Glitch';
+            } else {
+                processedRarity = rawOriginalRarity ? capitalizeFirstLetter(rawOriginalRarity) : 'Common';
+            }
             item.ItemRarity = processedRarity;
+
             item.points = RARITY_POINTS[item.ItemRarity] || 0;
-            item.checkedTimestamp = null; 
+            item.checkedTimestamp = null;
 
             const flatBosses = new Set(); const flatEnemyNames = new Set(); const flatQuestNames = new Set(); const flatLocations = new Set();
-            ['BossLocations', 'EnemyLocations', 'GeneralLocations', 'QuestSources'].forEach(sourceKey => { if (item[sourceKey] && Array.isArray(item[sourceKey])) { item[sourceKey].forEach(s_obj => { if (typeof s_obj === 'object' && s_obj !== null) { if (sourceKey === 'BossLocations' || sourceKey === 'EnemyLocations') { s_obj.respawns = s_obj.respawns !== false; if (s_obj.isUniqueEnemy !== undefined) s_obj.isUniqueEnemy = !!s_obj.isUniqueEnemy;} if (Array.isArray(s_obj.DropRates)) { s_obj.DropRates = s_obj.DropRates.map(dr => ({condition: dr.condition ? String(dr.condition) : "Base", rate: (dr.rate !== null && dr.rate !== undefined) ? String(dr.rate) : null })).filter(dr => dr.rate !== null);} else if (s_obj.DropRate !== null && s_obj.DropRate !== undefined) { s_obj.DropRates = [{ condition: "Base", rate: String(s_obj.DropRate) }]; delete s_obj.DropRate;} else {s_obj.DropRates = [];} s_obj.NVHMDropRate = (typeof s_obj.NVHMDropRate === 'number') ? s_obj.NVHMDropRate : null; s_obj.TVHMDropRate = (typeof s_obj.TVHMDropRate === 'number') ? s_obj.TVHMDropRate : null; s_obj.UVHMDropRate = (typeof s_obj.UVHMDropRate === 'number') ? s_obj.UVHMDropRate : null; if (sourceKey === 'QuestSources') { s_obj.QuestGiver = (s_obj.QuestGiver && typeof s_obj.QuestGiver === 'string') ? s_obj.QuestGiver.trim() : null; s_obj.QuestType = (s_obj.QuestType && typeof s_obj.QuestType === 'string') ? s_obj.QuestType.trim() : null;} const name = s_obj.BossName || s_obj.EnemyName || (sourceKey === 'QuestSources' ? s_obj.QuestName : s_obj.Source); const locName = s_obj.LocationName || s_obj.Location || (sourceKey === 'QuestSources' ? s_obj.QuestLocation : null); if (name && String(name).trim()) { const trimmedName = String(name).trim(); if (sourceKey === 'BossLocations') flatBosses.add(trimmedName); if (sourceKey === 'EnemyLocations') flatEnemyNames.add(trimmedName); if (sourceKey === 'QuestSources') flatQuestNames.add(trimmedName);} if (locName && String(locName).trim()) { const locationToAdd = String(locName).trim(); flatLocations.add(locationToAdd); if (sourceKey === 'BossLocations' && name && String(name).trim()) { const bName = String(name).trim(); if (!bossToLocationsMap[bName]) bossToLocationsMap[bName] = new Set(); bossToLocationsMap[bName].add(locationToAdd); if (!locationToBossesMap[locationToAdd]) locationToBossesMap[locationToAdd] = new Set(); locationToBossesMap[locationToAdd].add(bName);}}}});} else {item[sourceKey] = [];}});
-            item.Boss = Array.from(flatBosses).sort(); item.EnemyNames = Array.from(flatEnemyNames).sort(); item.Location = Array.from(flatLocations).sort(); item.QuestNames = Array.from(flatQuestNames).sort();
+            ['BossLocations', 'EnemyLocations', 'GeneralLocations', 'QuestSources'].forEach(sourceKey => {
+                if (item[sourceKey] && Array.isArray(item[sourceKey])) {
+                    item[sourceKey].forEach(s_obj => {
+                        if (typeof s_obj === 'object' && s_obj !== null) {
+                            if (sourceKey === 'BossLocations' || sourceKey === 'EnemyLocations') { s_obj.respawns = s_obj.respawns !== false; if (s_obj.isUniqueEnemy !== undefined) s_obj.isUniqueEnemy = !!s_obj.isUniqueEnemy;}
+                            if (Array.isArray(s_obj.DropRates)) { s_obj.DropRates = s_obj.DropRates.map(dr => ({condition: dr.condition ? String(dr.condition) : "Base", rate: (dr.rate !== null && dr.rate !== undefined) ? String(dr.rate) : null })).filter(dr => dr.rate !== null);} else if (s_obj.DropRate !== null && s_obj.DropRate !== undefined) { s_obj.DropRates = [{ condition: "Base", rate: String(s_obj.DropRate) }]; delete s_obj.DropRate;} else {s_obj.DropRates = [];}
+                            s_obj.NVHMDropRate = (typeof s_obj.NVHMDropRate === 'number') ? s_obj.NVHMDropRate : null; s_obj.TVHMDropRate = (typeof s_obj.TVHMDropRate === 'number') ? s_obj.TVHMDropRate : null; s_obj.UVHMDropRate = (typeof s_obj.UVHMDropRate === 'number') ? s_obj.UVHMDropRate : null;
+                            if (sourceKey === 'QuestSources') { s_obj.QuestGiver = (s_obj.QuestGiver && typeof s_obj.QuestGiver === 'string') ? s_obj.QuestGiver.trim() : null; s_obj.QuestType = (s_obj.QuestType && typeof s_obj.QuestType === 'string') ? s_obj.QuestType.trim() : null;}
+
+                            const name = s_obj.BossName || s_obj.EnemyName || (sourceKey === 'QuestSources' ? s_obj.QuestName : s_obj.Source);
+                            let locName = null;
+
+                            if (sourceKey === 'BossLocations' || sourceKey === 'EnemyLocations') {
+                                locName = s_obj.LocationName;
+                            } else if (sourceKey === 'QuestSources') {
+                                locName = s_obj.QuestLocation;
+                            } else if (sourceKey === 'GeneralLocations') {
+                                locName = s_obj.Location;
+                            }
+
+                            if (name && String(name).trim()) {
+                                const trimmedName = String(name).trim();
+                                if (sourceKey === 'BossLocations') flatBosses.add(trimmedName);
+                                if (sourceKey === 'EnemyLocations') flatEnemyNames.add(trimmedName);
+                                if (sourceKey === 'QuestSources') flatQuestNames.add(trimmedName);
+                            }
+
+                            if (locName && String(locName).trim()) {
+                                const locationsFromField = String(locName).split(' / ').map(l => l.trim()).filter(Boolean);
+                                locationsFromField.forEach(singleLoc => {
+                                    flatLocations.add(singleLoc);
+
+                                    if (sourceKey === 'BossLocations' && name && String(name).trim()) {
+                                        const bName = String(name).trim();
+                                        if (!bossToLocationsMap[bName]) bossToLocationsMap[bName] = new Set();
+                                        bossToLocationsMap[bName].add(singleLoc);
+                                        if (!locationToBossesMap[singleLoc]) locationToBossesMap[singleLoc] = new Set();
+                                        locationToBossesMap[singleLoc].add(bName);
+                                    }
+                                });
+                            }
+                        }
+                    });
+                } else {
+                    item[sourceKey] = [];
+                }
+            });
+            item.Boss = Array.from(flatBosses).sort();
+            item.EnemyNames = Array.from(flatEnemyNames).sort();
+            item.Location = Array.from(flatLocations).sort();
+            item.QuestNames = Array.from(flatQuestNames).sort();
+
             const normArr = (v,d='/')=> Array.isArray(v)?v.map(s=>String(s).trim()).filter(Boolean) : (v&&typeof v==='string')?v.split(d).map(s=>String(s).trim()).filter(Boolean) : v&&typeof v ==='number'?[String(v).trim()].filter(Boolean): v?[String(v).trim()].filter(Boolean):[];
-            item.Manufacturer = normArr(item.Manufacturer); item.DropSource = normArr(item.DropSource); item.Elements = normArr(item.Elements);
+            item.Manufacturer = normArr(item.Manufacturer);
+            item.DropSource = normArr(item.DropSource);
+            item.Elements = normArr(item.Elements);
             item.ItemType = (item.ItemType !== null && item.ItemType !== undefined) ? String(item.ItemType).trim() : 'Unknown Type'; if (item.ItemType === '') item.ItemType = 'Unknown Type';
             item.ItemSubType = (item.ItemSubType !== null && item.ItemSubType !== undefined) ? String(item.ItemSubType).trim() : null; if (item.ItemSubType === '') item.ItemSubType = null;
-            item.Content = item.Content ? String(item.Content).trim() : ''; item.Challenge = item.Challenge ? String(item.Challenge).trim() : ''; item.Notes = item.Notes ? String(item.Notes).trim() : '';
-            item.LocationFilter = !!item.LocationFilter; item.isMissableItem = !!item.isMissableItem;
-            item.Checked = false; 
+            item.Content = item.Content ? String(item.Content).trim() : '';
+            item.Challenge = item.Challenge ? String(item.Challenge).trim() : '';
+            item.Notes = item.Notes ? String(item.Notes).trim() : '';
+            item.LocationFilter = !!item.LocationFilter;
+            item.isMissableItem = !!item.isMissableItem;
+            item.Checked = false;
             processed.push(item);
         });
         allItems = processed;
-        
+
         for (const b in bossToLocationsMap) bossToLocationsMap[b] = Array.from(bossToLocationsMap[b]).sort();
         for (const l in locationToBossesMap) locationToBossesMap[l] = Array.from(locationToBossesMap[l]).sort();
-        
+
         if (missingIdErrorMessages.length > 0) { let alertMsg = `!! DATA WARNING !!\n${missingIdErrorMessages.length} item(s) are missing 'uniqueStaticId' or have issues.\nProgress for these items WILL NOT be saved correctly.\n\nExamples of problematic items:\n`; const maxExamples = 5; for(let i = 0; i < Math.min(missingIdErrorMessages.length, maxExamples); i++) { alertMsg += `- ${missingIdErrorMessages[i]}\n`;} if (missingIdErrorMessages.length > maxExamples) { alertMsg += `\n...and ${missingIdErrorMessages.length - maxExamples} more.`;} alertMsg += "\nPlease check the developer console (F12) for full details and fix your JSON data."; alert(alertMsg);}
         console.log('Processed allItems:', allItems.length, 'items.');
 
-        applyActiveProfileToAllItems(); 
-        initializeFilters(); 
-        setupProfileControls(); 
-        setupScoreSystemToggle(); 
+        applyActiveProfileToAllItems();
+        initializeFilters();
+        setupProfileControls();
+        setupScoreSystemToggle();
         setupHideCompletedButton();
         setupClearAllButton();
         setupGoToTopButton();
-        wasRenderTriggeredBySearch = false; 
-        renderItems(); 
+        wasRenderTriggeredBySearch = false;
+        renderItems();
     } catch (e) {
         console.error("Initialization failed (main catch):", e);
         const list = document.getElementById('item-list');
